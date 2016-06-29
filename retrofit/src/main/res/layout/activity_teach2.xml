@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="在下面输入一个IP地址，即可查询该IP的信息" />
+
+    <EditText
+        android:id="@+id/text_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="输入一个IP地址，如121.33.6.228"
+        android:inputType="phone"
+        android:text="121.33.6.228" />
+
+    <Button
+        android:id="@+id/button_query_execute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="直接使用，要开启线程" />
+
+    <TextView
+        android:id="@+id/text_ip_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

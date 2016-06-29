@@ -9,13 +9,21 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/MvpSample" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/gif" />
+            <option value="$PROJECT_DIR$/retrofit" />
+            <option value="$PROJECT_DIR$/rxandroid" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/MvpSample" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/gif" />
+            <option value="$PROJECT_DIR$/retrofit" />
+            <option value="$PROJECT_DIR$/rxandroid" />
           </set>
         </option>
       </GradleProjectSettings>

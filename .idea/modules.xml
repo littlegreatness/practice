@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/MvpSample/MvpSample.iml" filepath="$PROJECT_DIR$/MvpSample/MvpSample.iml" />
       <module fileurl="file://$PROJECT_DIR$/Practice.iml" filepath="$PROJECT_DIR$/Practice.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gif/gif.iml" filepath="$PROJECT_DIR$/gif/gif.iml" />
+      <module fileurl="file://$PROJECT_DIR$/retrofit/retrofit.iml" filepath="$PROJECT_DIR$/retrofit/retrofit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxandroid/rxandroid.iml" filepath="$PROJECT_DIR$/rxandroid/rxandroid.iml" />
     </modules>
   </component>
 </project>
