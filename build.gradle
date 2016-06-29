@@ -3,21 +3,65 @@
 buildscript {
     repositories {
         jcenter()
+        mavenCentral()
+        maven {
+            url 'https://oss.sonatype.org/content/repositories/snapshots/'
+        }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.1.2'
-
+        classpath 'com.android.tools.build:gradle:2.2.0-alpha3'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        classpath 'me.tatarka:gradle-retrolambda:3.2.4'
+        classpath 'com.android.databinding:dataBinder:1.0-rc4'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
 }
 
+ext {
+    configuration = [
+            package          : "buxiaoqing.prac.com",
+            buildToolsVersion: "24.0.0",
+            compileVersion   : 24,
+            minSdk           : 14,
+            targetSdk        : 24,
+            versionCode      : 1,
+            versionName      : "0.0.1",
+    ]
+
+    libraries = [
+            supportVersion    : "24.0.0",
+            retrofit          : "2.0.2",
+            rxandroid         : "1.1.0",
+            rxjava            : "1.1.0",
+            dagger            : "2.0",
+            javax_annotation  : "10.0-b28",
+            butterknife       : "7.0.1",
+            glide             : "3.6.1",
+            recycler_animators: "2.1.0",
+            circleimageview   : "2.0.0"
+    ]
+}
+
 allprojects {
     repositories {
         jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven {
+            name 'glide-snapshot'
+            url 'http://oss.sonatype.org/content/repositories/snapshots'
+        }
+        flatDir {
+            dirs 'libs' //this way we can find the .aar file in libs folder
+        }
     }
+
+
 }
+
 
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
