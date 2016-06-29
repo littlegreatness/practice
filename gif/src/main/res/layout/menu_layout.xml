@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorAccent"
     android:paddingBottom="30dp"
     android:paddingLeft="30dp"
     android:paddingTop="50dp">
@@ -19,7 +20,7 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="20dp"
             android:text="剩者为王"
-            android:textColor="#ffffff"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="25sp" />
     </LinearLayout>
 

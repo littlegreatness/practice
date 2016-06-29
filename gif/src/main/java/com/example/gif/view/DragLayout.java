@@ -1,20 +1,21 @@
 package com.example.gif.view;
 
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
-import android.os.Build;
 import android.support.v4.view.GestureDetectorCompat;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.widget.ViewDragHelper;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
+import com.example.gif.R;
 import com.nineoldandroids.view.ViewHelper;
 
 /**
@@ -33,6 +34,9 @@ public class DragLayout extends FrameLayout {
     private int mMenuWidth;
     private int mMenuHeight;
     private int mMainLeftRange;  //当前滑动距离
+
+    private boolean isShowShadow = false;
+    private ImageView iv_shadow;
 
     private DragListener dragListener;
 
@@ -90,7 +94,6 @@ public class DragLayout extends FrameLayout {
         //滑动的时候,view发生变化时调用   left,top  view的新位置     dx,dy发生变动的距离
         @Override
         public void onViewPositionChanged(View changedView, int left, int top, int dx, int dy) {
-            super.onViewPositionChanged(changedView, left, top, dx, dy);
 
             if (changedView == mainLayout) {
                 mMainLeftRange = left;
@@ -104,6 +107,10 @@ public class DragLayout extends FrameLayout {
                 mMainLeftRange = 0;
             }
 
+            if (isShowShadow) {
+                iv_shadow.layout(mMainLeftRange, 0, mMainLeftRange + mMenuWidth, mMenuHeight);
+            }
+
             if (changedView == mMenuLayout) {
                 mMenuLayout.layout(0, 0, mMenuWidth, mMenuHeight);
                 mainLayout.layout(mMainLeftRange, 0, mMainLeftRange + mMenuWidth, mMenuHeight);
@@ -112,11 +119,20 @@ public class DragLayout extends FrameLayout {
         }
     };
 
+    @Override
+    public void computeScroll() {
+        super.computeScroll();
+        if (viewDragHelper.continueSettling(true)) {
+            ViewCompat.postInvalidateOnAnimation(this);
+        }
+    }
+
     private void dragEvent(int mMainLeftRange) {
         if (dragListener == null) {
             return;
         }
-        float percent = mMainLeftRange / mDragRange;
+        //类型转换  int / int    就是0或1
+        float percent = mMainLeftRange / (float) mDragRange;
         animateView(percent);
         State lastState = mState;
         if (lastState != getmState() && mState == State.CLOSE) {
@@ -129,7 +145,6 @@ public class DragLayout extends FrameLayout {
     }
 
     private void animateView(float percent) {
-
         float f1 = (float) (1 - percent * 0.3);
         ViewHelper.setScaleX(mainLayout, f1);
         ViewHelper.setScaleY(mainLayout, f1);
@@ -139,6 +154,11 @@ public class DragLayout extends FrameLayout {
         ViewHelper.setScaleY(mMenuLayout, (float) (0.5 + 0.5 * percent));
 
         ViewHelper.setAlpha(mMenuLayout, percent);
+
+        if (isShowShadow) {
+            ViewHelper.setScaleX(iv_shadow, f1 * 1.4f * (1 - percent * 0.12f));
+            ViewHelper.setScaleY(iv_shadow, f1 * 1.85f * (1 - percent * 0.12f));
+        }
 
         if (getBackground() != null) {
             getBackground().setColorFilter(evaluate(percent, Color.BLACK, Color.TRANSPARENT), PorterDuff.Mode.SRC_OVER);
@@ -156,25 +176,22 @@ public class DragLayout extends FrameLayout {
         int endG = (transparent >> 8) & 0xff;
         int endB = (transparent) & 0xff;
 
-        return (int) (startA + (int) percent * (endA - startA) << 24) |
-                (int) (startR + (int) percent * (endR - startR) << 16) |
-                (int) (startG + (int) percent * (endG - startG) << 8) |
+        return (int) ((startA + (int) percent * (endA - startA)) << 24) |
+                (int) ((startR + (int) percent * (endR - startR)) << 16) |
+                (int) ((startG + (int) percent * (endG - startG)) << 8) |
                 (int) (startB + (int) percent * (endB - startB));
     }
 
+    public DragLayout(Context context) {
+        this(context, null);
+    }
 
     public DragLayout(Context context, AttributeSet attrs) {
-        super(context, attrs);
+        this(context, attrs, 0);
     }
 
     public DragLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-    }
-
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    public DragLayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
-
         viewDragHelper = ViewDragHelper.create(this, dragCallBack);
         detectorCompat = new GestureDetectorCompat(context, new MSimpleOnGestureListener());
     }
@@ -182,9 +199,16 @@ public class DragLayout extends FrameLayout {
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
+
+        if (isShowShadow) {
+            iv_shadow = new ImageView(getContext());
+            iv_shadow.setImageResource(R.drawable.shadow);
+            LayoutParams lp = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
+            addView(iv_shadow, 1, lp);
+        }
         mMenuLayout = (RelativeLayout) getChildAt(0);
         mMenuLayout.setClickable(true);
-        mainLayout = (MainLayout) getChildAt(1);
+        mainLayout = (MainLayout) getChildAt(isShowShadow ? 2 : 1);
         mainLayout.setDragLayout(this);
         mainLayout.setClickable(true);
     }
@@ -229,6 +253,7 @@ public class DragLayout extends FrameLayout {
         return mState;
     }
 
+
     public void open() {
         if (viewDragHelper.smoothSlideViewTo(mainLayout, mDragRange, 0)) {
             ViewCompat.postInvalidateOnAnimation(this);
@@ -251,5 +276,9 @@ public class DragLayout extends FrameLayout {
             //横向滑动为主
             return Math.abs(distanceY) <= Math.abs(distanceX);
         }
+    }
+
+    private void log(String str) {
+        Log.d("DragLayout", str);
     }
 }
