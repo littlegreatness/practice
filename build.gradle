@@ -39,7 +39,8 @@ ext {
             butterknife       : "7.0.1",
             glide             : "3.6.1",
             recycler_animators: "2.1.0",
-            circleimageview   : "2.0.0"
+            circleimageview   : "2.0.0",
+            dagger            : "2.2"
     ]
 }
 

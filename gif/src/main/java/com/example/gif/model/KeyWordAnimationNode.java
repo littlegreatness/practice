@@ -3,6 +3,9 @@ package com.example.gif.model;
 import android.graphics.Path;
 import android.graphics.drawable.Drawable;
 
+import dagger.Module;
+import dagger.Provides;
+
 public class KeyWordAnimationNode {
 
     private int resId;         // 资源ID
