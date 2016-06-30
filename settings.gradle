@@ -1,1 +1,1 @@
-include ':MvpSample', ':gif', ':retrofit', ':rxandroid'
+include ':MvpSample', ':gif', ':retrofit', ':rxandroid',  ':rxJoke'

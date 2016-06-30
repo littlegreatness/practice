@@ -31,10 +31,10 @@ ext {
 
     libraries = [
             supportVersion    : "24.0.0",
-            retrofit          : "2.0.2",
+            retrofit          : "2.1.0",
             rxandroid         : "1.1.0",
             rxjava            : "1.1.0",
-            dagger            : "2.0",
+            dagger            : "2.5",
             javax_annotation  : "10.0-b28",
             butterknife       : "7.0.1",
             glide             : "3.6.1",
@@ -57,8 +57,6 @@ allprojects {
             dirs 'libs' //this way we can find the .aar file in libs folder
         }
     }
-
-
 }
 
 
