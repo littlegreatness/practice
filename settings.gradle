@@ -1,1 +1,2 @@
-include ':MvpSample', ':gif', ':retrofit', ':rxandroid',  ':rxJoke'
+include ':MvpSample', ':retrofit', ':Permissioncheck', ':rxJoke', ':prac'
+include ':wewin', ':libraries:CustomShapeImageView', ':libraries:Shimmer'

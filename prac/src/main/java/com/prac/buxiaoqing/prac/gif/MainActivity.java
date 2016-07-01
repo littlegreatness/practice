@@ -2,29 +2,30 @@ package com.prac.buxiaoqing.prac.gif;
 
 import android.annotation.TargetApi;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.transition.Fade;
-import android.transition.Slide;
-import android.transition.TransitionInflater;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.example.gif.view.AnimateView;
-import com.example.gif.view.DragLayout;
-import com.example.gif.view.FsgifView;
+
+import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.AppIndex;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.prac.buxiaoqing.prac.R;
+import com.prac.buxiaoqing.prac.gif.view.AnimateView;
+import com.prac.buxiaoqing.prac.gif.view.DragLayout;
+import com.prac.buxiaoqing.prac.gif.view.FsgifView;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Set;
-
-import butterknife.Bind;
-import butterknife.ButterKnife;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -34,6 +35,11 @@ public class MainActivity extends AppCompatActivity {
     EditText et;
     DragLayout rootView;
     Button shareView;
+    /**
+     * ATTENTION: This was auto-generated to implement the App Indexing API.
+     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     */
+    private GoogleApiClient client;
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -42,12 +48,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        shareView = findViewById(R.id.jump);
-        et = findViewById(R.id.et_content);
-        rootView = findViewById(R.id.rootView);
-        gifView = findViewById(R.id.gifView);
-
-
+        shareView = (Button) findViewById(R.id.jump);
+        et = (EditText) findViewById(R.id.et_content);
+        rootView = (DragLayout) findViewById(R.id.rootView);
+        gifView = (FsgifView) findViewById(R.id.gifView);
 
 
         Fade slide = new Fade();
@@ -56,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setExitTransition(slide);
 
 
-        ButterKnife.bind(this);
         rootView.setDragListener(new DragLayout.DragListener() {
             @Override
             public void open() {
@@ -74,6 +77,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         initMap();
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
     private void initMap() {
@@ -121,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     public void jump(View view) {
         Intent intent = new Intent(this, jump_act.class);
-        ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this,shareView,"jump");
+        ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeSceneTransitionAnimation(this, shareView, "jump");
         startActivity(intent, activityOptionsCompat.toBundle());
     }
 
@@ -129,6 +135,45 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        ButterKnife.unbind(this);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client.connect();
+        Action viewAction = Action.newAction(
+                Action.TYPE_VIEW, // TODO: choose an action type.
+                "Main Page", // TODO: Define a title for the content shown.
+                // TODO: If you have web page content that matches this app activity's content,
+                // make sure this auto-generated web page URL is correct.
+                // Otherwise, set the URL to null.
+                Uri.parse("http://host/path"),
+                // TODO: Make sure this auto-generated app URL is correct.
+                Uri.parse("android-app://com.prac.buxiaoqing.prac.gif/http/host/path")
+        );
+        AppIndex.AppIndexApi.start(client, viewAction);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        Action viewAction = Action.newAction(
+                Action.TYPE_VIEW, // TODO: choose an action type.
+                "Main Page", // TODO: Define a title for the content shown.
+                // TODO: If you have web page content that matches this app activity's content,
+                // make sure this auto-generated web page URL is correct.
+                // Otherwise, set the URL to null.
+                Uri.parse("http://host/path"),
+                // TODO: Make sure this auto-generated app URL is correct.
+                Uri.parse("android-app://com.prac.buxiaoqing.prac.gif/http/host/path")
+        );
+        AppIndex.AppIndexApi.end(client, viewAction);
+        client.disconnect();
     }
 }

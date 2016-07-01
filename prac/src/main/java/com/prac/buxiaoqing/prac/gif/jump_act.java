@@ -12,6 +12,8 @@ import android.transition.TransitionInflater;
 import android.view.View;
 import android.widget.Button;
 
+import com.prac.buxiaoqing.prac.R;
+
 public class jump_act extends AppCompatActivity {
 
     Button back;
@@ -23,7 +25,7 @@ public class jump_act extends AppCompatActivity {
         setContentView(R.layout.activity_jump_act);
 
 
-        back = findViewById(R.id.back);
+        back = (Button) findViewById(R.id.back);
 
         Fade slide = new Fade();
         slide.setDuration(1000);

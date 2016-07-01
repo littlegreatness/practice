@@ -15,8 +15,8 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-import com.example.gif.R;
 import com.nineoldandroids.view.ViewHelper;
+import com.prac.buxiaoqing.prac.R;
 
 /**
  * Created by buxiaoqing on 16/6/28.

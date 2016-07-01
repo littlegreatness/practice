@@ -11,7 +11,8 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.example.gif.R;
+
+import com.prac.buxiaoqing.prac.R;
 
 import java.io.IOException;
 import java.io.InputStream;

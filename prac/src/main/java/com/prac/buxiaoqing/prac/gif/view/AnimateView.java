@@ -7,8 +7,9 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.RelativeLayout;
 
-import com.example.gif.model.KeyWordAnimationNode;
-import com.example.gif.util.PixelUtil;
+
+import com.prac.buxiaoqing.prac.gif.model.KeyWordAnimationNode;
+import com.prac.buxiaoqing.prac.gif.util.PixelUtil;
 
 import java.util.ArrayList;
 import java.util.List;
