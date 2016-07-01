@@ -18,14 +18,10 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
     }
-
 
     @Override
     public int checkPermission(String permission, int pid, int uid) {
-
-
         List<String> permissionsNeeded = new ArrayList<>();
         final List<String> permissionsList = new ArrayList<>();
         if (deniedPermission(permissionsList, Manifest.permission.ACCESS_FINE_LOCATION))
