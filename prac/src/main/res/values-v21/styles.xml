@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="MaterialAnimations" parent="@style/Theme.AppCompat.Light.NoActionBar">
+                ...
+                <!-- specify enter and exit transitions -->
+                <item name="android:windowEnterTransition">@transition/tra_fade</item>
+                <item name="android:windowExitTransition">@transition/tra_fade</item>
+
+                <!-- specify shared element transitions -->
+                <item name="android:windowSharedElementEnterTransition">@transition/tra_explore</item>
+                <item name="android:windowSharedElementExitTransition">@transition/tra_explore</item>
+                ...
+        </style>
+</resources>
