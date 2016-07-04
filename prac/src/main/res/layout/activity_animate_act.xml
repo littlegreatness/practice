@@ -4,11 +4,11 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:onClick="play"
         android:text="play" />
+
 
 </RelativeLayout>

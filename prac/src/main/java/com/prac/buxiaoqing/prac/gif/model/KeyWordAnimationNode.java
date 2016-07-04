@@ -13,7 +13,17 @@ public class KeyWordAnimationNode {
     private float value;       //
     private float speedY;
     private float speedX;
+    private int alpha;
     private Drawable drawable;
+
+
+    public int getAlpha() {
+        return alpha;
+    }
+
+    public void setAlpha(int alpha) {
+        this.alpha = alpha;
+    }
 
     public int getResId() {
         return resId;

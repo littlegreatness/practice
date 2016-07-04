@@ -79,6 +79,14 @@
                 android:layout_height="wrap_content"
                 android:onClick="jump"
                 android:text="跳转动画" />
+
+            <Button
+                android:transitionName="jump"
+                style="@style/MaterialAnimations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="praise"
+                android:text="点赞动画" />
         </LinearLayout>
 
     </com.example.gif.view.MainLayout>
