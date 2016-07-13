@@ -30,9 +30,7 @@ public class CusNumLayout extends LinearLayout {
 
     private int lineHeight;
 
-    private ArrayList<PicEntity> datas;// size == curNum
-
-    private HashMap<Integer, PicEntity> addDatas;
+    private HashMap<Integer, PicEntity> addDatas = new HashMap<>();
 
     public CusNumLayout(Context context) {
         this(context, null);
@@ -66,26 +64,24 @@ public class CusNumLayout extends LinearLayout {
 
     public void setDatas(int posY) {
         this.curLine = posY;
-        setCurNum(datas.size());
-        setDatas(datas, posY);
+        setDatas(addDatas, posY);
     }
 
 
-    public void setDatas(final ArrayList<PicEntity> datas, int posY) {
-        this.datas = datas;
+    public void setDatas(final HashMap<Integer, PicEntity> datas, int posY) {
+        this.addDatas = datas;
         this.curLine = posY;
         setCurNum(datas.size());
-
+        log("run  posY =" + posY + "   datas.size() = " + datas.size());
         new Runnable() {
             @Override
             public void run() {
                 for (int i = 0; i < datas.size(); i++) {
                     PicEntity picEntity = datas.get(i);
+
                     ImageView imageView = new ImageView(context);
                     imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
                     Glide.with(context).load(picEntity.getResId()).into(imageView);
-//                    picEntity.setPosX(i);
-//                    picEntity.setPosY(curLine);
                     int[] picSize = CusLayoutUtil.getPicSize(picEntity.getResId());
                     picEntity.setWidth(picSize[0]);
                     picEntity.setHeight(picSize[1]);
@@ -96,11 +92,8 @@ public class CusNumLayout extends LinearLayout {
         }.run();
     }
 
-
-
-
     public int getCurNum() {
-        return curNum;
+        return addDatas.size();
     }
 
     public HashMap<Integer, PicEntity> getAddDatas() {
@@ -121,24 +114,18 @@ public class CusNumLayout extends LinearLayout {
         return parentHeight;
     }
 
-    public ArrayList<PicEntity> getDatas() {
-        if (datas == null)
-            datas = new ArrayList<>();
-        return datas;
-    }
-
     public void buildView() {
         LayoutParams params = new LayoutParams(parentWidth, parentHeight);
         this.setLayoutParams(params);
         ViewGroup.LayoutParams picParams;
-        for (int i = 0; i < datas.size(); i++) {
-            PicEntity entity = datas.get(i);
+        for (int i = 0; i < curNum; i++) {
+            PicEntity entity = addDatas.get(i);
             if (entity.getHeight() < lineHeight)
                 lineHeight = entity.getHeight();
         }
 
-        for (int i = 0; i < datas.size(); i++) {
-            PicEntity entity = datas.get(i);
+        for (int i = 0; i < curNum; i++) {
+            PicEntity entity = addDatas.get(i);
             int width = parentWidth / curNum;
             picParams = new ViewGroup.LayoutParams(width, lineHeight);
             Log.d(TAG, "width = " + i + "   " + width);

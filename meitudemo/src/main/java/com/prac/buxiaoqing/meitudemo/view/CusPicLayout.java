@@ -40,7 +40,7 @@ public class CusPicLayout extends ScrollView {
     private ArrayList<PicEntity> picEntities;
     private int curLines;//总共分了几行   == cusNumLayouts.size();
     private int lineHeight;
-    private ArrayList<CusNumLayout> cusNumLayouts = new ArrayList<>();
+    private HashMap<Integer, CusNumLayout> cusNumLayouts = new HashMap<>();
 
     private LinearLayout.LayoutParams lineParams;
 
@@ -126,25 +126,27 @@ public class CusPicLayout extends ScrollView {
         setParentParams();
         lineHeight = width / MAX_NUM_IN_LINE;
         lineParams = new LinearLayout.LayoutParams(width, lineHeight);
-        for (int i = 0; i < curLines; i++) {
-            CusNumLayout cusNumLayout = new CusNumLayout(context);
-            cusNumLayout.setLayoutParams(lineParams);
-            cusNumLayout.setParentSize(width, width / MAX_NUM_IN_LINE);
-            ArrayList<PicEntity> entities = new ArrayList<>();
-            if (i == curLines - 1)
-                for (int j = i * MAX_NUM_IN_LINE; j < curPics; j++) {
-                    entities.add(picEntities.get(j));
-                }
-            else
-                for (int j = i * MAX_NUM_IN_LINE; j <= (i + 1) * MAX_NUM_IN_LINE - 1; j++) {
-                    entities.add(picEntities.get(j));
-                }
-            cusNumLayout.setDatas(entities, i);
-            cusNumLayout.setLineHeight(lineHeight);
-            cusNumLayout.buildView();
-            parentLinearLayout.addView(cusNumLayout);
-            cusNumLayouts.add(i, cusNumLayout);
-        }
+//        for (int i = 0; i < curLines; i++) {
+//            CusNumLayout cusNumLayout = new CusNumLayout(context);
+//            cusNumLayout.setLayoutParams(lineParams);
+//            cusNumLayout.setParentSize(width, width / MAX_NUM_IN_LINE);
+//
+//            if (i == curLines - 1)
+//                for (int j = i * MAX_NUM_IN_LINE; j < curPics; j++) {
+//                    cusNumLayout.getAddDatas().put(j, picEntities.get(j));
+//                }
+//            else
+//                for (int j = i * MAX_NUM_IN_LINE; j <= (i + 1) * MAX_NUM_IN_LINE - 1; j++) {
+//                    cusNumLayout.getAddDatas().put(j, picEntities.get(j));
+//                }
+//            cusNumLayout.setDatas(i);
+//            cusNumLayout.setLineHeight(lineHeight);
+//            cusNumLayout.buildView();
+//            parentLinearLayout.addView(cusNumLayout);
+//            cusNumLayouts.put(i, cusNumLayout);
+//        }
+        changeView();
+
     }
 
     @Override
@@ -216,7 +218,6 @@ public class CusPicLayout extends ScrollView {
         }
 
         PicEntity dragEntity = getDragEntity();
-        cusNumLayouts.get(dragEntity.getPosY()).getDatas().remove(dragEntity.getPosX());
 
         if (newPosy == curLines) {
             //新加一行
@@ -236,8 +237,9 @@ public class CusPicLayout extends ScrollView {
                 dragEntity.setPosY((int) newPosy);
             } else if (indexY < 10 && indexY >= 8) {
                 newPosy = (int) newPosy + 1;
-                dragEntity.setPosY((int) newPosy);
                 int curLineNum = cusNumLayouts.get(dragEntity.getPosY()).getCurNum();
+                dragEntity.setPosY((int) newPosy);
+                log("getCurNum = " + curLineNum);
                 if (newPosx <= curLineNum) {
                     dragEntity.setPosX((int) newPosx);
                 } else {
@@ -255,6 +257,12 @@ public class CusPicLayout extends ScrollView {
         }
         log("onDrop isNewLine = " + isNewLine + "  newPosx= " + (int) newPosx + "  newPosy= " + (int) newPosy);
         changeDataPos(isNewLine, (int) newPosx, (int) newPosy);
+
+
+        for (int i = 0; i < curPics; i++) {
+            PicEntity picEntity = picEntities.get(i);
+            log("after move:   i= " + i + "  posX = " + picEntity.getPosX() + "  posY = " + picEntity.getPosY());
+        }
         changeView();
     }
 
@@ -286,6 +294,7 @@ public class CusPicLayout extends ScrollView {
                 }
             }
         }
+
     }
 
     /**
@@ -458,33 +467,20 @@ public class CusPicLayout extends ScrollView {
      */
     private void reLoadLineDatas() {
         clearLinesDatas();
-        HashMap<Integer, CusNumLayout> hashMap = new HashMap<>();
         for (int i = 0; i < curPics; i++) {
             PicEntity picEntity = picEntities.get(i);
             int key = picEntity.getPosY();
-            if (hashMap.get(key) == null) {
+            if (cusNumLayouts.get(key) == null) {
                 CusNumLayout cl = new CusNumLayout(context);
                 cl.setLayoutParams(lineParams);
                 cl.setParentSize(width, width / MAX_NUM_IN_LINE);
                 cl.getAddDatas().put(picEntity.getPosX(), picEntity);
-                hashMap.put(key, cl);
+                cusNumLayouts.put(key, cl);
+                log(" reLoadLineDatas i = " + i + "  行 = " + key + "  列 = " + picEntity.getPosX());
             } else {
-                hashMap.get(key).getAddDatas().put(picEntity.getPosX(), picEntity);
+                cusNumLayouts.get(key).getAddDatas().put(picEntity.getPosX(), picEntity);
+                log(" reLoadLineDatas i = " + i + "  行 = " + key + "  列 = " + picEntity.getPosX());
             }
-        }
-
-        Iterator<Map.Entry<Integer, CusNumLayout>> iterator = hashMap.entrySet().iterator();
-        while (iterator.hasNext()) {
-            Map.Entry<Integer, CusNumLayout> next = iterator.next();
-            cusNumLayouts.add(next.getKey(), next.getValue());
-        }
-        for (CusNumLayout cl : cusNumLayouts) {
-            Iterator<Map.Entry<Integer, PicEntity>> it = cl.getAddDatas().entrySet().iterator();
-            while (it.hasNext()) {
-                Map.Entry<Integer, PicEntity> next = it.next();
-                cl.getDatas().add(next.getKey(), next.getValue());
-            }
-            Arrays.asList(cl.getAddDatas());
         }
     }
 
@@ -493,7 +489,7 @@ public class CusPicLayout extends ScrollView {
         curLines = cusNumLayouts.size();
         for (int i = 0; i < curLines; i++) {
             CusNumLayout cusNumLayout = cusNumLayouts.get(i);
-            cusNumLayout.setDatas(cusNumLayout.getDatas(), i);
+            cusNumLayout.setDatas(i);
             cusNumLayout.setLineHeight(lineHeight);
             cusNumLayout.buildView();
             parentLinearLayout.addView(cusNumLayouts.get(i));
