@@ -12,6 +12,7 @@ import com.prac.buxiaoqing.meitudemo.model.PicEntity;
 import com.prac.buxiaoqing.meitudemo.util.CusLayoutUtil;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * author：buxiaoqing on 16/7/11 14:12
@@ -27,9 +28,11 @@ public class CusNumLayout extends LinearLayout {
 
     private int parentWidth, parentHeight;// parent width
 
-    private int lineHeight ;
+    private int lineHeight;
 
     private ArrayList<PicEntity> datas;// size == curNum
+
+    private HashMap<Integer, PicEntity> addDatas;
 
     public CusNumLayout(Context context) {
         this(context, null);
@@ -61,6 +64,13 @@ public class CusNumLayout extends LinearLayout {
         this.parentHeight = height;
     }
 
+    public void setDatas(int posY) {
+        this.curLine = posY;
+        setCurNum(datas.size());
+        setDatas(datas, posY);
+    }
+
+
     public void setDatas(final ArrayList<PicEntity> datas, int posY) {
         this.datas = datas;
         this.curLine = posY;
@@ -86,8 +96,21 @@ public class CusNumLayout extends LinearLayout {
         }.run();
     }
 
+
+
+
     public int getCurNum() {
         return curNum;
+    }
+
+    public HashMap<Integer, PicEntity> getAddDatas() {
+        if (addDatas == null)
+            addDatas = new HashMap<>();
+        return addDatas;
+    }
+
+    public void setAddDatas(HashMap<Integer, PicEntity> addDatas) {
+        this.addDatas = addDatas;
     }
 
     public int getParentWidth() {

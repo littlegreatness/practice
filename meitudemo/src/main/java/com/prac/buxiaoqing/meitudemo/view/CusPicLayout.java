@@ -18,6 +18,7 @@ import android.widget.ScrollView;
 import com.prac.buxiaoqing.meitudemo.model.PicEntity;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -198,73 +199,127 @@ public class CusPicLayout extends ScrollView {
         int x_in_view = x - getLeft();
         int y_in_view = y - getTop();
 
-        int newPosx = x_in_view / (width / MAX_NUM_IN_LINE);
-        int newPposy = y_in_view / lineHeight;
+        float newPosx = x_in_view / (width / MAX_NUM_IN_LINE * 1f);//  0 -- 2
+        float newPosy = y_in_view / (lineHeight * 1f);  // 0 --  curLines
 
-        log("onDrop newPosx = " + newPosx + "   newPposy = " + newPposy);
+        if (newPosx >= 2)
+            newPosx = 2f;
+
+        int indexX = (int) (newPosx * 10) % 10;
+        if (indexX > 3)
+            newPosx = (int) newPosx + 1;
+
+        boolean isNewLine = false;
+        if (newPosy > curLines) {
+            isNewLine = true;
+            newPosy = curLines;
+        }
 
         PicEntity dragEntity = getDragEntity();
         cusNumLayouts.get(dragEntity.getPosY()).getDatas().remove(dragEntity.getPosX());
 
-        if (newPposy >= curLines) {
-            //新起一行
-            CusNumLayout cusNumLayout = new CusNumLayout(context);
-            cusNumLayout.setLayoutParams(lineParams);
-            cusNumLayout.setParentSize(width, width / MAX_NUM_IN_LINE);
+        if (newPosy == curLines) {
+            //新加一行
             dragEntity.setPosX(0);
             dragEntity.setPosY(curLines);
-            ArrayList<PicEntity> entities = new ArrayList<>();
-            entities.add(dragEntity);
-            cusNumLayout.setDatas(entities, curLines);
-            cusNumLayout.buildView();
-            parentLinearLayout.addView(cusNumLayout);
-            cusNumLayouts.add(curLines, cusNumLayout);
         } else {
-            CusNumLayout cusNumLayout = cusNumLayouts.get(newPposy);
-            int curLineNum = cusNumLayout.getDatas().size();
-            dragEntity.setPosY(newPposy);
-            if (curLineNum == 1) {
-                if (curLineNum <= newPosx) {
-                    //插到第二个位置
-                    dragEntity.setPosX(1);
-                    cusNumLayout.getDatas().add(1, dragEntity);
+            //  取小数部分的第一位
+            //  0--3  是在偏下的一行
+            //  4--7  挤出新的一行
+            //  8--9  是在偏下的一行
+            int indexY = (int) (newPosy * 10) % 10;
+
+            if (indexY >= 4 && indexY <= 7) {
+                isNewLine = true;
+                newPosy = (int) newPosy + 1;
+                dragEntity.setPosX(0);
+                dragEntity.setPosY((int) newPosy);
+            } else if (indexY < 10 && indexY >= 8) {
+                newPosy = (int) newPosy + 1;
+                dragEntity.setPosY((int) newPosy);
+                int curLineNum = cusNumLayouts.get(dragEntity.getPosY()).getCurNum();
+                if (newPosx <= curLineNum) {
+                    dragEntity.setPosX((int) newPosx);
                 } else {
-                    //插到第一个位置   后面的位置要+1
-                    dragEntity.setPosX(0);
-                    cusNumLayout.getDatas().get(0).setPosX(1);
-                    cusNumLayout.getDatas().add(0, dragEntity);
-                }
-            } else if (curLineNum == 2) {
-                if (curLineNum <= newPosx) {
-                    //插到第三个位置
-                    dragEntity.setPosX(2);
-                    cusNumLayout.getDatas().add(2, dragEntity);
-                } else {
-                    if (newPosx == 0) {
-                        //插到第一个位置   后面的位置要+1
+                    int newIndex = (int) newPosx + 1;
+                    if (newIndex >= MAX_NUM_IN_LINE) {
+                        //往后挤了
                         dragEntity.setPosX(0);
-                        cusNumLayout.getDatas().get(0).setPosX(1);
-                        cusNumLayout.getDatas().get(1).setPosX(2);
-                        cusNumLayout.getDatas().add(0, dragEntity);
+                        dragEntity.setPosY((int) newPosy + 1);
+                        isNewLine = true;
                     } else {
-                        //插到第二个位置  后面的位置要+1
-                        dragEntity.setPosX(1);
-                        cusNumLayout.getDatas().get(1).setPosX(2);
-                        cusNumLayout.getDatas().add(1, dragEntity);
+                        dragEntity.setPosX(newIndex);
                     }
                 }
-            } else if (curLineNum == 3) {
-                //就不处理了
             }
         }
-        //changeView();
+        log("onDrop isNewLine = " + isNewLine + "  newPosx= " + (int) newPosx + "  newPosy= " + (int) newPosy);
+        changeDataPos(isNewLine, (int) newPosx, (int) newPosy);
+        changeView();
     }
 
+    /**
+     * 这个方法是修改移动之后,除了移动的图片之外的数据的改动
+     * 其实一次应该也就够了，插入到某一个位置（如果是新的行，那么后面的行的行数都要加1；
+     * 如果是插入到旧行，插入行的列数做相应改变）
+     *
+     * @param isNewLine 是否是独占一行
+     * @param newY      移动图片的新Y坐标
+     * @param newX      移动图片的新X坐标
+     */
+    private void changeDataPos(boolean isNewLine, int newY, int newX) {
+        for (PicEntity picEntity : picEntities) {
+            if (isNewLine) {
+                if (picEntity.getPosY() >= newY)
+                    picEntity.setPosY(picEntity.getPosY() + 1);
+            } else {
+                if (picEntity.getPosY() == newY) {
+                    if (picEntity.getPosX() >= newX)
+                        if (picEntity.getPosX() + 1 < MAX_NUM_IN_LINE)
+                            picEntity.setPosX(picEntity.getPosX() + 1);
+                        else {
+                            //往后挤   下一行的图片横坐标一次加1;加一后等于3的话,下一行的再加1,直到最后一行,最坏情况是又多出来一行
+                            picEntity.setPosX(0);
+                            picEntity.setPosY(newY + 1);
+                            floatAdd(newY + 1);
+                        }
+                }
+            }
+        }
+    }
+
+    /**
+     * 被往后挤了一下  一次往后加1个位置,递归调用
+     *
+     * @param lineNum
+     */
+    private void floatAdd(int lineNum) {
+
+        if (lineNum >= curLines)
+            return;
+        for (PicEntity picEntity : picEntities) {
+            if (picEntity.getPosY() == lineNum) {
+                int indexX = picEntity.getPosX() + 1;
+                if (indexX < MAX_NUM_IN_LINE)
+                    picEntity.setPosX(indexX);
+                else {
+                    picEntity.setPosX(0);
+                    picEntity.setPosY(picEntity.getPosY() + 1);
+                    floatAdd(picEntity.getPosY() + 1);
+                }
+            }
+        }
+    }
+
+
     private PicEntity getDragEntity() {
+        PicEntity drag = null;
         if (dragEntity != null)
-            return cusNumLayouts.get(dragEntity.getPosY()).getDatas().get(dragEntity.getPosX());
-        else
-            return null;
+            for (PicEntity picEntity : picEntities) {
+                if (picEntity.getPosY() == dragEntity.getPosY() && picEntity.getPosX() == dragEntity.getPosX())
+                    drag = picEntity;
+            }
+        return drag;
     }
 
     /**
@@ -286,8 +341,6 @@ public class CusPicLayout extends ScrollView {
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         log("onInterceptTouchEvent");
-        int x = (int) ev.getRawX();
-        int y = (int) ev.getRawY();
         if (ev.getAction() == MotionEvent.ACTION_MOVE) {
             for (int i = 0; i < picEntities.size(); i++) {
                 if (picEntities.get(i).isSelected()) {
@@ -301,13 +354,8 @@ public class CusPicLayout extends ScrollView {
                     dragEntity.setPosX(picEntity.getPosX());
                     dragEntity.setPosY(picEntity.getPosY());
 
-                    ImageView imageView = picEntity.getImageView();
-
-                    win_view_x = x - imageView.getLeft();//点击在VIEW上的相对位置
-                    win_view_y = y - imageView.getTop();//点击在VIEW上的相对位置
-
-                    log("win_view_x = " + win_view_x);
-                    log("win_view_y = " + win_view_y);
+                    win_view_x = (int) ev.getRawX() - picEntity.getPosX() * width / cusNumLayouts.get(picEntity.getPosY()).getCurNum();//点击在VIEW上的相对位置
+                    win_view_y = (int) ev.getRawY() - picEntity.getPosY() * lineHeight;//点击在VIEW上的相对位置   有问题
 
                     Bitmap drawingCache = creatCacheImg(picEntity.getResId());
                     startDrag(drawingCache, (int) ev.getRawX(), (int) ev.getRawY());
@@ -401,10 +449,7 @@ public class CusPicLayout extends ScrollView {
      * 清理每行的数据
      */
     private void clearLinesDatas() {
-        for (int i = 0; i < cusNumLayouts.size(); i++) {
-            cusNumLayouts.clear();
-        }
-        this.removeAllViews();
+        cusNumLayouts.clear();
         parentLinearLayout.removeAllViews();
     }
 
@@ -421,10 +466,10 @@ public class CusPicLayout extends ScrollView {
                 CusNumLayout cl = new CusNumLayout(context);
                 cl.setLayoutParams(lineParams);
                 cl.setParentSize(width, width / MAX_NUM_IN_LINE);
-                cl.getDatas().add(picEntity.getPosX(), picEntity);
+                cl.getAddDatas().put(picEntity.getPosX(), picEntity);
                 hashMap.put(key, cl);
             } else {
-                hashMap.get(key).getDatas().add(picEntity.getPosX(), picEntity);
+                hashMap.get(key).getAddDatas().put(picEntity.getPosX(), picEntity);
             }
         }
 
@@ -433,13 +478,19 @@ public class CusPicLayout extends ScrollView {
             Map.Entry<Integer, CusNumLayout> next = iterator.next();
             cusNumLayouts.add(next.getKey(), next.getValue());
         }
+        for (CusNumLayout cl : cusNumLayouts) {
+            Iterator<Map.Entry<Integer, PicEntity>> it = cl.getAddDatas().entrySet().iterator();
+            while (it.hasNext()) {
+                Map.Entry<Integer, PicEntity> next = it.next();
+                cl.getDatas().add(next.getKey(), next.getValue());
+            }
+            Arrays.asList(cl.getAddDatas());
+        }
     }
 
     public void changeView() {
-        //reLoadLineDatas();
+        reLoadLineDatas();
         curLines = cusNumLayouts.size();
-        //setParentParams();
-        parentLinearLayout.removeAllViews();
         for (int i = 0; i < curLines; i++) {
             CusNumLayout cusNumLayout = cusNumLayouts.get(i);
             cusNumLayout.setDatas(cusNumLayout.getDatas(), i);
@@ -447,7 +498,7 @@ public class CusPicLayout extends ScrollView {
             cusNumLayout.buildView();
             parentLinearLayout.addView(cusNumLayouts.get(i));
             log("刷新行  =" + i);
-            log("该行有  =" + cusNumLayout.getDatas().size() + " 张");
+            log("该行有  =" + cusNumLayout.getCurNum() + " 张");
         }
     }
 
