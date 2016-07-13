@@ -482,6 +482,14 @@ public class CusPicLayout extends ScrollView {
                 log(" reLoadLineDatas i = " + i + "  行 = " + key + "  列 = " + picEntity.getPosX());
             }
         }
+
+
+        for (int i = 0; i < cusNumLayouts.size(); i++) {
+
+            log(" check data 行= " + i + "  列 = " + cusNumLayouts.get(i).getAddDatas().size() + "个");
+
+
+        }
     }
 
     public void changeView() {
