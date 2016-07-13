@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/editor_action_bar_back_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center|start"
+        android:background="@drawable/action_bar_back_button"
+        android:scaleType="center"
+        android:src="@mipmap/back_arrow"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="13dp"
+        android:background="@color/color_line_vertical"/>
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0.5dp"
+        android:layout_weight="1.0"
+        android:ellipsize="end"
+        android:gravity="center|start"
+        android:lines="1"
+        android:text="@string/edit"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/editor_action_bar_save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="13dp"
+        android:gravity="center"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+</LinearLayout>

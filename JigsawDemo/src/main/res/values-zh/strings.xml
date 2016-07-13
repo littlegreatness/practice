@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">拼图</string>
+    <string name="generate_bitmap">生成Bitmap</string>
+    <string name="edit">编辑</string>
+    <string name="save">保存</string>
+
+    <string name="all_image">所有图片</string>
+    <string name="over_max_count_tips">你最多可以选择%1$d张图片</string>
+
+</resources>

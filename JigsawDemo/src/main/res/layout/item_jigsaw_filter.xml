@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/white">
+
+    <FrameLayout
+        android:id="@+id/item_jigsaw_filter_layout"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_centerInParent="true">
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/item_jigsaw_filter_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>
