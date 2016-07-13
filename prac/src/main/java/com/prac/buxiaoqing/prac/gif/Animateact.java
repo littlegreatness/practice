@@ -11,6 +11,8 @@ import android.view.Window;
 import com.prac.buxiaoqing.prac.R;
 import com.prac.buxiaoqing.prac.gif.view.AnimateView;
 
+import java.io.File;
+
 public class Animateact extends AppCompatActivity {
 
     @Override

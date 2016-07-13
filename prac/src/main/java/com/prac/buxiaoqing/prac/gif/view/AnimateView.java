@@ -99,8 +99,8 @@ public class AnimateView extends View {
                 startY = -(PixelUtil.dp2px(context, SIZE_HEIGHT_DP) / 15F) * (random.nextInt((int) (20F * 15)) + 30);
                 KeyWordAnimationNode keyWordAnimationNode = new KeyWordAnimationNode();
                 //随机一个速度
-                float speedY = random.nextFloat() * 6 + 7;
-                float speedX = random.nextFloat() * 2 - 1;
+                float speedY = random.nextFloat() * 6 + 3;
+                float speedX = random.nextFloat();
                 keyWordAnimationNode.setSpeedY(speedY);
                 keyWordAnimationNode.setSpeedX(speedX);
                 keyWordAnimationNode.setY(startY);
@@ -111,8 +111,8 @@ public class AnimateView extends View {
             }
         else {
             KeyWordAnimationNode keyWordAnimationNode = new KeyWordAnimationNode();
-            float speedY = -(random.nextFloat() * 6 + 3);
-            float speedX = -(random.nextFloat() * 2);
+            float speedY = -(random.nextFloat() * 2 + 2);
+            float speedX = -(random.nextFloat()) + 0.5f;
             keyWordAnimationNode.setSpeedY(speedY);
             keyWordAnimationNode.setSpeedX(speedX);
             keyWordAnimationNode.setAlpha(255);//0-255
@@ -163,7 +163,8 @@ public class AnimateView extends View {
                 targetY = keyWordAnimationNode.getY() + keyWordAnimationNode.getSpeedY();
                 keyWordAnimationNode.setY(targetY);
 
-                int alpha = keyWordAnimationNode.getAlpha() - 5;
+
+                int alpha = (int) (keyWordAnimationNode.getAlpha() - 255 / startY);
                 if (alpha <= 0) {
                     alpha = 0;
                 }

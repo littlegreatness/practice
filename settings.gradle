@@ -1,2 +1,4 @@
-include ':MvpSample', ':retrofit', ':Permissioncheck', ':rxJoke', ':prac'
+include ':MvpSample', ':retrofit', ':Permissioncheck', ':rxJoke', ':prac', ':meitudemo', ':JigsawDemo', ':DragGridView'
 include ':wewin', ':libraries:CustomShapeImageView', ':libraries:Shimmer'
+include ':DragImageView', ':library'
+include ':viewdraghelper'

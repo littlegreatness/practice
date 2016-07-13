@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.fangjie.dragimageview.example.MainActivity">
+
+    <TextView android:text="@string/describ"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:id="@+id/tv_title"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="300dp"
+        android:id="@+id/btn_simple"
+        android:layout_centerHorizontal="true"
+        android:text="简单案例"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/tv_title"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="300dp"
+        android:id="@+id/btn_with_textview"
+        android:layout_centerHorizontal="true"
+        android:text="带Textview相同变换案例"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btn_simple"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="300dp"
+        android:id="@+id/btn_true_or_not"
+        android:layout_centerHorizontal="true"
+        android:text="True OR Not选择案例"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btn_with_textview"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
