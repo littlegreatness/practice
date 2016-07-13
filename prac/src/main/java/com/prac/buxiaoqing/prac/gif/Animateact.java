@@ -19,11 +19,26 @@ public class Animateact extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animate_act);
+
+
+        float a = 1.8f;
+
+        float b = 1.4f;
+
+        float c = 1.5f;
+
+        int A = (int) a;
+
+        int B = (int) b;
+
+        int C = (int) c;
+
+
+        System.out.println(" A = " + A + "  B = " + B + "  C=" + C);
     }
 
 
     public void play(View view) {
-
 
         Rect frame = new Rect();
         getWindow().getDecorView().getWindowVisibleDisplayFrame(frame);
