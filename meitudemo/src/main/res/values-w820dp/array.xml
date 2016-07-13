@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--热门城市-->
-    <string-array name="date">
+    <string-array name="cities">
         <item>不限</item>
         <item>北京市</item>
         <item>上海市</item>
