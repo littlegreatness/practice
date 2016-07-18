@@ -160,7 +160,6 @@ public class CusPicLayout extends ScrollView {
                 case MotionEvent.ACTION_MOVE:
                     log("ACTION_MOVE");
                     onDrag(windowX, windowY);
-                    onMove(windowX, windowY);
                     break;
                 case MotionEvent.ACTION_UP:
                     log("ACTION_UP");
@@ -177,17 +176,6 @@ public class CusPicLayout extends ScrollView {
     }
 
     /**
-     * ACTION_MOVE 其它位置的图片要稍微让步以下的动画
-     *
-     * @param windowX
-     * @param windowY
-     */
-    private void onMove(int windowX, int windowY) {
-
-
-    }
-
-    /**
      * ACTION_UP ,确定要改变的位置
      *
      * @param x
@@ -200,7 +188,7 @@ public class CusPicLayout extends ScrollView {
 
         int dragPos = getDraDataPos();
 
-        log("onDrop x = " + x + "   y = " + y);
+        log(" move:  onDrop x = " + x + "   y = " + y);
         int x_in_view = x - getLeft();
         int y_in_view = y - getTop();
 
@@ -258,6 +246,7 @@ public class CusPicLayout extends ScrollView {
                 int newIndex = curLineNum;//后入式
                 if (oldPoxY == newPosy) {
                     //同一行
+                    isNewLine = false;
                     dragEntity.setPosX(newIndex - 1);
                 } else {
                     if (newIndex >= MAX_NUM_IN_LINE) {
@@ -274,13 +263,19 @@ public class CusPicLayout extends ScrollView {
             }
         }
 
+
         for (int i = 0; i < curPics; i++) {
             PicEntity picEntity = picEntities.get(i);
             log("before move:   i= " + i + "  posX = " + picEntity.getPosX() + "  posY = " + picEntity.getPosY());
         }
 
+        log("before move:   curLines= " + curLines);
+
         log("move:  = " + isNewLine + "  oldPoxY= " + oldPoxY + "  oldPosX= " + oldPosX + "   newY = "
                 + dragEntity.getPosY() + "   newX = " + dragEntity.getPosX());
+
+        if (oldPoxY == dragEntity.getPosY())
+            isNewLine = false;
 
         changeDataPos(isNewLine, dragPos, oldPoxY, oldPosX, dragEntity.getPosY(), dragEntity.getPosX());
 
@@ -307,15 +302,17 @@ public class CusPicLayout extends ScrollView {
      *                  onDrop isNewLine = true  oldPoxY= 0  oldPosX= 2   newY = 3   newX = 0
      */
     private void changeDataPos(boolean isNewLine, int dragPos, int oldY, int oldX, int newY, int newX) {
-        for (int i = 0; i < curPics; i++) {
-            if (dragPos == i)
-                continue;
-            PicEntity picEntity = picEntities.get(i);
-            if (isNewLine)
-                if (picEntity.getPosY() >= newY)
-                    picEntity.setPosY(picEntity.getPosY() + 1);
 
-            // the same line   ,just correct cord X .
+        for (int i = 0; i < curPics; i++) {
+            PicEntity picEntity = picEntities.get(i);
+            //新建行
+            if (isNewLine)
+                if (picEntity.getPosY() >= newY && i != dragPos) {
+                    picEntity.setPosY(picEntity.getPosY() + 1);
+                    continue;
+                }
+
+            // the same line   ,just correct cord X .  Exchange position.
             if (newY == oldY) {
                 if (picEntity.getPosY() == newY && picEntity.getPosX() == newX) {
                     picEntity.setPosX(oldX);
@@ -339,9 +336,48 @@ public class CusPicLayout extends ScrollView {
                     int newLineNum = cusNumLayouts.get(newY).getCurNum();
                     if (newX != newLineNum) {
                         //如果插入的那一行,newX不是最后一个,那么它后面的X要加1
-                        if (picEntity.getPosY() == newY && picEntity.getPosX() >= oldX)
-                            picEntity.setPosX(picEntity.getPosX() + 1);
+                        if (picEntity.getPosY() == newY && picEntity.getPosX() >= newX) {
+                            int curXPos = picEntity.getPosX() + 1;
+                            if (curXPos <= MAX_NUM_IN_LINE - 1 && i != dragPos)
+                                picEntity.setPosX(picEntity.getPosX() + 1);
+                            else {
+                                //溢出了
+                                picEntity.setPosX(0);
+                                picEntity.setPosY(picEntity.getPosY() + 1);
+                                flowMove(i, picEntity.getPosY());
+                            }
+                        }
                     }
+                }
+            }
+        }
+
+        if (cusNumLayouts.get(oldY).getAddDatas().size() == 1) {
+            if (oldY < newY && isNewLine)
+                getDragEntity().setPosY(newY - 1);
+            log("++++++++++++++++++++++++" + dragPos);
+        }
+    }
+
+    /**
+     * 前一行满3了,向后平移
+     *
+     * @param x
+     * @param y
+     */
+    private void flowMove(int k, int y) {
+        for (int i = 0; i < curPics; i++) {
+            PicEntity picEntity = picEntities.get(i);
+            if (i == k)
+                continue;
+            if (picEntity.getPosY() == y) {
+                if (picEntity.getPosX() + 1 <= MAX_NUM_IN_LINE - 1)
+                    picEntity.setPosX(picEntity.getPosX() + 1);
+                else {
+                    //溢出了
+                    picEntity.setPosX(0);
+                    picEntity.setPosY(picEntity.getPosY() + 1);
+                    flowMove(i, picEntity.getPosY());
                 }
             }
         }
