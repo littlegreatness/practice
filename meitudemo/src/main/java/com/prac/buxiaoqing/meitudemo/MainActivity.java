@@ -1,7 +1,6 @@
 package com.prac.buxiaoqing.meitudemo;
 
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
 import com.prac.buxiaoqing.meitudemo.model.PicEntity;
@@ -10,7 +9,6 @@ import com.prac.buxiaoqing.meitudemo.view.CusPicLayout;
 import com.prac.buxiaoqing.meitudemo.view.CustomLabelLayout;
 
 import java.util.ArrayList;
-import java.util.concurrent.RunnableFuture;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -23,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         customLabelLayout = (CustomLabelLayout) findViewById(R.id.cus_layout);
 
         customLabelLayout.setMaxLines(10);
@@ -103,4 +102,5 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        }, 2000);
     }
+
 }
