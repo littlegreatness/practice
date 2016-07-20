@@ -2,6 +2,7 @@ package com.prac.buxiaoqing.meitudemo.util;
 
 
 import android.graphics.BitmapFactory;
+import android.util.Log;
 
 
 /**
@@ -15,5 +16,4 @@ public class CusLayoutUtil {
         BitmapFactory.decodeFile(res, options); // 此时返回的bitmap为null
         return new int[]{options.outWidth, options.outHeight};
     }
-
 }

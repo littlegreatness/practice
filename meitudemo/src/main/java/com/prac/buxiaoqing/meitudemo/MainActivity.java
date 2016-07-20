@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         line = (CusNumLayout) findViewById(R.id.line);
-        line.setParentSize(650, 400);
+        line.setParentSize(650);
 
         ArrayList<PicEntity> list = new ArrayList<>();
         PicEntity picEntity0 = new PicEntity("/storage/emulated/0/sina/weibo/weibo/img-84c5d2f84a55ffcbaaa359dd7e4d6d97.jpg");

@@ -26,7 +26,7 @@ public class CusNumLayout extends LinearLayout {
 
     private int curNum;//how many img in current line
 
-    private int parentWidth, parentHeight;// parent width
+    private int parentWidth;// parent width
 
     private int lineHeight;
 
@@ -57,9 +57,9 @@ public class CusNumLayout extends LinearLayout {
         this.curNum = curNum;
     }
 
-    public void setParentSize(int parentWidth, int height) {
+    public void setParentSize(int parentWidth) {
         this.parentWidth = parentWidth;
-        this.parentHeight = height;
+        this.lineHeight = parentWidth;
     }
 
     public void setDatas(int posY) {
@@ -85,7 +85,12 @@ public class CusNumLayout extends LinearLayout {
                     int[] picSize = CusLayoutUtil.getPicSize(picEntity.getResId());
                     picEntity.setWidth(picSize[0]);
                     picEntity.setHeight(picSize[1]);
+
+                    log("run  size i = " + i + " width = " + picSize[0] + " height = " + picSize[1]);
                     picEntity.setRate(picSize[1] / (picSize[0] * 1f));
+                    int height = (int) (parentWidth / curNum * picEntity.getRate());
+                    if (height < lineHeight)
+                        lineHeight = height;
                     picEntity.setImageView(imageView);
                 }
             }
@@ -110,12 +115,10 @@ public class CusNumLayout extends LinearLayout {
         return parentWidth;
     }
 
-    public int getParentHeight() {
-        return parentHeight;
-    }
 
     public void buildView() {
-        LayoutParams params = new LayoutParams(parentWidth, parentHeight);
+        LayoutParams params = new LayoutParams(parentWidth, lineHeight);
+        log("build view lineHeight = " + lineHeight);
         this.setLayoutParams(params);
         ViewGroup.LayoutParams picParams;
         for (int i = 0; i < curNum; i++) {

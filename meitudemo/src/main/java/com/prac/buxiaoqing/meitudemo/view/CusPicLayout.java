@@ -75,7 +75,7 @@ public class CusPicLayout extends ScrollView {
         this.setLayoutParams(parentParams);
 
         windowManager = (WindowManager) getContext().getSystemService(Context.WINDOW_SERVICE);// "window"
-        width = 650;
+        width = 660;
     }
 
     public List<PicEntity> getPicEntities() {
@@ -106,8 +106,6 @@ public class CusPicLayout extends ScrollView {
         } else {
             curLines = curPics / MAX_NUM_IN_LINE + 1;
         }
-        //TODO  先做成方形的,并且高度都一致,后面再改这些吧
-        log("curLines = " + curLines + "   height=" + height);
     }
 
     private void setParentParams() {
@@ -123,25 +121,6 @@ public class CusPicLayout extends ScrollView {
         setParentParams();
         lineHeight = width / MAX_NUM_IN_LINE;
         lineParams = new LinearLayout.LayoutParams(width, lineHeight);
-//        for (int i = 0; i < curLines; i++) {
-//            CusNumLayout cusNumLayout = new CusNumLayout(context);
-//            cusNumLayout.setLayoutParams(lineParams);
-//            cusNumLayout.setParentSize(width, width / MAX_NUM_IN_LINE);
-//
-//            if (i == curLines - 1)
-//                for (int j = i * MAX_NUM_IN_LINE; j < curPics; j++) {
-//                    cusNumLayout.getAddDatas().put(j, picEntities.get(j));
-//                }
-//            else
-//                for (int j = i * MAX_NUM_IN_LINE; j <= (i + 1) * MAX_NUM_IN_LINE - 1; j++) {
-//                    cusNumLayout.getAddDatas().put(j, picEntities.get(j));
-//                }
-//            cusNumLayout.setDatas(i);
-//            cusNumLayout.setLineHeight(lineHeight);
-//            cusNumLayout.buildView();
-//            parentLinearLayout.addView(cusNumLayout);
-//            cusNumLayouts.put(i, cusNumLayout);
-//        }
         changeView();
 
     }
@@ -149,6 +128,7 @@ public class CusPicLayout extends ScrollView {
     @Override
     public boolean onTouchEvent(MotionEvent ev) {
         log("onTouchEvent");
+
         if (dragView != null) {
             log("dragView != null");
             windowX = (int) ev.getRawX();
@@ -299,7 +279,7 @@ public class CusPicLayout extends ScrollView {
      * @param newY      移动图片的新Y坐标
      * @param newX      移动图片的新X坐标
      *                  <p/>
-     *                  onDrop isNewLine = true  oldPoxY= 0  oldPosX= 2   newY = 3   newX = 0
+     *                  move:  = true  oldPoxY= 0  oldPosX= 0   newY = 4   newX = 0
      */
     private void changeDataPos(boolean isNewLine, int dragPos, int oldY, int oldX, int newY, int newX) {
 
@@ -334,7 +314,7 @@ public class CusPicLayout extends ScrollView {
 
                 if (!isNewLine) {
                     int newLineNum = cusNumLayouts.get(newY).getCurNum();
-                    if (newX != newLineNum) {
+                    if (newX != newLineNum && dragPos != i) {
                         //如果插入的那一行,newX不是最后一个,那么它后面的X要加1
                         if (picEntity.getPosY() == newY && picEntity.getPosX() >= newX) {
                             int curXPos = picEntity.getPosX() + 1;
@@ -354,7 +334,7 @@ public class CusPicLayout extends ScrollView {
 
         if (cusNumLayouts.get(oldY).getAddDatas().size() == 1) {
             if (oldY < newY && isNewLine)
-                getDragEntity().setPosY(newY - 1);
+                picEntities.get(dragPos).setPosY(newY - 1);
             log("++++++++++++++++++++++++" + dragPos);
         }
     }
@@ -383,6 +363,11 @@ public class CusPicLayout extends ScrollView {
         }
     }
 
+    /**
+     * 最好是用getDraDataPos(),改变位置之后,dragEntity.getPosX(), dragEntity.getPosY()坐标的可能会有两个
+     *
+     * @return
+     */
     private PicEntity getDragEntity() {
         PicEntity drag = null;
         if (dragEntity != null)
@@ -545,7 +530,7 @@ public class CusPicLayout extends ScrollView {
             if (cusNumLayouts.get(key) == null) {
                 CusNumLayout cl = new CusNumLayout(context);
                 cl.setLayoutParams(lineParams);
-                cl.setParentSize(width, width / MAX_NUM_IN_LINE);
+                cl.setParentSize(width);
                 cl.getAddDatas().put(picEntity.getPosX(), picEntity);
                 cusNumLayouts.put(key, cl);
                 log(" reLoadLineDatas i = " + i + "  行 = " + key + "  列 = " + picEntity.getPosX());
@@ -566,7 +551,6 @@ public class CusPicLayout extends ScrollView {
         for (int i = 0; i < curLines; i++) {
             CusNumLayout cusNumLayout = cusNumLayouts.get(i);
             cusNumLayout.setDatas(i);
-            cusNumLayout.setLineHeight(lineHeight);
             cusNumLayout.buildView();
             parentLinearLayout.addView(cusNumLayouts.get(i));
             log("刷新行  =" + i);
