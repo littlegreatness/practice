@@ -195,6 +195,9 @@ public class CusPicLayout extends ScrollView {
                 isNewLine = true;
                 newPosy = curLines;
             }
+        } else if (newPosy > oldPoxY && cusNumLayouts.get(oldPoxY).getCurNum() == 1) {
+            //一行只有一个,还给拖拽走了
+            newPosy -= 1;
         }
 
         //Y 坐标的处理
@@ -284,58 +287,139 @@ public class CusPicLayout extends ScrollView {
     private void changeDataPos(boolean isNewLine, int dragPos, int oldY, int oldX, int newY, int newX) {
 
         for (int i = 0; i < curPics; i++) {
-            PicEntity picEntity = picEntities.get(i);
-            //新建行
-            if (isNewLine)
-                if (picEntity.getPosY() >= newY && i != dragPos) {
-                    picEntity.setPosY(picEntity.getPosY() + 1);
-                    continue;
-                }
+            //跳过拖拽的那个
+            if (dragPos == i)
+                continue;
 
-            // the same line   ,just correct cord X .  Exchange position.
+            PicEntity picEntity = picEntities.get(i);
+
             if (newY == oldY) {
-                if (picEntity.getPosY() == newY && picEntity.getPosX() == newX) {
+                if (picEntity.getPosY() == newY && picEntity.getPosX() == newX)
                     picEntity.setPosX(oldX);
-                }
-            } else {
-                if (cusNumLayouts.get(oldY).getAddDatas().size() == 1) {
-                    //oldY后面的Y依次要减1          新建行的情况  前面加过1了
-                    if (picEntity.getPosY() >= oldY)
-                        //oldY后面的Y依次要减1          新建行的情况  前面加过1了
-                        picEntity.setPosY(picEntity.getPosY() - 1);
-                } else {
-                    //如果oldX  不是该行的最后一个,那么它后面的要减1
-                    int curLineNum = cusNumLayouts.get(oldY).getCurNum();
-                    if (oldX < curLineNum - 1) {
+            } else if (newY < oldY) {
+                if (isNewLine) {
+                    if (cusNumLayouts.get(oldY).getCurNum() == 1) {
+                        if (picEntity.getPosY() > newY && picEntity.getPosY() < oldY)
+                            picEntity.setPosY(picEntity.getPosY() + 1);
+                    } else {
+                        if (picEntity.getPosY() > newY)
+                            picEntity.setPosY(picEntity.getPosY() + 1);
+
                         if (picEntity.getPosY() == oldY && picEntity.getPosX() > oldX)
                             picEntity.setPosX(picEntity.getPosX() - 1);
                     }
-                }
+                } else {
+                    if (cusNumLayouts.get(oldY).getCurNum() == 1) {
+                        if (picEntity.getPosY() > oldY)
+                            picEntity.setPosY(picEntity.getPosY() + 1);
+                    } else {
+                        if (picEntity.getPosY() == oldY && picEntity.getPosX() > oldX)
+                            picEntity.setPosX(picEntity.getPosX() - 1);
+                    }
 
-                if (!isNewLine) {
                     int newLineNum = cusNumLayouts.get(newY).getCurNum();
-                    if (newX != newLineNum && dragPos != i) {
-                        //如果插入的那一行,newX不是最后一个,那么它后面的X要加1
-                        if (picEntity.getPosY() == newY && picEntity.getPosX() >= newX) {
-                            int curXPos = picEntity.getPosX() + 1;
-                            if (curXPos <= MAX_NUM_IN_LINE - 1 && i != dragPos)
-                                picEntity.setPosX(picEntity.getPosX() + 1);
-                            else {
-                                //溢出了
-                                picEntity.setPosX(0);
-                                picEntity.setPosY(picEntity.getPosY() + 1);
-                                flowMove(i, picEntity.getPosY());
-                            }
+                    if (newLineNum == MAX_NUM_IN_LINE) {
+                        if (picEntity.getPosY() == newY && picEntity.getPosX() >= newX)
+                            picEntity.setPosX(picEntity.getPosX() + 1);
+
+                        //满了  顺势后移
+                        if (picEntity.getPosY() == newY && picEntity.getPosX() == 2) {
+                            picEntity.setPosX(0);
+                            picEntity.setPosY(picEntity.getPosY() + 1);
+                            flowMove(i, picEntity.getPosY());
                         }
+                    } else {
+                        if (picEntity.getPosY() == newY && picEntity.getPosX() >= newX)
+                            picEntity.setPosX(picEntity.getPosX() + 1);
+                    }
+                }
+            } else {
+                if (isNewLine) {
+                    if (cusNumLayouts.get(oldY).getCurNum() == 1) {
+                        /////////////
+                        if (picEntity.getPosY() > oldY && picEntity.getPosY() <= newY)
+                            picEntity.setPosY(picEntity.getPosY() - 1);
+                    } else {
+                        if (picEntity.getPosY() >= newY)
+                            picEntity.setPosY(picEntity.getPosY() + 1);
+
+                        if (picEntity.getPosY() == oldY && picEntity.getPosX() > oldX)
+                            picEntity.setPosX(picEntity.getPosX() - 1);
+                    }
+                } else {
+                    if (cusNumLayouts.get(oldY).getCurNum() == 1) {
+                        if (picEntity.getPosY() > oldY)
+                            picEntity.setPosY(picEntity.getPosY() - 1);
+                    } else {
+                        //nothing
+                    }
+
+                    int newLineNum = cusNumLayouts.get(newY).getCurNum();
+                    if (newLineNum == MAX_NUM_IN_LINE) {
+                        if (picEntity.getPosY() == newY && picEntity.getPosX() >= newX)
+                            picEntity.setPosX(picEntity.getPosX() + 1);
+
+                        //满了  顺势后移
+                        if (picEntity.getPosY() == newY && picEntity.getPosX() == 2) {
+                            picEntity.setPosX(0);
+                            picEntity.setPosY(picEntity.getPosY() + 1);
+                            flowMove(i, picEntity.getPosY());
+                        }
+                    } else {
+                        if (picEntity.getPosY() == newY && picEntity.getPosX() >= newX)
+                            picEntity.setPosX(picEntity.getPosX() + 1);
                     }
                 }
             }
-        }
 
-        if (cusNumLayouts.get(oldY).getAddDatas().size() == 1) {
-            if (oldY < newY && isNewLine)
-                picEntities.get(dragPos).setPosY(newY - 1);
-            log("++++++++++++++++++++++++" + dragPos);
+
+            //新建行
+//            if (isNewLine)
+//                if (picEntity.getPosY() >= newY) {
+//                    picEntity.setPosY(picEntity.getPosY() + 1);
+//                    continue;
+//                }
+//
+//            // the same line   ,just correct cord X .  Exchange position.
+//            if (newY == oldY) {
+// if (picEntity.getPosY() == newY && picEntity.getPosX() == newX)
+            //picEntity.setPosX(oldX);
+//            } else {
+//                if (cusNumLayouts.get(oldY).getAddDatas().size() == 1 && oldY < newY) {
+//                    //oldY后面的Y依次要减1          新建行的情况  前面加过1了
+//                    if (picEntity.getPosY() > oldY && picEntity.getPosY() < newY)
+//                        //oldY后面的Y依次要减1          新建行的情况  前面加过1了
+//                        picEntity.setPosY(picEntity.getPosY() - 1);
+//                } else if (cusNumLayouts.get(oldY).getAddDatas().size() == 1 && oldY < newY) {
+//
+//
+//                } else {
+//                    //如果oldX  不是该行的最后一个,那么它后面的要减1
+//                    int curLineNum = cusNumLayouts.get(oldY).getCurNum();
+//                    if (oldX < curLineNum - 1) {
+//                        if (picEntity.getPosY() == oldY && picEntity.getPosX() > oldX)
+//                            picEntity.setPosX(picEntity.getPosX() - 1);
+//                    }
+//                }
+//
+//                if (!isNewLine) {
+//                    int newLineNum = cusNumLayouts.get(newY).getCurNum();
+//                    if (newX != newLineNum && dragPos != i) {
+//                        //如果插入的那一行,newX不是最后一个,那么它后面的X要加1
+//                        if (picEntity.getPosY() == newY && picEntity.getPosX() >= newX) {
+//                            int curXPos = picEntity.getPosX() + 1;
+//                            if (curXPos <= MAX_NUM_IN_LINE - 1 && i != dragPos)
+//                                picEntity.setPosX(picEntity.getPosX() + 1);
+//                            else {
+//                                //溢出了
+//                                picEntity.setPosX(0);
+//                                picEntity.setPosY(picEntity.getPosY() + 1);
+//                                flowMove(i, picEntity.getPosY());
+//                            }
+//                        }
+//                    }
+//                }
+//            }
         }
     }
 
