@@ -65,20 +65,20 @@ public class MainActivity extends AppCompatActivity {
         picEntity4.setPosY(1);
         list.add(4, picEntity4);
 
-        PicEntity picEntity5 = new PicEntity("/storage/emulated/0/tencent/MicroMsg/c15693f514f1eb28f6aecdc6d6eb7bdatemp1458386595021/sfs/avatar/d4/52/user_hd_d45241532519c6e5c16b30acd247f77b.png");
-        picEntity5.setPosX(2);
-        picEntity5.setPosY(1);
-        list.add(5, picEntity5);
-
-        PicEntity picEntity6 = new PicEntity("/storage/emulated/0/tencent/MicroMsg/c15693f514f1eb28f6aecdc6d6eb7bdatemp1458386595021/sfs/avatar/d4/52/user_hd_d45241532519c6e5c16b30acd247f77b.png");
-        picEntity6.setPosX(0);
-        picEntity6.setPosY(2);
-        list.add(6, picEntity6);
-
-        PicEntity picEntity7 = new PicEntity("/storage/emulated/0/tencent/MicroMsg/c15693f514f1eb28f6aecdc6d6eb7bdatemp1458386595021/sfs/avatar/d4/52/user_hd_d45241532519c6e5c16b30acd247f77b.png");
-        picEntity7.setPosX(1);
-        picEntity7.setPosY(2);
-        list.add(7, picEntity7);
+//        PicEntity picEntity5 = new PicEntity("/storage/emulated/0/tencent/MicroMsg/c15693f514f1eb28f6aecdc6d6eb7bdatemp1458386595021/sfs/avatar/d4/52/user_hd_d45241532519c6e5c16b30acd247f77b.png");
+//        picEntity5.setPosX(2);
+//        picEntity5.setPosY(1);
+//        list.add(5, picEntity5);
+//
+//        PicEntity picEntity6 = new PicEntity("/storage/emulated/0/tencent/MicroMsg/c15693f514f1eb28f6aecdc6d6eb7bdatemp1458386595021/sfs/avatar/d4/52/user_hd_d45241532519c6e5c16b30acd247f77b.png");
+//        picEntity6.setPosX(0);
+//        picEntity6.setPosY(2);
+//        list.add(6, picEntity6);
+//
+//        PicEntity picEntity7 = new PicEntity("/storage/emulated/0/tencent/MicroMsg/c15693f514f1eb28f6aecdc6d6eb7bdatemp1458386595021/sfs/avatar/d4/52/user_hd_d45241532519c6e5c16b30acd247f77b.png");
+//        picEntity7.setPosX(1);
+//        picEntity7.setPosY(2);
+//        list.add(7, picEntity7);
 
 //        PicEntity picEntity8 = new PicEntity("/storage/emulated/0/tencent/MicroMsg/c15693f514f1eb28f6aecdc6d6eb7bdatemp1458386595021/sfs/avatar/d4/52/user_hd_d45241532519c6e5c16b30acd247f77b.png");
 //        picEntity8.setPosX(0);
