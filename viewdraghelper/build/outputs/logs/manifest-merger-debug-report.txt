@@ -17,6 +17,7 @@ ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/src/m
 		ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/src/main/AndroidManifest.xml:2:11-69
 uses-sdk
 ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/src/main/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:appcompat-v7:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-vector-drawable:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/AndroidManifest.xml:21:5-43
@@ -24,14 +25,8 @@ MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStu
 MERGED from [com.android.support:animated-vector-drawable:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/AndroidManifest.xml:21:5-43
 MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:animated-vector-drawable:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-vector-drawable:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:21:5-23:54
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
 		ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/src/main/AndroidManifest.xml:9:9-38
 		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/src/main/AndroidManifest.xml
@@ -42,18 +37,13 @@ MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStu
 		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/src/main/AndroidManifest.xml
 application
 ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/src/main/AndroidManifest.xml:11:5-29:19
+MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:appcompat-v7:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-vector-drawable:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/AndroidManifest.xml:23:5-20
 MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-vector-drawable:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-vector-drawable:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/src/main/AndroidManifest.xml:13:9-41
