@@ -59,8 +59,7 @@ public class Animateact extends AppCompatActivity {
                             case MotionEvent.ACTION_DOWN:
                                 isDown = true;
                                 if (isDown) {
-                                    time = System.currentTimeMillis();
-                                    handler.postDelayed(runnable, 300);
+                                    handler.post(runnable);
                                 }
                                 break;
                             case MotionEvent.ACTION_UP:
