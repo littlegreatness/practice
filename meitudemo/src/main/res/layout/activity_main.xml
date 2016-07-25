@@ -21,7 +21,8 @@
     <com.prac.buxiaoqing.meitudemo.view.CusNumLayout
         android:id="@+id/line"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
 
 
     <com.prac.buxiaoqing.meitudemo.view.CusPicLayout
@@ -29,5 +30,40 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="visible" />
+
+
+    <Button
+        android:id="@+id/move0"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:onClick="move0"
+        android:text="move0" />
+
+
+    <Button
+        android:id="@+id/move1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:onClick="move1"
+        android:text="move1" />
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:onClick="move2"
+        android:text="move2" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:onClick="move3"
+        android:text="move3" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:onClick="move4"
+        android:text="move4" />
 
 </LinearLayout>

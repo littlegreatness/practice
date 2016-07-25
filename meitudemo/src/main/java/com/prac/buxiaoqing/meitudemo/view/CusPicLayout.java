@@ -9,8 +9,11 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
+import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
@@ -19,7 +22,9 @@ import com.prac.buxiaoqing.meitudemo.model.PicEntity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 /**
  * author：buxiaoqing on 16/7/11 14:05
@@ -155,54 +160,89 @@ public class CusPicLayout extends ScrollView {
         return super.onTouchEvent(ev);
     }
 
+    private boolean isNewLine = false;
+
     /**
-     * ACTION_UP ,确定要改变的位置
+     * 计算释放的位置
      *
      * @param x
      * @param y
+     * @return
      */
-    private void onDrop(int x, int y) {
-        PicEntity dragEntity = getDragEntity();
-        int oldPosX = dragEntity.getPosX();
-        int oldPoxY = dragEntity.getPosY();
+    private int[] calDropPos(int x, int y) {
 
-        int dragPos = getDraDataPos();
+        isNewLine = false;
+
+        int[] pos = new int[]{0, 0};
+
+        PicEntity dragEntity = getDragEntity();
+        int oldPosY = dragEntity.getPosY();
 
         log(" move:  onDrop x = " + x + "   y = " + y);
         int x_in_view = x - getLeft();
         int y_in_view = y - getTop();
 
         float newPosx = x_in_view / (width / MAX_NUM_IN_LINE * 1f);//  0 -- 2
-        float newPosy = y_in_view / (lineHeight * 1f);  // 0 --  curLines
+        //float newPosy = y_in_view / (lineHeight * 1f);  // 0 --  curLines
+        float newPosy = y_in_view;
+        log("newPosY = " + newPosy);
+        int height = 0;
+        Iterator<Map.Entry<Integer, CusNumLayout>> iterator = cusNumLayouts.entrySet().iterator();
+        while (iterator.hasNext()) {
+            Map.Entry<Integer, CusNumLayout> next = iterator.next();
+            //////是不是按顺序来的呢   答案是肯定的
+            int lastHeight = height;
+            height += next.getValue().getLineHeight();
 
+            if (y_in_view < height && y_in_view > lastHeight) {
+                newPosy = (y_in_view - lastHeight) / (1f * next.getValue().getLineHeight()) + next.getKey();
+                if (newPosy < 0)
+                    newPosy = 0;
+
+                log("newPosY = " + newPosy + "  y_in_view= " + y_in_view + "  height = " + height + "   lastHeight = " + lastHeight + "  next.getKey() = " + next.getKey());
+                //TODO
+                break;
+            } else if (y_in_view > height) {
+                newPosy = (y_in_view - height) / (1f * next.getValue().getLineHeight()) + next.getKey() + 1;
+                log("newPosY = " + newPosy + "  y_in_view= " + y_in_view + "  height = " + height + "  next.getKey() = " + next.getKey());
+                break;
+            }
+        }
         int indexX = (int) (newPosx * 10) % 10;
-        if (indexX > 3)
+        /////////
+        if (indexX > 3 && indexX < 7)
+            newPosx = (int) newPosx;
+        if (indexX > 7)
             newPosx = (int) newPosx + 1;
+        if (indexX < 3 && newPosx >= 1)
+            newPosx = (int) newPosx - 1;
+
+        newPosx = (int) newPosx;
 
         if (newPosx >= 2)
             newPosx = 2f;
 
-        boolean isNewLine = false;
+        newPosy = (int) newPosy;
         //最后一行如果只有一个可不能再起一行   其他行都可以新起一行
-        if (newPosy >= curLines && oldPoxY < curLines - 1) {
+        if (newPosy >= curLines && oldPosY < curLines - 1) {
             isNewLine = true;
             newPosy = curLines;
-        } else if (newPosy >= curLines && oldPoxY == curLines - 1) {
+        } else if (newPosy >= curLines && oldPosY == curLines - 1) {
             if (cusNumLayouts.get(curLines - 1).getCurNum() == 1) {
                 isNewLine = false;
-                newPosy = oldPoxY;
+                newPosy = oldPosY;
             } else {
                 isNewLine = true;
                 newPosy = curLines;
             }
-        } else if (newPosy > oldPoxY && cusNumLayouts.get(oldPoxY).getCurNum() == 1) {
+        } else if ((int) newPosy > oldPosY && cusNumLayouts.get(oldPosY).getCurNum() == 1) {
             //一行只有一个,还给拖拽走了
             newPosy -= 1;
         }
 
         //Y 坐标的处理
         if (isNewLine) {
-            dragEntity.setPosY(curLines);
+            pos[1] = curLines;
         } else {
             //  取小数部分的第一位
             //  0--3  是在偏下的一行
@@ -215,37 +255,60 @@ public class CusPicLayout extends ScrollView {
             } else if (indexY < 10 && indexY >= 8) {
                 newPosy = (int) newPosy + 1;
             }
-            dragEntity.setPosY((int) newPosy);
+            pos[1] = (int) newPosy;
         }
 
         //X坐标处理
         if (isNewLine) {
-            dragEntity.setPosX(0);
+            pos[0] = 0;
         } else {
             int curLineNum = cusNumLayouts.get((int) newPosy).getCurNum();//1    2     3
             if (newPosx < curLineNum) {
-                dragEntity.setPosX((int) newPosx);
+                pos[0] = (int) newPosx;
             } else {
                 int newIndex = curLineNum;//后入式
-                if (oldPoxY == (int) newPosy) {
+                if (oldPosY == (int) newPosy) {
                     //同一行
                     isNewLine = false;
-                    dragEntity.setPosX(newIndex - 1);
+                    pos[0] = newIndex - 1;
                 } else {
                     if (newIndex >= MAX_NUM_IN_LINE) {
-                        dragEntity.setPosX(0);//满了的话   要进入下一行了,下一行的都要往后移动了,满了,再进入下一行   ,这个还没吧
+                        pos[0] = 0;//满了的话   要进入下一行了,下一行的都要往后移动了,满了,再进入下一行   ,这个还没吧
                         newPosy = (int) newPosy + 1;
                         if (newPosy > curLines) {
                             newPosy = curLines;
                         }
-                        dragEntity.setPosY((int) newPosy);
+                        pos[1] = (int) newPosy;
                     } else {
-                        dragEntity.setPosX(newIndex);
+                        pos[0] = (int) newIndex;
                     }
                 }
             }
         }
 
+
+        return pos;
+    }
+
+
+    /**
+     * ACTION_UP ,确定要改变的位置
+     *
+     * @param x
+     * @param y
+     */
+    private void onDrop(int x, int y) {
+
+        int oldPosX = dragEntity.getPosX();
+        int oldPoxY = dragEntity.getPosY();
+
+        int dragPos = getDraDataPos();
+
+        int[] ints = calDropPos(x, y);
+
+        PicEntity drag = picEntities.get(dragPos);
+        drag.setPosX(ints[0]);
+        drag.setPosY(ints[1]);
 
         for (int i = 0; i < curPics; i++) {
             PicEntity picEntity = picEntities.get(i);
@@ -253,14 +316,15 @@ public class CusPicLayout extends ScrollView {
         }
 
         log("before move:   curLines= " + curLines);
-
-        log("move:  = " + isNewLine + "  oldPoxY= " + oldPoxY + "  oldPosX= " + oldPosX + "   newY = "
-                + dragEntity.getPosY() + "   newX = " + dragEntity.getPosX());
-
-        if (oldPoxY == dragEntity.getPosY())
+        if (oldPoxY == drag.getPosY())
             isNewLine = false;
 
-        changeDataPos(isNewLine, dragPos, oldPoxY, oldPosX, dragEntity.getPosY(), dragEntity.getPosX());
+
+        log("move:  isNewLine= " + isNewLine + "  oldPoxY= " + oldPoxY + "  oldPosX= " + oldPosX + "   newY = "
+                + drag.getPosY() + "   newX = " + drag.getPosX());
+
+
+        changeDataPos(isNewLine, dragPos, oldPoxY, oldPosX, ints[1], ints[0]);
 
         for (int i = 0; i < curPics; i++) {
             PicEntity picEntity = picEntities.get(i);
@@ -281,8 +345,7 @@ public class CusPicLayout extends ScrollView {
      * @param isNewLine 是否是独占一行
      * @param newY      移动图片的新Y坐标
      * @param newX      移动图片的新X坐标
-     *                  <p/>
-     *                  move:  = false  oldPoxY= 1  oldPosX= 0   newY = 0   newX = 2
+     *                  move:  = true  oldPoxY= 0  oldPosX= 2   newY = 3   newX = 0
      */
     private void changeDataPos(boolean isNewLine, int dragPos, int oldY, int oldX, int newY, int newX) {
 
@@ -355,7 +418,7 @@ public class CusPicLayout extends ScrollView {
 
                     int newLineNum = cusNumLayouts.get(newY).getCurNum();
                     if (newLineNum == MAX_NUM_IN_LINE) {
-                        if (picEntity.getPosY() == newY && picEntity.getPosX() >= newX)
+                        if (picEntity.getPosY() == newY && picEntity.getPosX() >= newX && picEntity.getPosX() < 2)
                             picEntity.setPosX(picEntity.getPosX() + 1);
 
                         //满了  顺势后移
@@ -370,55 +433,6 @@ public class CusPicLayout extends ScrollView {
                     }
                 }
             }
-
-
-            //新建行
-//            if (isNewLine)
-//                if (picEntity.getPosY() >= newY) {
-//                    picEntity.setPosY(picEntity.getPosY() + 1);
-//                    continue;
-//                }
-//
-//            // the same line   ,just correct cord X .  Exchange position.
-//            if (newY == oldY) {
-// if (picEntity.getPosY() == newY && picEntity.getPosX() == newX)
-            //picEntity.setPosX(oldX);
-//            } else {
-//                if (cusNumLayouts.get(oldY).getAddDatas().size() == 1 && oldY < newY) {
-//                    //oldY后面的Y依次要减1          新建行的情况  前面加过1了
-//                    if (picEntity.getPosY() > oldY && picEntity.getPosY() < newY)
-//                        //oldY后面的Y依次要减1          新建行的情况  前面加过1了
-//                        picEntity.setPosY(picEntity.getPosY() - 1);
-//                } else if (cusNumLayouts.get(oldY).getAddDatas().size() == 1 && oldY < newY) {
-//
-//
-//                } else {
-//                    //如果oldX  不是该行的最后一个,那么它后面的要减1
-//                    int curLineNum = cusNumLayouts.get(oldY).getCurNum();
-//                    if (oldX < curLineNum - 1) {
-//                        if (picEntity.getPosY() == oldY && picEntity.getPosX() > oldX)
-//                            picEntity.setPosX(picEntity.getPosX() - 1);
-//                    }
-//                }
-//
-//                if (!isNewLine) {
-//                    int newLineNum = cusNumLayouts.get(newY).getCurNum();
-//                    if (newX != newLineNum && dragPos != i) {
-//                        //如果插入的那一行,newX不是最后一个,那么它后面的X要加1
-//                        if (picEntity.getPosY() == newY && picEntity.getPosX() >= newX) {
-//                            int curXPos = picEntity.getPosX() + 1;
-//                            if (curXPos <= MAX_NUM_IN_LINE - 1 && i != dragPos)
-//                                picEntity.setPosX(picEntity.getPosX() + 1);
-//                            else {
-//                                //溢出了
-//                                picEntity.setPosX(0);
-//                                picEntity.setPosY(picEntity.getPosY() + 1);
-//                                flowMove(i, picEntity.getPosY());
-//                            }
-//                        }
-//                    }
-//                }
-//            }
         }
     }
 
@@ -485,6 +499,72 @@ public class CusPicLayout extends ScrollView {
             log("onDrag x = " + rawX + "   y = " + rawY);
             windowManager.updateViewLayout(dragView, windowParams);
         }
+        int[] ints = calDropPos((int) rawX, (int) rawY);
+
+
+        if (ints[0] % 5 == 0) {// 这样是不行的吧
+            int oldPosX = dragEntity.getPosX();
+            int oldPoxY = dragEntity.getPosY();
+            View childUp = null, childBelow = null;
+            if (ints[1] - 1 >= 0)
+                childUp = parentLinearLayout.getChildAt(ints[1] - 1);
+
+            if (ints[1] <= parentLinearLayout.getChildCount())
+                childBelow = parentLinearLayout.getChildAt(ints[1]);
+
+            if (oldPoxY != ints[1] && isNewLine) {
+                //往后移动建新杭
+                //不越界的话 上上 下下
+                if (childUp != null) {
+                    childUp.clearAnimation();
+                    childUp.startAnimation(moveUp());
+                }
+                if (childBelow != null) {
+                    childBelow.clearAnimation();
+                    childBelow.startAnimation(moveDown());
+                }
+            }
+        }
+        //坐标怎么弄 TODO
+
+
+        log("new pos  x = " + ints[0] + "  y = " + ints[1] + "    origin  x = " + rawX + "   y = " + rawY);
+    }
+
+    public void move0() {
+        cusNumLayouts.get(0).avoid(0);
+    }
+
+    public void move1() {
+        cusNumLayouts.get(0).avoid(1);
+    }
+
+    public void move2() {
+        cusNumLayouts.get(0).avoid(2);
+    }
+
+    public void move3() {
+        cusNumLayouts.get(0).avoid(3);
+    }
+
+    private TranslateAnimation moveUp() {
+        TranslateAnimation moveUp = new TranslateAnimation(0, 0, 0, -100);
+        moveUp.setDuration(200);
+        moveUp.setFillAfter(false);
+        moveUp.setRepeatMode(Animation.REVERSE);
+        moveUp.setRepeatCount(1);
+        moveUp.start();
+        return moveUp;
+    }
+
+    private TranslateAnimation moveDown() {
+        TranslateAnimation moveDown = new TranslateAnimation(0, 0, 0, 100);
+        moveDown.setDuration(200);
+        moveDown.setFillAfter(false);
+        moveDown.setRepeatMode(Animation.REVERSE);
+        moveDown.setRepeatCount(1);
+        moveDown.start();
+        return moveDown;
     }
 
     @Override

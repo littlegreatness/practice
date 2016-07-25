@@ -2,6 +2,11 @@ package com.prac.buxiaoqing.meitudemo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.TranslateAnimation;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.prac.buxiaoqing.meitudemo.model.PicEntity;
 import com.prac.buxiaoqing.meitudemo.view.CusNumLayout;
@@ -15,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     private CustomLabelLayout customLabelLayout;
     private CusNumLayout line;
     private CusPicLayout pic_layout;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,13 +98,26 @@ public class MainActivity extends AppCompatActivity {
 
         pic_layout.initView();
 
+    }
 
-//        //new Handler().postDelayed(new Runnable() {
-//            @Override
-//            public void run() {
-//                pic_layout.changeView();
-//            }
-//        }, 2000);
+
+    public void move0(View view) {
+        pic_layout.move0();
+    }
+
+    public void move1(View view) {
+        pic_layout.move1();
+    }
+
+    public void move2(View view) {
+        pic_layout.move2();
+    }
+
+    public void move3(View view) {
+        pic_layout.move3();
+    }
+
+    public void move4(View view) {
     }
 
 }

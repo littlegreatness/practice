@@ -4,6 +4,8 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -137,6 +139,70 @@ public class CusNumLayout extends LinearLayout {
             this.addView(entity.getImageView());
         }
     }
+
+    private Animation moveLeft, moveRight;
+
+
+    private Animation getMoveLeft() {
+        if (moveLeft == null) {
+            moveLeft = new TranslateAnimation(0, -100, 0, 0);
+            moveLeft.setDuration(200);
+            moveLeft.setFillAfter(false);
+            moveLeft.setRepeatMode(Animation.REVERSE);
+            moveLeft.setRepeatCount(1);
+            moveLeft.start();
+        }
+        return moveLeft;
+    }
+
+    private Animation getMoveRight() {
+        if (moveRight == null) {
+            moveRight = new TranslateAnimation(0, 100, 0, 0);
+            moveRight.setDuration(200);
+            moveRight.setFillAfter(false);
+            moveRight.setRepeatMode(Animation.REVERSE);
+            moveRight.setRepeatCount(1);
+            moveRight.start();
+        }
+        return moveRight;
+    }
+
+
+    /**
+     * 在图片移动的时候,左右移动,以显示当前要放置的位置的方法
+     *
+     * @param index
+     */
+    public void avoid(int index) {
+
+        if (index > curNum)
+            index = curNum;
+
+        if (index == 0) {
+            addDatas.get(0).getImageView().clearAnimation();
+
+            addDatas.get(0).getImageView().setAnimation(getMoveRight());
+            addDatas.get(0).getImageView().startAnimation(getMoveRight());
+
+            log("move:00000000000");
+
+        } else if (index == curNum) {
+            addDatas.get(curNum - 1).getImageView().clearAnimation();
+
+            addDatas.get(curNum - 1).getImageView().setAnimation(getMoveLeft());
+            addDatas.get(curNum - 1).getImageView().startAnimation(getMoveLeft());
+            log("move:33333333333");
+        } else {
+            addDatas.get(index).getImageView().clearAnimation();
+            addDatas.get(index).getImageView().setAnimation(getMoveRight());
+            addDatas.get(index).getImageView().startAnimation(getMoveRight());
+            log("move:=================");
+            addDatas.get(index - 1).getImageView().clearAnimation();
+            addDatas.get(index - 1).getImageView().setAnimation(getMoveLeft());
+            addDatas.get(index - 1).getImageView().startAnimation(getMoveLeft());
+        }
+    }
+
 
     private void log(String msg) {
         Log.d(TAG, msg);

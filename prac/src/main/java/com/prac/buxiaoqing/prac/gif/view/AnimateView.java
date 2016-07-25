@@ -164,7 +164,7 @@ public class AnimateView extends View {
                 keyWordAnimationNode.setY(targetY);
 
 
-                int alpha = (int) (keyWordAnimationNode.getAlpha() - 255 / startY);
+                int alpha = (int) (keyWordAnimationNode.getAlpha() - 3.0f * 255 / startY);
                 if (alpha <= 0) {
                     alpha = 0;
                 }
