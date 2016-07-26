@@ -147,7 +147,7 @@ public class CusNumLayout extends LinearLayout {
         if (moveLeft == null) {
             moveLeft = new TranslateAnimation(0, -100, 0, 0);
             moveLeft.setDuration(200);
-            moveLeft.setFillAfter(false);
+            moveLeft.setFillAfter(true);
             moveLeft.setRepeatMode(Animation.REVERSE);
             moveLeft.setRepeatCount(1);
             moveLeft.start();
@@ -159,7 +159,7 @@ public class CusNumLayout extends LinearLayout {
         if (moveRight == null) {
             moveRight = new TranslateAnimation(0, 100, 0, 0);
             moveRight.setDuration(200);
-            moveRight.setFillAfter(false);
+            moveRight.setFillAfter(true);
             moveRight.setRepeatMode(Animation.REVERSE);
             moveRight.setRepeatCount(1);
             moveRight.start();

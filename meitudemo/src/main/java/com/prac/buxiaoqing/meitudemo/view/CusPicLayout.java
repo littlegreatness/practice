@@ -485,6 +485,9 @@ public class CusPicLayout extends ScrollView {
         return dragPos;
     }
 
+
+    private int moveX, moveY;
+
     /**
      * 选择的图片会跟着触摸点走
      *
@@ -501,50 +504,44 @@ public class CusPicLayout extends ScrollView {
         }
         int[] ints = calDropPos((int) rawX, (int) rawY);
 
+        if (moveX != ints[0])
+            moveX = ints[0];
 
-        if (ints[0] % 5 == 0) {// 这样是不行的吧
-            int oldPosX = dragEntity.getPosX();
-            int oldPoxY = dragEntity.getPosY();
-            View childUp = null, childBelow = null;
-            if (ints[1] - 1 >= 0)
-                childUp = parentLinearLayout.getChildAt(ints[1] - 1);
+        if (moveY != ints[1])
+            moveY = ints[1];
 
-            if (ints[1] <= parentLinearLayout.getChildCount())
-                childBelow = parentLinearLayout.getChildAt(ints[1]);
+        //坐标怎么弄 TODO
+        move(moveX, moveY);
 
-            if (oldPoxY != ints[1] && isNewLine) {
-                //往后移动建新杭
-                //不越界的话 上上 下下
+        log("new pos  x = " + ints[0] + "  y = " + ints[1] + "  isNewLine = " + isNewLine + "    origin  x = " + rawX + "   y = " + rawY);
+    }
+
+    public void move(int x, int y) {
+        if (isNewLine) {
+            if (y - 1 >= 0) {
+                View childUp = parentLinearLayout.getChildAt(y - 1);
                 if (childUp != null) {
                     childUp.clearAnimation();
                     childUp.startAnimation(moveUp());
                 }
+            }
+
+            if (y + 1 < curLines) {
+                View childBelow = parentLinearLayout.getChildAt(y + 1);
                 if (childBelow != null) {
                     childBelow.clearAnimation();
                     childBelow.startAnimation(moveDown());
                 }
             }
+        } else {
+            if (y >= curLines)
+                return;
+
+            if (x >= cusNumLayouts.get(y).getCurNum())
+                return;
+
+            cusNumLayouts.get(y).avoid(x);
         }
-        //坐标怎么弄 TODO
-
-
-        log("new pos  x = " + ints[0] + "  y = " + ints[1] + "    origin  x = " + rawX + "   y = " + rawY);
-    }
-
-    public void move0() {
-        cusNumLayouts.get(0).avoid(0);
-    }
-
-    public void move1() {
-        cusNumLayouts.get(0).avoid(1);
-    }
-
-    public void move2() {
-        cusNumLayouts.get(0).avoid(2);
-    }
-
-    public void move3() {
-        cusNumLayouts.get(0).avoid(3);
     }
 
     private TranslateAnimation moveUp() {

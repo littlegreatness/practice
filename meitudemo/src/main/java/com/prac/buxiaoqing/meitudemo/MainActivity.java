@@ -98,26 +98,6 @@ public class MainActivity extends AppCompatActivity {
 
         pic_layout.initView();
 
+
     }
-
-
-    public void move0(View view) {
-        pic_layout.move0();
-    }
-
-    public void move1(View view) {
-        pic_layout.move1();
-    }
-
-    public void move2(View view) {
-        pic_layout.move2();
-    }
-
-    public void move3(View view) {
-        pic_layout.move3();
-    }
-
-    public void move4(View view) {
-    }
-
 }
