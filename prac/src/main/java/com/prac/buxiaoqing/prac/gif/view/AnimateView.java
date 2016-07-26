@@ -9,14 +9,12 @@ import android.view.WindowManager;
 import android.widget.RelativeLayout;
 
 
-import com.prac.buxiaoqing.prac.gif.Animateact;
 import com.prac.buxiaoqing.prac.gif.model.KeyWordAnimationNode;
 import com.prac.buxiaoqing.prac.gif.util.PixelUtil;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.logging.Logger;
 
 /**
  * Created by buxiaoqing on 16/6/24.
@@ -113,6 +111,7 @@ public class AnimateView extends View {
             KeyWordAnimationNode keyWordAnimationNode = new KeyWordAnimationNode();
             float speedY = -(random.nextFloat() * 2 + 2);
             float speedX = -(random.nextFloat()) + 0.5f;
+
             keyWordAnimationNode.setSpeedY(speedY);
             keyWordAnimationNode.setSpeedX(speedX);
             keyWordAnimationNode.setAlpha(255);//0-255
@@ -158,10 +157,16 @@ public class AnimateView extends View {
                 targetY = keyWordAnimationNode.getY() + keyWordAnimationNode.getSpeedY();
                 keyWordAnimationNode.setY(targetY);
             } else {
-                targetX = keyWordAnimationNode.getX() + keyWordAnimationNode.getSpeedX();
-                keyWordAnimationNode.setX(targetX);
+
                 targetY = keyWordAnimationNode.getY() + keyWordAnimationNode.getSpeedY();
                 keyWordAnimationNode.setY(targetY);
+
+
+                //targetX = keyWordAnimationNode.getX() + keyWordAnimationNode.getSpeedX();
+                targetX = keyWordAnimationNode.getX() + 3 * (float) Math.sin((startY - targetY) / 60);
+                log(" targetY = " + targetY + "   targetX = " + targetX);
+
+                keyWordAnimationNode.setX(targetX);
 
 
                 int alpha = (int) (keyWordAnimationNode.getAlpha() - 3.0f * 255 / startY);
@@ -211,4 +216,13 @@ public class AnimateView extends View {
         keyWordAnimationList.clear();
         isStart = false;
     }
+
+
+    private void log(String str) {
+
+        System.out.println(str);
+
+    }
+
+
 }
