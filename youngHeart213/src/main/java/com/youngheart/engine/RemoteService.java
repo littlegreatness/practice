@@ -35,6 +35,7 @@ public class RemoteService {
 		final URLData urlData = UrlConfigManager.findURL(activity, apiKey);
 		if (urlData.getMockClass() != null) {
 			try {
+				//mock data
 				MockService mockService = (MockService) Class.forName(
 						urlData.getMockClass()).newInstance();
 				String strResponse = mockService.getJsonData();

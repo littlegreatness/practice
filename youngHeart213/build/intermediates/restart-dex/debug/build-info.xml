@@ -4,7 +4,7 @@
     api-level="19"
     density="xhdpi"
     format="7"
-    timestamp="840351885996507"
+    timestamp="840861715063551"
     token="3659045191911090482" >
 
     <task
@@ -24,7 +24,7 @@
         location="/Users/buxiaoqing/AndroidStudioProjects/Practice/youngHeart213/build/outputs/apk/youngHeart213-debug.apk"
         type="MAIN" />
 
-    <build timestamp="840351885996507" >
+    <build timestamp="840861715063551" >
         <artifact
             location="/Users/buxiaoqing/AndroidStudioProjects/Practice/youngHeart213/build/outputs/apk/youngHeart213-debug.apk"
             type="MAIN" />
