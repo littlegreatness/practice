@@ -32,38 +32,38 @@
         android:visibility="visible" />
 
 
-    <Button
-        android:id="@+id/move0"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:onClick="move0"
-        android:text="move0" />
+    <!--<Button-->
+        <!--android:id="@+id/move0"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:onClick="move0"-->
+        <!--android:text="move0" />-->
 
 
-    <Button
-        android:id="@+id/move1"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:onClick="move1"
-        android:text="move1" />
+    <!--<Button-->
+        <!--android:id="@+id/move1"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:onClick="move1"-->
+        <!--android:text="move1" />-->
 
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:onClick="move2"
-        android:text="move2" />
+    <!--<Button-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:onClick="move2"-->
+        <!--android:text="move2" />-->
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:onClick="move3"
-        android:text="move3" />
+    <!--<Button-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:onClick="move3"-->
+        <!--android:text="move3" />-->
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:onClick="move4"
-        android:text="move4" />
+    <!--<Button-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:onClick="move4"-->
+        <!--android:text="move4" />-->
 
 </LinearLayout>

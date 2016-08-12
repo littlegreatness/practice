@@ -489,7 +489,7 @@ public class CusPicLayout extends ScrollView {
     private int moveX, moveY;
 
     /**
-     * 选择的图片会跟着触摸点走
+     * 选择的图片会跟着触摸点走   有点不准确呀
      *
      * @param rawX
      * @param rawY
@@ -499,7 +499,6 @@ public class CusPicLayout extends ScrollView {
             windowParams.alpha = 1.f;
             windowParams.x = (int) rawX - win_view_x;
             windowParams.y = (int) rawY - win_view_y;
-            log("onDrag x = " + rawX + "   y = " + rawY);
             windowManager.updateViewLayout(dragView, windowParams);
         }
         int[] ints = calDropPos((int) rawX, (int) rawY);
@@ -579,9 +578,12 @@ public class CusPicLayout extends ScrollView {
                         dragEntity = new PicEntity(picEntity.getResId());
                     dragEntity.setPosX(picEntity.getPosX());
                     dragEntity.setPosY(picEntity.getPosY());
-
+                    //TODO
                     win_view_x = (int) ev.getRawX() - picEntity.getPosX() * width / cusNumLayouts.get(picEntity.getPosY()).getCurNum();//点击在VIEW上的相对位置
-                    win_view_y = (int) ev.getRawY() - picEntity.getPosY() * lineHeight;//点击在VIEW上的相对位置   有问题
+                    win_view_y = (int) ev.getRawY() - getCurPosHeight(picEntity.getPosY());//点击在VIEW上的相对位置   有问题
+
+                    win_view_x = win_view_x / 3 * cusNumLayouts.get(picEntity.getPosY()).getCurNum();
+                    win_view_y = (int) (win_view_y / (cusNumLayouts.get(picEntity.getPosY()).getLineHeight() * 1f) * width / MAX_NUM_IN_LINE);
 
                     Bitmap drawingCache = creatCacheImg(picEntity.getResId());
                     startDrag(drawingCache, (int) ev.getRawX(), (int) ev.getRawY());
@@ -589,10 +591,17 @@ public class CusPicLayout extends ScrollView {
                 }
             }
         }
-
-
         return super.onInterceptTouchEvent(ev);
     }
+
+    private int getCurPosHeight(int posY) {
+        int height = 0;
+        for (int i = 0; i < posY; i++)
+            height += cusNumLayouts.get(i).getLineHeight();
+        log("getCurPos  height = " + height);
+        return height;
+    }
+
 
     private void clearSelected() {
         for (int i = 0; i < picEntities.size(); i++) {
