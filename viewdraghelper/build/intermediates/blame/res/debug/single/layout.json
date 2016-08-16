@@ -20,12 +20,12 @@
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/notification_template_media.xml"
     },
     {
-        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/support_simple_spinner_dropdown_item.xml"
-    },
-    {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
@@ -84,24 +84,24 @@
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/notification_media_action.xml"
     },
     {
-        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
-        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_screen_content_include.xml"
-    },
-    {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/layout/activity_youtube.xml",
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/src/main/res/layout/activity_youtube.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_screen_content_include.xml"
     },
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/layout/activity_main.xml",
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
@@ -148,12 +148,12 @@
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/select_dialog_item_material.xml"
     },
     {
-        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
-        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_action_mode_bar.xml"
-    },
-    {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_action_mode_bar.xml"
     },
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
