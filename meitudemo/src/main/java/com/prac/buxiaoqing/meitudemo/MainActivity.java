@@ -38,61 +38,78 @@ public class MainActivity extends AppCompatActivity {
         line = (CusNumLayout) findViewById(R.id.line);
         line.setParentSize(650);
 
-        ArrayList<PicEntity> list = new ArrayList<>();
-        PicEntity picEntity0 = new PicEntity("/storage/emulated/0/sina/weibo/weibo/img-84c5d2f84a55ffcbaaa359dd7e4d6d97.jpg");
-        picEntity0.setPosX(0);
-        picEntity0.setPosY(0);
-        list.add(0, picEntity0);
+//        ArrayList<PicEntity> list = new ArrayList<>();
+//        PicEntity picEntity0 = new PicEntity("/storage/emulated/0/sina/weibo/weibo/img-84c5d2f84a55ffcbaaa359dd7e4d6d97.jpg");
+//        picEntity0.setPosX(0);
+//        picEntity0.setPosY(0);
+//        list.add(0, picEntity0);
+//
+//        PicEntity picEntity1 = new PicEntity("/storage/emulated/0/sina/weibo/weibo/img-4ffc29ee7f651e715ec4d2007237e2e6.jpg");
+//        picEntity1.setPosX(1);
+//        picEntity1.setPosY(0);
+//        list.add(1, picEntity1);
+//
+//        PicEntity picEntity2 = new PicEntity("/storage/emulated/0/news_article/a75fe8cd324d12289201113b67dea41f.jpg");
+//        picEntity2.setPosX(2);
+//        picEntity2.setPosY(0);
+//        list.add(2, picEntity2);
+//
+//        PicEntity picEntity3 = new PicEntity("/storage/emulated/0/tencent/MicroMsg/c15693f514f1eb28f6aecdc6d6eb7bdatemp1458386595021/sfs/avatar/d4/52/user_hd_d45241532519c6e5c16b30acd247f77b.png");
+//        picEntity3.setPosX(0);
+//        picEntity3.setPosY(1);
+//        list.add(3, picEntity3);
+//
+//        PicEntity picEntity4 = new PicEntity("/storage/emulated/0/tencent/MicroMsg/c15693f514f1eb28f6aecdc6d6eb7bdatemp1458386595021/sfs/avatar/d4/52/user_hd_d45241532519c6e5c16b30acd247f77b.png");
+//        picEntity4.setPosX(1);
+//        picEntity4.setPosY(1);
+//        list.add(4, picEntity4);
+//
+//        PicEntity picEntity5 = new PicEntity("/storage/emulated/0/tencent/MicroMsg/c15693f514f1eb28f6aecdc6d6eb7bdatemp1458386595021/sfs/avatar/d4/52/user_hd_d45241532519c6e5c16b30acd247f77b.png");
+//        picEntity5.setPosX(2);
+//        picEntity5.setPosY(1);
+//        list.add(5, picEntity5);
+//
+//        PicEntity picEntity6 = new PicEntity("/storage/emulated/0/tencent/MicroMsg/c15693f514f1eb28f6aecdc6d6eb7bdatemp1458386595021/sfs/avatar/d4/52/user_hd_d45241532519c6e5c16b30acd247f77b.png");
+//        picEntity6.setPosX(0);
+//        picEntity6.setPosY(2);
+//        list.add(6, picEntity6);
+//
+//        PicEntity picEntity7 = new PicEntity("/storage/emulated/0/tencent/MicroMsg/c15693f514f1eb28f6aecdc6d6eb7bdatemp1458386595021/sfs/avatar/d4/52/user_hd_d45241532519c6e5c16b30acd247f77b.png");
+//        picEntity7.setPosX(1);
+//        picEntity7.setPosY(2);
+//        list.add(7, picEntity7);
 
-        PicEntity picEntity1 = new PicEntity("/storage/emulated/0/sina/weibo/weibo/img-4ffc29ee7f651e715ec4d2007237e2e6.jpg");
-        picEntity1.setPosX(1);
-        picEntity1.setPosY(0);
-        list.add(1, picEntity1);
-
-        PicEntity picEntity2 = new PicEntity("/storage/emulated/0/news_article/a75fe8cd324d12289201113b67dea41f.jpg");
-        picEntity2.setPosX(2);
-        picEntity2.setPosY(0);
-        list.add(2, picEntity2);
-
-        PicEntity picEntity3 = new PicEntity("/storage/emulated/0/tencent/MicroMsg/c15693f514f1eb28f6aecdc6d6eb7bdatemp1458386595021/sfs/avatar/d4/52/user_hd_d45241532519c6e5c16b30acd247f77b.png");
-        picEntity3.setPosX(0);
-        picEntity3.setPosY(1);
-        list.add(3, picEntity3);
-
-        PicEntity picEntity4 = new PicEntity("/storage/emulated/0/tencent/MicroMsg/c15693f514f1eb28f6aecdc6d6eb7bdatemp1458386595021/sfs/avatar/d4/52/user_hd_d45241532519c6e5c16b30acd247f77b.png");
-        picEntity4.setPosX(1);
-        picEntity4.setPosY(1);
-        list.add(4, picEntity4);
-
-        PicEntity picEntity5 = new PicEntity("/storage/emulated/0/tencent/MicroMsg/c15693f514f1eb28f6aecdc6d6eb7bdatemp1458386595021/sfs/avatar/d4/52/user_hd_d45241532519c6e5c16b30acd247f77b.png");
-        picEntity5.setPosX(2);
-        picEntity5.setPosY(1);
-        list.add(5, picEntity5);
-
-        PicEntity picEntity6 = new PicEntity("/storage/emulated/0/tencent/MicroMsg/c15693f514f1eb28f6aecdc6d6eb7bdatemp1458386595021/sfs/avatar/d4/52/user_hd_d45241532519c6e5c16b30acd247f77b.png");
-        picEntity6.setPosX(0);
-        picEntity6.setPosY(2);
-        list.add(6, picEntity6);
-
-        PicEntity picEntity7 = new PicEntity("/storage/emulated/0/tencent/MicroMsg/c15693f514f1eb28f6aecdc6d6eb7bdatemp1458386595021/sfs/avatar/d4/52/user_hd_d45241532519c6e5c16b30acd247f77b.png");
-        picEntity7.setPosX(1);
-        picEntity7.setPosY(2);
-        list.add(7, picEntity7);
-
-//        PicEntity picEntity8 = new PicEntity("/storage/emulated/0/tencent/MicroMsg/c15693f514f1eb28f6aecdc6d6eb7bdatemp1458386595021/sfs/avatar/d4/52/user_hd_d45241532519c6e5c16b30acd247f77b.png");
-//        picEntity8.setPosX(0);
-//        picEntity8.setPosY(4);
-//        list.add(8, picEntity8);
-
-//      line.setDatas(list, 0);
-//      line.buildView();
+        ArrayList<String> pics = new ArrayList<>();
+        pics.add("/storage/emulated/0/sina/weibo/weibo/img-84c5d2f84a55ffcbaaa359dd7e4d6d97.jpg");
+        pics.add("/storage/emulated/0/sina/weibo/weibo/img-4ffc29ee7f651e715ec4d2007237e2e6.jpg");
+        pics.add("/storage/emulated/0/news_article/a75fe8cd324d12289201113b67dea41f.jpg");
+        pics.add("/storage/emulated/0/tencent/MicroMsg/c15693f514f1eb28f6aecdc6d6eb7bdatemp1458386595021/sfs/avatar/d4/52/user_hd_d45241532519c6e5c16b30acd247f77b.png");
+        pics.add("/storage/emulated/0/sina/weibo/weibo/img-84c5d2f84a55ffcbaaa359dd7e4d6d97.jpg");
+        pics.add("/storage/emulated/0/sina/weibo/weibo/img-84c5d2f84a55ffcbaaa359dd7e4d6d97.jpg");
+        pics.add("/storage/emulated/0/sina/weibo/weibo/img-84c5d2f84a55ffcbaaa359dd7e4d6d97.jpg");
+        pics.add("/storage/emulated/0/sina/weibo/weibo/img-84c5d2f84a55ffcbaaa359dd7e4d6d97.jpg");
 
         pic_layout = (CusPicLayout) findViewById(R.id.pic_layout);
 
-        pic_layout.setPicEntities(list);
+        pic_layout.setPicEntities(generateEnties(pics));
 
         pic_layout.initView();
 
-
     }
+
+    private ArrayList<PicEntity> generateEnties(ArrayList<String> pics) {
+        ArrayList<PicEntity> lists = new ArrayList();
+        if (pics != null && pics.size() >= 0) {
+            int size = pics.size();
+            for (int i = 0; i < size; i++) {
+                PicEntity entity = new PicEntity(pics.get(i));
+                entity.setPosX(i % 3);
+                entity.setPosY(i / 3);
+                lists.add(entity);
+            }
+        }
+        return lists;
+    }
+
+
 }

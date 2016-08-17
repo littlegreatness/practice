@@ -13,7 +13,6 @@ import com.bumptech.glide.Glide;
 import com.prac.buxiaoqing.meitudemo.model.PicEntity;
 import com.prac.buxiaoqing.meitudemo.util.CusLayoutUtil;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -83,7 +82,8 @@ public class CusNumLayout extends LinearLayout {
 
                     ImageView imageView = new ImageView(context);
                     imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-                    Glide.with(context).load(picEntity.getResId()).into(imageView);
+                    if (picEntity.getResId() != null)
+                        Glide.with(context).load(picEntity.getResId()).into(imageView);
                     int[] picSize = CusLayoutUtil.getPicSize(picEntity.getResId());
                     picEntity.setWidth(picSize[0]);
                     picEntity.setHeight(picSize[1]);

@@ -134,30 +134,37 @@ public class CusPicLayout extends ScrollView {
     public boolean onTouchEvent(MotionEvent ev) {
         log("onTouchEvent");
 
-        if (dragView != null) {
-            log("dragView != null");
-            windowX = (int) ev.getRawX();
-            windowY = (int) ev.getRawY();
-            switch (ev.getAction()) {
-                case MotionEvent.ACTION_DOWN:
-                    log("ACTION_DOWN");
-                    break;
-                case MotionEvent.ACTION_MOVE:
-                    log("ACTION_MOVE");
-                    onDrag(windowX, windowY);
-                    break;
-                case MotionEvent.ACTION_UP:
-                    log("ACTION_UP");
-                    stopDrag();
-                    onDrop(windowX, windowY);
-                    requestDisallowInterceptTouchEvent(false);
-                    break;
-                default:
-                    break;
-            }
-        } else
-            log("dragView 空了");
+        //系统异常   IllegalArgumentException: pointerIndex out of range
+        try {
+            if (dragView != null) {
+                log("dragView != null");
+                windowX = (int) ev.getRawX();
+                windowY = (int) ev.getRawY();
+                switch (ev.getAction()) {
+                    case MotionEvent.ACTION_DOWN:
+                        log("ACTION_DOWN");
+                        break;
+                    case MotionEvent.ACTION_MOVE:
+                        log("ACTION_MOVE");
+                        onDrag(windowX, windowY);
+                        break;
+                    case MotionEvent.ACTION_UP:
+                        log("ACTION_UP");
+                        stopDrag();
+                        onDrop(windowX, windowY);
+                        requestDisallowInterceptTouchEvent(false);
+                        break;
+                    default:
+                        break;
+                }
+            } else
+                log("dragView 空了");
+        } catch (IllegalArgumentException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
         return super.onTouchEvent(ev);
+
     }
 
     private boolean isNewLine = false;
