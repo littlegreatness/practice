@@ -3,7 +3,6 @@ package com.prac.buxiaoqing.meitudemo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.prac.buxiaoqing.meitudemo.model.PicEntity;
 import com.prac.buxiaoqing.meitudemo.view.CusNumLayout;
 import com.prac.buxiaoqing.meitudemo.view.CusPicLayout;
 import com.prac.buxiaoqing.meitudemo.view.CustomLabelLayout;
@@ -91,24 +90,10 @@ public class MainActivity extends AppCompatActivity {
 
         pic_layout = (CusPicLayout) findViewById(R.id.pic_layout);
 
-        pic_layout.setPicEntities(generateEnties(pics));
+        pic_layout.generateEnties(pics);
 
         pic_layout.initView();
 
-    }
-
-    private ArrayList<PicEntity> generateEnties(ArrayList<String> pics) {
-        ArrayList<PicEntity> lists = new ArrayList();
-        if (pics != null && pics.size() >= 0) {
-            int size = pics.size();
-            for (int i = 0; i < size; i++) {
-                PicEntity entity = new PicEntity(pics.get(i));
-                entity.setPosX(i % 3);
-                entity.setPosY(i / 3);
-                lists.add(entity);
-            }
-        }
-        return lists;
     }
 
 

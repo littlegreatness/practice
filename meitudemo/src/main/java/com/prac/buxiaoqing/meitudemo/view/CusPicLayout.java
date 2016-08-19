@@ -83,6 +83,22 @@ public class CusPicLayout extends ScrollView {
         width = 660;
     }
 
+
+    public void generateEnties(ArrayList<String> pics) {
+        ArrayList<PicEntity> lists = new ArrayList();
+        if (pics != null && pics.size() >= 0) {
+            int size = pics.size();
+            for (int i = 0; i < size; i++) {
+                PicEntity entity = new PicEntity(pics.get(i));
+                entity.setPosX(i % 3);
+                entity.setPosY(i / 3);
+                lists.add(entity);
+            }
+        }
+        setPicEntities(lists);
+    }
+
+
     public List<PicEntity> getPicEntities() {
         return picEntities;
     }
