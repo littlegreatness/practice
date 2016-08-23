@@ -25,7 +25,6 @@ import com.newtonker.jigsawdemo.adapter.ModelLinearAdapter;
 import com.newtonker.jigsawdemo.adapter.PhotoGridAdapter;
 import com.newtonker.jigsawdemo.adapter.PopupDirectoryListAdapter;
 import com.newtonker.jigsawdemo.event.OnItemCheckListener;
-import com.newtonker.jigsawdemo.event.OnModelItemClickListener;
 import com.newtonker.jigsawdemo.event.OnPhotoCheckedChangeListener;
 import com.newtonker.jigsawdemo.model.JigsawType;
 import com.newtonker.jigsawdemo.model.Photo;
