@@ -35,10 +35,9 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.handmark.pulltorefresh.library.ILoadingLayout;
-import com.handmark.pulltorefresh.library.PullToRefreshBase.Mode;
-import com.handmark.pulltorefresh.library.PullToRefreshBase.Orientation;
-import com.handmark.pulltorefresh.library.R;
+import com.prac.buxiaoqing.pulltorefresh.library.ILoadingLayout;
+import com.prac.buxiaoqing.pulltorefresh.library.PullToRefreshBase;
+import com.prac.buxiaoqing.pulltorefresh.library.sample.R;
 
 @SuppressLint("ViewConstructor")
 public abstract class LoadingLayout extends FrameLayout implements ILoadingLayout {
@@ -57,14 +56,14 @@ public abstract class LoadingLayout extends FrameLayout implements ILoadingLayou
 	private final TextView mHeaderText;
 	private final TextView mSubHeaderText;
 
-	protected final Mode mMode;
-	protected final Orientation mScrollDirection;
+	protected final PullToRefreshBase.Mode mMode;
+	protected final PullToRefreshBase.Orientation mScrollDirection;
 
 	private CharSequence mPullLabel;
 	private CharSequence mRefreshingLabel;
 	private CharSequence mReleaseLabel;
 
-	public LoadingLayout(Context context, final Mode mode, final Orientation scrollDirection, TypedArray attrs) {
+	public LoadingLayout(Context context, final PullToRefreshBase.Mode mode, final PullToRefreshBase.Orientation scrollDirection, TypedArray attrs) {
 		super(context);
 		mMode = mode;
 		mScrollDirection = scrollDirection;
@@ -89,7 +88,7 @@ public abstract class LoadingLayout extends FrameLayout implements ILoadingLayou
 
 		switch (mode) {
 			case PULL_FROM_END:
-				lp.gravity = scrollDirection == Orientation.VERTICAL ? Gravity.TOP : Gravity.LEFT;
+				lp.gravity = scrollDirection == PullToRefreshBase.Orientation.VERTICAL ? Gravity.TOP : Gravity.LEFT;
 
 				// Load in labels
 				mPullLabel = context.getString(R.string.pull_to_refresh_from_bottom_pull_label);
@@ -99,7 +98,7 @@ public abstract class LoadingLayout extends FrameLayout implements ILoadingLayou
 
 			case PULL_FROM_START:
 			default:
-				lp.gravity = scrollDirection == Orientation.VERTICAL ? Gravity.BOTTOM : Gravity.RIGHT;
+				lp.gravity = scrollDirection == PullToRefreshBase.Orientation.VERTICAL ? Gravity.BOTTOM : Gravity.RIGHT;
 
 				// Load in labels
 				mPullLabel = context.getString(R.string.pull_to_refresh_pull_label);

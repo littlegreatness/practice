@@ -5,7 +5,7 @@
     android:layout_height="fill_parent" >
 
 <!-- The PullToRefreshGridView replaces a standard GridView widget. -->
-    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+    <com.prac.buxiaoqing.pulltorefresh.library.PullToRefreshGridView
         xmlns:ptr="http://schemas.android.com/apk/res-auto"
         android:id="@+id/pull_refresh_grid"
         android:layout_height="fill_parent"

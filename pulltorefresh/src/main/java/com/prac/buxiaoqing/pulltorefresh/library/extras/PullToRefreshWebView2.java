@@ -21,7 +21,8 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.webkit.WebView;
 
-import com.handmark.pulltorefresh.library.PullToRefreshWebView;
+import com.prac.buxiaoqing.pulltorefresh.library.PullToRefreshBase;
+import com.prac.buxiaoqing.pulltorefresh.library.PullToRefreshWebView;
 
 /**
  * An advanced version of {@link PullToRefreshWebView} which delegates the
@@ -73,7 +74,7 @@ public class PullToRefreshWebView2 extends PullToRefreshWebView {
 		super(context, attrs);
 	}
 
-	public PullToRefreshWebView2(Context context, Mode mode) {
+	public PullToRefreshWebView2(Context context, PullToRefreshBase.Mode mode) {
 		super(context, mode);
 	}
 

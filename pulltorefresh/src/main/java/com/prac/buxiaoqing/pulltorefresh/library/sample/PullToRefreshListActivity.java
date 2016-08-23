@@ -32,13 +32,10 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.handmark.pulltorefresh.library.PullToRefreshBase;
-import com.handmark.pulltorefresh.library.PullToRefreshBase.Mode;
-import com.handmark.pulltorefresh.library.PullToRefreshBase.OnLastItemVisibleListener;
-import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
-import com.handmark.pulltorefresh.library.PullToRefreshBase.State;
-import com.handmark.pulltorefresh.library.PullToRefreshListView;
-import com.handmark.pulltorefresh.library.extras.SoundPullEventListener;
+import com.prac.buxiaoqing.pulltorefresh.library.PullToRefreshBase;
+import com.prac.buxiaoqing.pulltorefresh.library.PullToRefreshListView;
+import com.prac.buxiaoqing.pulltorefresh.library.extras.SoundPullEventListener;
+
 
 public final class PullToRefreshListActivity extends ListActivity {
 
@@ -60,7 +57,7 @@ public final class PullToRefreshListActivity extends ListActivity {
 		mPullRefreshListView = (PullToRefreshListView) findViewById(R.id.pull_refresh_list);
 
 		// Set a listener to be invoked when the list should be refreshed.
-		mPullRefreshListView.setOnRefreshListener(new OnRefreshListener<ListView>() {
+		mPullRefreshListView.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener<ListView>() {
 			@Override
 			public void onRefresh(PullToRefreshBase<ListView> refreshView) {
 				String label = DateUtils.formatDateTime(getApplicationContext(), System.currentTimeMillis(),
@@ -75,7 +72,7 @@ public final class PullToRefreshListActivity extends ListActivity {
 		});
 
 		// Add an end-of-list listener
-		mPullRefreshListView.setOnLastItemVisibleListener(new OnLastItemVisibleListener() {
+		mPullRefreshListView.setOnLastItemVisibleListener(new PullToRefreshBase.OnLastItemVisibleListener() {
 
 			@Override
 			public void onLastItemVisible() {
@@ -97,9 +94,9 @@ public final class PullToRefreshListActivity extends ListActivity {
 		 * Add Sound Event Listener
 		 */
 		SoundPullEventListener<ListView> soundListener = new SoundPullEventListener<ListView>(this);
-		soundListener.addSoundEvent(State.PULL_TO_REFRESH, R.raw.pull_event);
-		soundListener.addSoundEvent(State.RESET, R.raw.reset_sound);
-		soundListener.addSoundEvent(State.REFRESHING, R.raw.refreshing_sound);
+		soundListener.addSoundEvent(PullToRefreshBase.State.PULL_TO_REFRESH, R.raw.pull_event);
+		soundListener.addSoundEvent(PullToRefreshBase.State.RESET, R.raw.reset_sound);
+		soundListener.addSoundEvent(PullToRefreshBase.State.REFRESHING, R.raw.refreshing_sound);
 		mPullRefreshListView.setOnPullEventListener(soundListener);
 
 		// You can also just use setListAdapter(mAdapter) or
@@ -137,7 +134,7 @@ public final class PullToRefreshListActivity extends ListActivity {
 		menu.add(0, MENU_DISABLE_SCROLL, 1,
 				mPullRefreshListView.isScrollingWhileRefreshingEnabled() ? "Disable Scrolling while Refreshing"
 						: "Enable Scrolling while Refreshing");
-		menu.add(0, MENU_SET_MODE, 0, mPullRefreshListView.getMode() == Mode.BOTH ? "Change to MODE_PULL_DOWN"
+		menu.add(0, MENU_SET_MODE, 0, mPullRefreshListView.getMode() == PullToRefreshBase.Mode.BOTH ? "Change to MODE_PULL_DOWN"
 				: "Change to MODE_PULL_BOTH");
 		menu.add(0, MENU_DEMO, 0, "Demo");
 		return super.onCreateOptionsMenu(menu);
@@ -164,7 +161,7 @@ public final class PullToRefreshListActivity extends ListActivity {
 						: "Enable Scrolling while Refreshing");
 
 		MenuItem setModeItem = menu.findItem(MENU_SET_MODE);
-		setModeItem.setTitle(mPullRefreshListView.getMode() == Mode.BOTH ? "Change to MODE_FROM_START"
+		setModeItem.setTitle(mPullRefreshListView.getMode() == PullToRefreshBase.Mode.BOTH ? "Change to MODE_FROM_START"
 				: "Change to MODE_PULL_BOTH");
 
 		return super.onPrepareOptionsMenu(menu);
@@ -183,8 +180,8 @@ public final class PullToRefreshListActivity extends ListActivity {
 						.isScrollingWhileRefreshingEnabled());
 				break;
 			case MENU_SET_MODE:
-				mPullRefreshListView.setMode(mPullRefreshListView.getMode() == Mode.BOTH ? Mode.PULL_FROM_START
-						: Mode.BOTH);
+				mPullRefreshListView.setMode(mPullRefreshListView.getMode() == PullToRefreshBase.Mode.BOTH ? PullToRefreshBase.Mode.PULL_FROM_START
+						: PullToRefreshBase.Mode.BOTH);
 				break;
 			case MENU_DEMO:
 				mPullRefreshListView.demo();

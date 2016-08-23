@@ -25,11 +25,10 @@ import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.ImageView;
 
-import com.handmark.pulltorefresh.extras.viewpager.PullToRefreshViewPager;
-import com.handmark.pulltorefresh.library.PullToRefreshBase;
-import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
+import com.prac.buxiaoqing.pulltorefresh.library.PullToRefreshBase;
+import com.prac.buxiaoqing.pulltorefresh.library.ViewPager.PullToRefreshViewPager;
 
-public class PullToRefreshViewPagerActivity extends Activity implements OnRefreshListener<ViewPager> {
+public class PullToRefreshViewPagerActivity extends Activity implements PullToRefreshBase.OnRefreshListener<ViewPager> {
 
 	private PullToRefreshViewPager mPullToRefreshViewPager;
 

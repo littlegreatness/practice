@@ -20,11 +20,11 @@ import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.handmark.pulltorefresh.library.PullToRefreshBase;
-import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
-import com.handmark.pulltorefresh.library.extras.PullToRefreshWebView2;
+import com.prac.buxiaoqing.pulltorefresh.library.PullToRefreshBase;
+import com.prac.buxiaoqing.pulltorefresh.library.extras.PullToRefreshWebView2;
 
-public final class PullToRefreshWebView2Activity extends Activity implements OnRefreshListener<WebView> {
+
+public final class PullToRefreshWebView2Activity extends Activity implements PullToRefreshBase.OnRefreshListener<WebView> {
 
 	/** Called when the activity is first created. */
 	@Override

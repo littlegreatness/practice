@@ -18,12 +18,6 @@ package com.prac.buxiaoqing.pulltorefresh.library;
 import android.view.View;
 import android.view.animation.Interpolator;
 
-import com.handmark.pulltorefresh.library.PullToRefreshBase.Mode;
-import com.handmark.pulltorefresh.library.PullToRefreshBase.OnPullEventListener;
-import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
-import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener2;
-import com.handmark.pulltorefresh.library.PullToRefreshBase.State;
-
 public interface IPullToRefresh<T extends View> {
 
 	/**
@@ -43,7 +37,7 @@ public interface IPullToRefresh<T extends View> {
 	 * 
 	 * @return Mode that the view is currently in
 	 */
-	public Mode getCurrentMode();
+	public PullToRefreshBase.Mode getCurrentMode();
 
 	/**
 	 * Returns whether the Touch Events are filtered or not. If true is
@@ -91,7 +85,7 @@ public interface IPullToRefresh<T extends View> {
 	 * 
 	 * @return Mode that the view has been set to
 	 */
-	public Mode getMode();
+	public PullToRefreshBase.Mode getMode();
 
 	/**
 	 * Get the Wrapped Refreshable View. Anything returned here has already been
@@ -112,7 +106,7 @@ public interface IPullToRefresh<T extends View> {
 	/**
 	 * @return - The state that the View is currently in.
 	 */
-	public State getState();
+	public PullToRefreshBase.State getState();
 
 	/**
 	 * Whether Pull-to-Refresh is enabled
@@ -170,7 +164,7 @@ public interface IPullToRefresh<T extends View> {
 	 * 
 	 * @param mode - Mode to set the View to
 	 */
-	public void setMode(Mode mode);
+	public void setMode(PullToRefreshBase.Mode mode);
 
 	/**
 	 * Set OnPullEventListener for the Widget
@@ -178,21 +172,21 @@ public interface IPullToRefresh<T extends View> {
 	 * @param listener - Listener to be used when the Widget has a pull event to
 	 *            propogate.
 	 */
-	public void setOnPullEventListener(OnPullEventListener<T> listener);
+	public void setOnPullEventListener(PullToRefreshBase.OnPullEventListener<T> listener);
 
 	/**
 	 * Set OnRefreshListener for the Widget
 	 * 
 	 * @param listener - Listener to be used when the Widget is set to Refresh
 	 */
-	public void setOnRefreshListener(OnRefreshListener<T> listener);
+	public void setOnRefreshListener(PullToRefreshBase.OnRefreshListener<T> listener);
 
 	/**
 	 * Set OnRefreshListener for the Widget
 	 * 
 	 * @param listener - Listener to be used when the Widget is set to Refresh
 	 */
-	public void setOnRefreshListener(OnRefreshListener2<T> listener);
+	public void setOnRefreshListener(PullToRefreshBase.OnRefreshListener2<T> listener);
 
 	/**
 	 * Sets whether Overscroll support is enabled. This is different to

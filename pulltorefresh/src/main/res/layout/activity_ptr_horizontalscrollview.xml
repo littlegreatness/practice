@@ -6,7 +6,7 @@
 
     <!-- The PullToRefreshScrollView replaces a standard PullToRefreshScrollView widget. -->
 
-    <com.handmark.pulltorefresh.library.PullToRefreshHorizontalScrollView
+    <com.prac.buxiaoqing.pulltorefresh.library.PullToRefreshHorizontalScrollView
         xmlns:ptr="http://schemas.android.com/apk/res-auto"
         android:id="@+id/pull_refresh_horizontalscrollview"
         android:layout_width="fill_parent"
@@ -62,6 +62,6 @@
                 android:background="#ff669900" />
         </LinearLayout>
         
-    </com.handmark.pulltorefresh.library.PullToRefreshHorizontalScrollView>
+    </com.prac.buxiaoqing.pulltorefresh.library.PullToRefreshHorizontalScrollView>
 
 </LinearLayout>

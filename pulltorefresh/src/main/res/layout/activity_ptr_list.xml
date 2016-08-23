@@ -6,7 +6,7 @@
 
 <!--     The PullToRefreshListView replaces a standard ListView widget. -->
 
-    <com.handmark.pulltorefresh.library.PullToRefreshListView
+    <com.prac.buxiaoqing.pulltorefresh.library.PullToRefreshListView
         android:id="@+id/pull_refresh_list"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"

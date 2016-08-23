@@ -20,9 +20,9 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.ScrollView;
 
-import com.handmark.pulltorefresh.library.PullToRefreshBase;
-import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
-import com.handmark.pulltorefresh.library.PullToRefreshScrollView;
+import com.prac.buxiaoqing.pulltorefresh.library.PullToRefreshBase;
+import com.prac.buxiaoqing.pulltorefresh.library.PullToRefreshScrollView;
+
 
 public final class PullToRefreshScrollViewActivity extends Activity {
 
@@ -36,7 +36,7 @@ public final class PullToRefreshScrollViewActivity extends Activity {
 		setContentView(R.layout.activity_ptr_scrollview);
 
 		mPullRefreshScrollView = (PullToRefreshScrollView) findViewById(R.id.pull_refresh_scrollview);
-		mPullRefreshScrollView.setOnRefreshListener(new OnRefreshListener<ScrollView>() {
+		mPullRefreshScrollView.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener<ScrollView>() {
 
 			@Override
 			public void onRefresh(PullToRefreshBase<ScrollView> refreshView) {

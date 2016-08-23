@@ -26,9 +26,9 @@ import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView.ScaleType;
 
-import com.handmark.pulltorefresh.library.PullToRefreshBase.Mode;
-import com.handmark.pulltorefresh.library.PullToRefreshBase.Orientation;
-import com.handmark.pulltorefresh.library.R;
+import com.prac.buxiaoqing.pulltorefresh.library.PullToRefreshBase;
+import com.prac.buxiaoqing.pulltorefresh.library.sample.R;
+
 
 @SuppressLint("ViewConstructor")
 public class FlipLoadingLayout extends LoadingLayout {
@@ -37,10 +37,10 @@ public class FlipLoadingLayout extends LoadingLayout {
 
 	private final Animation mRotateAnimation, mResetRotateAnimation;
 
-	public FlipLoadingLayout(Context context, final Mode mode, final Orientation scrollDirection, TypedArray attrs) {
+	public FlipLoadingLayout(Context context, final PullToRefreshBase.Mode mode, final PullToRefreshBase.Orientation scrollDirection, TypedArray attrs) {
 		super(context, mode, scrollDirection, attrs);
 
-		final int rotateAngle = mode == Mode.PULL_FROM_START ? -180 : 180;
+		final int rotateAngle = mode == PullToRefreshBase.Mode.PULL_FROM_START ? -180 : 180;
 
 		mRotateAnimation = new RotateAnimation(0, rotateAngle, Animation.RELATIVE_TO_SELF, 0.5f,
 				Animation.RELATIVE_TO_SELF, 0.5f);
@@ -123,7 +123,7 @@ public class FlipLoadingLayout extends LoadingLayout {
 		float angle = 0f;
 		switch (mMode) {
 			case PULL_FROM_END:
-				if (mScrollDirection == Orientation.HORIZONTAL) {
+				if (mScrollDirection == PullToRefreshBase.Orientation.HORIZONTAL) {
 					angle = 90f;
 				} else {
 					angle = 180f;
@@ -131,7 +131,7 @@ public class FlipLoadingLayout extends LoadingLayout {
 				break;
 
 			case PULL_FROM_START:
-				if (mScrollDirection == Orientation.HORIZONTAL) {
+				if (mScrollDirection == PullToRefreshBase.Orientation.HORIZONTAL) {
 					angle = 270f;
 				}
 				break;

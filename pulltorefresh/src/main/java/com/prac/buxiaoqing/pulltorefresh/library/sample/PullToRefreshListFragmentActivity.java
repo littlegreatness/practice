@@ -24,12 +24,12 @@ import android.support.v4.app.FragmentActivity;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.handmark.pulltorefresh.extras.listfragment.PullToRefreshListFragment;
-import com.handmark.pulltorefresh.library.PullToRefreshBase;
-import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
-import com.handmark.pulltorefresh.library.PullToRefreshListView;
+import com.prac.buxiaoqing.pulltorefresh.library.PullToRefreshBase;
+import com.prac.buxiaoqing.pulltorefresh.library.PullToRefreshListView;
+import com.prac.buxiaoqing.pulltorefresh.library.listfragment.PullToRefreshListFragment;
 
-public final class PullToRefreshListFragmentActivity extends FragmentActivity implements OnRefreshListener<ListView> {
+
+public final class PullToRefreshListFragmentActivity extends FragmentActivity implements PullToRefreshBase.OnRefreshListener<ListView> {
 
 	private LinkedList<String> mListItems;
 	private ArrayAdapter<String> mAdapter;

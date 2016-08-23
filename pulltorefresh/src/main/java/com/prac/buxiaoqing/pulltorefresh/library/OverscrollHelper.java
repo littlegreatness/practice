@@ -19,8 +19,6 @@ import android.annotation.TargetApi;
 import android.util.Log;
 import android.view.View;
 
-import com.handmark.pulltorefresh.library.PullToRefreshBase.Mode;
-import com.handmark.pulltorefresh.library.PullToRefreshBase.State;
 
 @TargetApi(9)
 public final class OverscrollHelper {
@@ -121,7 +119,7 @@ public final class OverscrollHelper {
 		// Check that OverScroll is enabled and that we're not currently
 		// refreshing.
 		if (view.isPullToRefreshOverScrollEnabled() && !view.isRefreshing()) {
-			final Mode mode = view.getMode();
+			final PullToRefreshBase.Mode mode = view.getMode();
 
 			// Check that Pull-to-Refresh is enabled, and the event isn't from
 			// touch
@@ -141,7 +139,7 @@ public final class OverscrollHelper {
 						// If we're currently at zero, we're about to start
 						// overscrolling, so change the state
 						if (currentScrollValue == 0) {
-							view.setState(State.OVERSCROLLING);
+							view.setState(PullToRefreshBase.State.OVERSCROLLING);
 						}
 
 						view.setHeaderScroll((int) (scaleFactor * (currentScrollValue + newScrollValue)));
@@ -153,7 +151,7 @@ public final class OverscrollHelper {
 						// If we're currently at zero, we're about to start
 						// overscrolling, so change the state
 						if (currentScrollValue == 0) {
-							view.setState(State.OVERSCROLLING);
+							view.setState(PullToRefreshBase.State.OVERSCROLLING);
 						}
 
 						view.setHeaderScroll((int) (scaleFactor * (currentScrollValue + newScrollValue - scrollRange)));
@@ -161,13 +159,13 @@ public final class OverscrollHelper {
 				} else if (Math.abs(newScrollValue) <= fuzzyThreshold
 						|| Math.abs(newScrollValue - scrollRange) <= fuzzyThreshold) {
 					// Means we've stopped overscrolling, so scroll back to 0
-					view.setState(State.RESET);
+					view.setState(PullToRefreshBase.State.RESET);
 				}
-			} else if (isTouchEvent && State.OVERSCROLLING == view.getState()) {
+			} else if (isTouchEvent && PullToRefreshBase.State.OVERSCROLLING == view.getState()) {
 				// This condition means that we were overscrolling from a fling,
 				// but the user has touched the View and is now overscrolling
 				// from touch instead. We need to just reset.
-				view.setState(State.RESET);
+				view.setState(PullToRefreshBase.State.RESET);
 			}
 		}
 	}
