@@ -8,12 +8,12 @@
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/notification_template_part_chronometer.xml"
     },
     {
-        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
-        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_expanded_menu_layout.xml"
-    },
-    {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_expanded_menu_layout.xml"
     },
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
@@ -84,12 +84,12 @@
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/notification_media_action.xml"
     },
     {
-        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/layout/activity_youtube.xml",
-        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/src/main/res/layout/activity_youtube.xml"
-    },
-    {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/layout/activity_youtube.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/src/main/res/layout/activity_youtube.xml"
     },
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/layout/activity_main.xml",
