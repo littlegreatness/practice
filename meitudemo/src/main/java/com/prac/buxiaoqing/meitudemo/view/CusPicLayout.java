@@ -471,7 +471,7 @@ public class CusPicLayout extends ScrollView {
     /**
      * 前一行满3了,向后平移
      *
-     * @param x
+     * @param k
      * @param y
      */
     private void flowMove(int k, int y) {
@@ -710,8 +710,8 @@ public class CusPicLayout extends ScrollView {
         windowManager = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);// "window"
         windowManager.addView(iv, windowParams);
         dragView = iv;
-        if (dragEntity != null)
-            dragEntity.setImageView(dragView);
+//        if (dragEntity != null)
+//            dragEntity.setImageView(dragView);
     }
 
 

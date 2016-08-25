@@ -3,6 +3,7 @@ package com.prac.buxiaoqing.meitudemo.view;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
@@ -13,7 +14,9 @@ import com.bumptech.glide.Glide;
 import com.prac.buxiaoqing.meitudemo.model.PicEntity;
 import com.prac.buxiaoqing.meitudemo.util.CusLayoutUtil;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * author：buxiaoqing on 16/7/11 14:12
@@ -32,6 +35,8 @@ public class CusNumLayout extends LinearLayout {
     private int lineHeight;
 
     private HashMap<Integer, PicEntity> addDatas = new HashMap<>();
+
+    private List<ImageView> imgList = new ArrayList<>();
 
     public CusNumLayout(Context context) {
         this(context, null);
@@ -78,8 +83,7 @@ public class CusNumLayout extends LinearLayout {
             @Override
             public void run() {
                 for (int i = 0; i < datas.size(); i++) {
-                    PicEntity picEntity = datas.get(i);
-
+                    final PicEntity picEntity = datas.get(i);
                     ImageView imageView = new ImageView(context);
                     imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
                     if (picEntity.getResId() != null)
@@ -93,7 +97,18 @@ public class CusNumLayout extends LinearLayout {
                     int height = (int) (parentWidth / curNum * picEntity.getRate());
                     if (height < lineHeight)
                         lineHeight = height;
-                    picEntity.setImageView(imageView);
+
+                    imageView.setOnLongClickListener(new OnLongClickListener() {
+                        @Override
+                        public boolean onLongClick(View view) {
+                            picEntity.setSelected(true);
+                            return true;
+                        }
+                    });
+
+                    imgList.add(imageView);
+
+                    //picEntity.setImageView(imageView);
                 }
             }
         }.run();
@@ -135,8 +150,8 @@ public class CusNumLayout extends LinearLayout {
             picParams = new ViewGroup.LayoutParams(width, lineHeight);
             Log.d(TAG, "width = " + i + "   " + width);
             Log.d(TAG, "height = " + i + "   " + lineHeight);
-            entity.getImageView().setLayoutParams(picParams);
-            this.addView(entity.getImageView());
+            imgList.get(i).setLayoutParams(picParams);
+            this.addView(imgList.get(i));
         }
     }
 
@@ -179,27 +194,27 @@ public class CusNumLayout extends LinearLayout {
             index = curNum;
 
         if (index == 0) {
-            addDatas.get(0).getImageView().clearAnimation();
+            imgList.get(0).clearAnimation();
 
-            addDatas.get(0).getImageView().setAnimation(getMoveRight());
-            addDatas.get(0).getImageView().startAnimation(getMoveRight());
+            imgList.get(0).setAnimation(getMoveRight());
+            imgList.get(0).startAnimation(getMoveRight());
 
             log("move:00000000000");
 
         } else if (index == curNum) {
-            addDatas.get(curNum - 1).getImageView().clearAnimation();
+            imgList.get(curNum - 1).clearAnimation();
 
-            addDatas.get(curNum - 1).getImageView().setAnimation(getMoveLeft());
-            addDatas.get(curNum - 1).getImageView().startAnimation(getMoveLeft());
+            imgList.get(curNum - 1).setAnimation(getMoveLeft());
+            imgList.get(curNum - 1).startAnimation(getMoveLeft());
             log("move:33333333333");
         } else {
-            addDatas.get(index).getImageView().clearAnimation();
-            addDatas.get(index).getImageView().setAnimation(getMoveRight());
-            addDatas.get(index).getImageView().startAnimation(getMoveRight());
+            imgList.get(index).clearAnimation();
+            imgList.get(index).setAnimation(getMoveRight());
+            imgList.get(index).startAnimation(getMoveRight());
             log("move:=================");
-            addDatas.get(index - 1).getImageView().clearAnimation();
-            addDatas.get(index - 1).getImageView().setAnimation(getMoveLeft());
-            addDatas.get(index - 1).getImageView().startAnimation(getMoveLeft());
+            imgList.get(index - 1).clearAnimation();
+            imgList.get(index - 1).setAnimation(getMoveLeft());
+            imgList.get(index - 1).startAnimation(getMoveLeft());
         }
     }
 

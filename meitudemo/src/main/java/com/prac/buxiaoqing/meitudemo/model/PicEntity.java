@@ -17,7 +17,7 @@ public class PicEntity implements Serializable {
         this.resId = resId;
     }
 
-    private ImageView imageView;
+    //private ImageView imageView;
 
     private String resId;
 
@@ -31,22 +31,22 @@ public class PicEntity implements Serializable {
 
     private float rate;// height/width
 
-    public ImageView getImageView() {
-        return imageView;
-    }
-
-    public void setImageView(ImageView imageView) {
-        this.imageView = imageView;
-
-        if (imageView != null)
-            imageView.setOnLongClickListener(new View.OnLongClickListener() {
-                @Override
-                public boolean onLongClick(View view) {
-                    selected = true;
-                    return true;
-                }
-            });
-    }
+//    public ImageView getImageView() {
+//        return imageView;
+//    }
+//
+//    public void setImageView(ImageView imageView) {
+//        this.imageView = imageView;
+//
+//        if (imageView != null)
+//            imageView.setOnLongClickListener(new View.OnLongClickListener() {
+//                @Override
+//                public boolean onLongClick(View view) {
+//                    selected = true;
+//                    return true;
+//                }
+//            });
+//    }
 
     public boolean isSelected() {
         return selected;
