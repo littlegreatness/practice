@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import com.prac.buxiaoqing.meitudemo.view.CusNumLayout;
 import com.prac.buxiaoqing.meitudemo.view.CusPicLayout;
 import com.prac.buxiaoqing.meitudemo.view.CustomLabelLayout;
+import com.prac.buxiaoqing.meitudemo.view.OutScrollView;
 
 import java.util.ArrayList;
 
@@ -15,12 +16,14 @@ public class MainActivity extends AppCompatActivity {
     private CusNumLayout line;
     private CusPicLayout pic_layout;
 
+    private OutScrollView scrollView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        scrollView = (OutScrollView) findViewById(R.id.scrollView);
         ArrayList<String> pics = new ArrayList<>();
         pics.add("/storage/emulated/0/sina/weibo/weibo/img-84c5d2f84a55ffcbaaa359dd7e4d6d97.jpg");
         pics.add("/storage/emulated/0/sina/weibo/weibo/img-4ffc29ee7f651e715ec4d2007237e2e6.jpg");
@@ -34,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
         pic_layout = (CusPicLayout) findViewById(R.id.pic_layout);
 
         pic_layout.generateEnties(pics);
+
+        pic_layout.setScrollView(scrollView);
 
         pic_layout.initView();
 

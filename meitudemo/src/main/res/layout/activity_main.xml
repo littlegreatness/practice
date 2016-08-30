@@ -8,12 +8,37 @@
     android:orientation="vertical"
     tools:context="com.prac.buxiaoqing.meitudemo.MainActivity">
 
-    <com.prac.buxiaoqing.meitudemo.view.CusPicLayout
-        android:id="@+id/pic_layout"
+    <com.prac.buxiaoqing.meitudemo.view.OutScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="visible" />
+        android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:text="header" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="header" />
+
+
+            <com.prac.buxiaoqing.meitudemo.view.CusPicLayout
+                android:id="@+id/pic_layout"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </com.prac.buxiaoqing.meitudemo.view.OutScrollView>
 
 
 </LinearLayout>

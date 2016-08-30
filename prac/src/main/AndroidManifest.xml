@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.prac.buxiaoqing.prac">
 
@@ -8,16 +9,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
-         App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <!--
+         ATTENTION: This was auto-generated to add Google Play services to your project for
+         App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-        <activity android:name=".gif.MainActivity">
 
-        </activity>
+        <activity android:name=".gif.MainActivity"></activity>
         <activity android:name=".gif.jump_act" />
         <activity android:name=".gif.Animateact">
+
+        </activity>
+        <activity android:name=".gif.InnerScrollViewAct">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

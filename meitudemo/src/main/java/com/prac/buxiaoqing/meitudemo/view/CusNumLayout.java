@@ -105,10 +105,7 @@ public class CusNumLayout extends LinearLayout {
                             return true;
                         }
                     });
-
                     imgList.add(imageView);
-
-                    //picEntity.setImageView(imageView);
                 }
             }
         }.run();

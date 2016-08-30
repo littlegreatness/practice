@@ -10,13 +10,11 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ScrollView;
 
 import com.prac.buxiaoqing.meitudemo.model.PicEntity;
 
@@ -30,13 +28,13 @@ import java.util.Map;
  * author：buxiaoqing on 16/7/11 14:05
  * Just do IT(没有梦想,何必远方)
  */
-public class CusPicLayout extends ScrollView {
+public class CusPicLayout extends LinearLayout {
 
     private static final String TAG = CusPicLayout.class.getSimpleName();
     private static final int MAX_NUM_IN_LINE = 3;//一行最多3张
 
     private Context context;
-    private LinearLayout parentLinearLayout;//ScrollView下面的LinearLayout
+    //private LinearLayout parentLinearLayout;//ScrollView下面的LinearLayout
     private int width, height;
     private int curPics; //总共有几张图 == picEntities.size();
     private ArrayList<PicEntity> picEntities;
@@ -45,6 +43,12 @@ public class CusPicLayout extends ScrollView {
     private HashMap<Integer, CusNumLayout> cusNumLayouts = new HashMap<>();
 
     private LinearLayout.LayoutParams lineParams;
+
+    public void setScrollView(final OutScrollView scrollView) {
+        this.scrollView = scrollView;
+    }
+
+    private OutScrollView scrollView;
 
     ///////////////////////////////////////////
     private WindowManager windowManager;
@@ -75,14 +79,10 @@ public class CusPicLayout extends ScrollView {
     public CusPicLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         this.context = context;
-        LinearLayout.LayoutParams parentParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.MATCH_PARENT);
-        this.setLayoutParams(parentParams);
-
+        this.setOrientation(VERTICAL);
         windowManager = (WindowManager) getContext().getSystemService(Context.WINDOW_SERVICE);// "window"
         width = 660;
     }
-
 
     public void generateEnties(ArrayList<String> pics) {
         ArrayList<PicEntity> lists = new ArrayList();
@@ -129,27 +129,60 @@ public class CusPicLayout extends ScrollView {
         }
     }
 
-    private void setParentParams() {
-        height = curLines * width / MAX_NUM_IN_LINE;
-        LinearLayout.LayoutParams parentParams = new LinearLayout.LayoutParams(width, height);
-        parentLinearLayout = new LinearLayout(context);
-        parentLinearLayout.setLayoutParams(parentParams);
-        parentLinearLayout.setOrientation(LinearLayout.VERTICAL);
-        this.addView(parentLinearLayout);
-    }
-
     public void initView() {
-        setParentParams();
         lineHeight = width / MAX_NUM_IN_LINE;
         lineParams = new LinearLayout.LayoutParams(width, lineHeight);
         changeView();
+    }
 
+
+    @Override
+    public boolean onInterceptTouchEvent(MotionEvent ev) {
+
+        log("onInterceptTouchEvent");
+        if (ev.getAction() == MotionEvent.ACTION_DOWN) {
+            if(dragView != null){
+                scrollView.requestDisallowInterceptTouchEvent(true);
+            }
+        } else if (ev.getAction() == MotionEvent.ACTION_MOVE) {
+            for (int i = 0; i < picEntities.size(); i++) {
+                if (picEntities.get(i).isSelected()) {
+                    log("onInterceptTouchEvent     isOnDrag =" + (dragView != null));
+                    //获取长按的位置   为什么不是在ACTION_DOWN获取到的呢???
+                    log("onLongclick move  i= " + i + "  posX = " + picEntities.get(i).getPosX() + "  posY = " + picEntities.get(i).getPosY());
+                    //根据坐标获取指定位置图片
+                    PicEntity picEntity = picEntities.get(i);
+
+                    if (dragEntity == null)
+                        dragEntity = new PicEntity(picEntity.getResId());
+                    dragEntity.setPosX(picEntity.getPosX());
+                    dragEntity.setPosY(picEntity.getPosY());
+                    //TODO
+                    win_view_x = (int) ev.getRawX() - picEntity.getPosX() * width / cusNumLayouts.get(picEntity.getPosY()).getCurNum();//点击在VIEW上的相对位置
+                    win_view_y = (int) ev.getRawY() - getCurPosHeight(picEntity.getPosY());//点击在VIEW上的相对位置   有问题
+
+                    win_view_x = win_view_x / 3 * cusNumLayouts.get(picEntity.getPosY()).getCurNum();
+                    win_view_y = (int) (win_view_y / (cusNumLayouts.get(picEntity.getPosY()).getLineHeight() * 1f) * width / MAX_NUM_IN_LINE);
+
+                    Bitmap drawingCache = creatCacheImg(picEntity.getResId());
+                    startDrag(drawingCache, (int) ev.getRawX(), (int) ev.getRawY());
+                    return true;
+                }
+            }
+        } else if (ev.getAction() == MotionEvent.ACTION_UP) {
+
+        }
+
+        if(dragView != null){
+            scrollView.requestDisallowInterceptTouchEvent(true);
+        }
+        scrollView.setOnDrag((dragView != null));
+        return super.onInterceptTouchEvent(ev);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent ev) {
         log("onTouchEvent");
-
         //系统异常   IllegalArgumentException: pointerIndex out of range
         try {
             if (dragView != null) {
@@ -158,17 +191,17 @@ public class CusPicLayout extends ScrollView {
                 windowY = (int) ev.getRawY();
                 switch (ev.getAction()) {
                     case MotionEvent.ACTION_DOWN:
-                        log("ACTION_DOWN");
+                        log("onTouchEvent ACTION_DOWN isonDrag = " + (dragView != null));
                         break;
                     case MotionEvent.ACTION_MOVE:
-                        log("ACTION_MOVE");
+                        log("onTouchEvent ACTION_MOVEi isOnDrag = " + (dragView != null));
                         onDrag(windowX, windowY);
-                        break;
+                        requestDisallowInterceptTouchEvent(false);
+                        return true;
                     case MotionEvent.ACTION_UP:
-                        log("ACTION_UP");
+                        log("onTouchEvent ACTION_UP  isOnDrag = " + (dragView != null));
                         stopDrag();
                         onDrop(windowX, windowY);
-                        requestDisallowInterceptTouchEvent(false);
                         break;
                     default:
                         break;
@@ -179,8 +212,12 @@ public class CusPicLayout extends ScrollView {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        return super.onTouchEvent(ev);
+        scrollView.setOnDrag((dragView != null));
 
+        if(dragView != null){
+            scrollView.requestDisallowInterceptTouchEvent(true);
+        }
+        return super.onTouchEvent(ev);
     }
 
     private boolean isNewLine = false;
@@ -532,6 +569,7 @@ public class CusPicLayout extends ScrollView {
             windowParams.x = (int) rawX - win_view_x;
             windowParams.y = (int) rawY - win_view_y;
             windowManager.updateViewLayout(dragView, windowParams);
+            log("onDrag   updateViewLayout  isOnDrag = " + (dragView != null));
         }
         int[] ints = calDropPos((int) rawX, (int) rawY);
 
@@ -555,13 +593,13 @@ public class CusPicLayout extends ScrollView {
             moveY = y;
             if (isNewLine) {
                 //////////////////////TODO  第一行的问题   总是差了一行
-                View childBelow = parentLinearLayout.getChildAt(y);
+                View childBelow = this.getChildAt(y);
                 if (childBelow != null) {
                     childBelow.clearAnimation();
                     childBelow.startAnimation(moveDown());
                 }
                 if (y - 1 >= 0) {
-                    View childUp = parentLinearLayout.getChildAt(y - 1);
+                    View childUp = this.getChildAt(y - 1);
                     if (childUp != null) {
                         childUp.clearAnimation();
                         childUp.startAnimation(moveUp());
@@ -598,36 +636,6 @@ public class CusPicLayout extends ScrollView {
         return moveDown;
     }
 
-    @Override
-    public boolean onInterceptTouchEvent(MotionEvent ev) {
-        log("onInterceptTouchEvent");
-        if (ev.getAction() == MotionEvent.ACTION_MOVE) {
-            for (int i = 0; i < picEntities.size(); i++) {
-                if (picEntities.get(i).isSelected()) {
-                    //获取长按的位置   为什么不是在ACTION_DOWN获取到的呢???
-                    log("onLongclick move  i= " + i + "  posX = " + picEntities.get(i).getPosX() + "  posY = " + picEntities.get(i).getPosY());
-                    //根据坐标获取指定位置图片
-                    PicEntity picEntity = picEntities.get(i);
-
-                    if (dragEntity == null)
-                        dragEntity = new PicEntity(picEntity.getResId());
-                    dragEntity.setPosX(picEntity.getPosX());
-                    dragEntity.setPosY(picEntity.getPosY());
-                    //TODO
-                    win_view_x = (int) ev.getRawX() - picEntity.getPosX() * width / cusNumLayouts.get(picEntity.getPosY()).getCurNum();//点击在VIEW上的相对位置
-                    win_view_y = (int) ev.getRawY() - getCurPosHeight(picEntity.getPosY());//点击在VIEW上的相对位置   有问题
-
-                    win_view_x = win_view_x / 3 * cusNumLayouts.get(picEntity.getPosY()).getCurNum();
-                    win_view_y = (int) (win_view_y / (cusNumLayouts.get(picEntity.getPosY()).getLineHeight() * 1f) * width / MAX_NUM_IN_LINE);
-
-                    Bitmap drawingCache = creatCacheImg(picEntity.getResId());
-                    startDrag(drawingCache, (int) ev.getRawX(), (int) ev.getRawY());
-                    return true;
-                }
-            }
-        }
-        return super.onInterceptTouchEvent(ev);
-    }
 
     private int getCurPosHeight(int posY) {
         int height = 0;
@@ -683,6 +691,7 @@ public class CusPicLayout extends ScrollView {
         clearSelected();
     }
 
+
     /**
      * 开始拖拽
      *
@@ -705,13 +714,11 @@ public class CusPicLayout extends ScrollView {
                 | WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN;
         this.windowParams.format = PixelFormat.TRANSLUCENT;
         this.windowParams.windowAnimations = 0;
-        ImageView iv = new ImageView(context);
-        iv.setImageBitmap(dragBitmap);
+        ImageView tempImag = new ImageView(context);
+        tempImag.setImageBitmap(dragBitmap);
         windowManager = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);// "window"
-        windowManager.addView(iv, windowParams);
-        dragView = iv;
-//        if (dragEntity != null)
-//            dragEntity.setImageView(dragView);
+        windowManager.addView(tempImag, windowParams);
+        dragView = tempImag;
     }
 
 
@@ -720,7 +727,7 @@ public class CusPicLayout extends ScrollView {
      */
     private void clearLinesDatas() {
         cusNumLayouts.clear();
-        parentLinearLayout.removeAllViews();
+        this.removeAllViews();
     }
 
     /**
@@ -750,13 +757,26 @@ public class CusPicLayout extends ScrollView {
         curLines = cusNumLayouts.size();
         if (getDragEntity() != null)
             log("changeView drag posX =" + getDragEntity().getPosX() + " posY = " + getDragEntity().getPosY());
-        for (int i = 0; i < curLines; i++) {
-            CusNumLayout cusNumLayout = cusNumLayouts.get(i);
-            cusNumLayout.setDatas(i);
-            cusNumLayout.buildView();
-            parentLinearLayout.addView(cusNumLayouts.get(i));
-            log("changeView 刷新行  =" + i + "该行有  =" + cusNumLayout.getCurNum() + " 张");
+
+        Iterator<Map.Entry<Integer, CusNumLayout>> iterator = cusNumLayouts.entrySet().iterator();
+
+        height = 0;
+        while (iterator.hasNext()) {
+            Map.Entry<Integer, CusNumLayout> next = iterator.next();
+            CusNumLayout value = next.getValue();
+            value.setDatas(next.getKey());
+            value.buildView();
+            height += value.getLineHeight();
+            this.addView(value, next.getKey());
+            log("changeView 刷新行  =" + next.getKey() + "该行有  =" + value.getCurNum() + " 张" + "   height= " + height);
         }
+
+        LinearLayout.LayoutParams params = (LayoutParams) this.getLayoutParams();
+        params.height = height;
+        params.width = width;
+        setLayoutParams(params);
+
+        log("changeView height  =" + this.getLayoutParams().height + "  child count =" + getChildCount());
     }
 
     private void log(String msg) {

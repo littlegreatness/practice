@@ -1,10 +1,5 @@
 package com.prac.buxiaoqing.meitudemo.model;
 
-import android.util.Log;
-import android.view.MotionEvent;
-import android.view.View;
-import android.widget.ImageView;
-
 import java.io.Serializable;
 
 /**
@@ -30,23 +25,6 @@ public class PicEntity implements Serializable {
     private int width, height;
 
     private float rate;// height/width
-
-//    public ImageView getImageView() {
-//        return imageView;
-//    }
-//
-//    public void setImageView(ImageView imageView) {
-//        this.imageView = imageView;
-//
-//        if (imageView != null)
-//            imageView.setOnLongClickListener(new View.OnLongClickListener() {
-//                @Override
-//                public boolean onLongClick(View view) {
-//                    selected = true;
-//                    return true;
-//                }
-//            });
-//    }
 
     public boolean isSelected() {
         return selected;
