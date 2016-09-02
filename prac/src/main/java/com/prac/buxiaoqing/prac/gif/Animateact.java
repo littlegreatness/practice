@@ -12,6 +12,7 @@ import android.widget.Button;
 
 import com.prac.buxiaoqing.prac.R;
 import com.prac.buxiaoqing.prac.gif.view.AnimateView;
+import com.prac.buxiaoqing.prac.gif.view.ProgressView;
 
 
 public class Animateact extends AppCompatActivity {
@@ -20,7 +21,7 @@ public class Animateact extends AppCompatActivity {
     private Button button;
 
     private boolean isDown;
-
+    private ProgressView progress;
     private Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
@@ -47,7 +48,8 @@ public class Animateact extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animate_act);
         button = (Button) findViewById(R.id.button);
-
+        progress = (ProgressView) findViewById(R.id.progress);
+        progress.setTotalTime(15 * 1000);
 
         button.setOnTouchListener(
                 new View.OnTouchListener() {
@@ -75,6 +77,28 @@ public class Animateact extends AppCompatActivity {
 
     }
 
+
+    long starttime;
+
+    public void progress(View v) {
+        v.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+
+                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                    starttime = System.currentTimeMillis();
+                    progress.clear();
+                    progress.setCurrentState(ProgressView.State.START);
+
+                } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                    progress.setCurrentState(ProgressView.State.PAUSE);
+                    progress.putProgressList((int) (System.currentTimeMillis() - starttime));
+
+                }
+                return false;
+            }
+        });
+    }
 
     public void play(final View view) {
 

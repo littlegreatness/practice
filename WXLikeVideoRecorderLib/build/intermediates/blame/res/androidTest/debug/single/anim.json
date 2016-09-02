@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/WXLikeVideoRecorderLib/build/intermediates/res/merged/androidTest/debug/anim/focus_animation.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/WXLikeVideoRecorderLib/build/intermediates/bundles/debug/res/anim/focus_animation.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/WXLikeVideoRecorderLib/build/intermediates/res/merged/androidTest/debug/anim/indicator_animation.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/WXLikeVideoRecorderLib/build/intermediates/bundles/debug/res/anim/indicator_animation.xml"
+    }
+]

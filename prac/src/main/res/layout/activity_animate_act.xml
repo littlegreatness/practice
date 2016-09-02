@@ -11,4 +11,25 @@
         android:text="play" />
 
 
+    <LinearLayout
+        android:layout_below="@+id/button"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.prac.buxiaoqing.prac.gif.view.ProgressView
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="6dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="progress"
+            android:text="进度条" />
+    </LinearLayout>
+
+
+
 </RelativeLayout>

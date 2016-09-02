@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.example.gif.view.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.prac.buxiaoqing.prac.gif.view.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:cus="http://schemas.android.com/apk/res-auto"
     android:id="@+id/rootView"
     android:layout_width="match_parent"
@@ -10,7 +10,7 @@
 
     <include layout="@layout/menu_layout" />
 
-    <com.example.gif.view.MainLayout
+    <com.prac.buxiaoqing.prac.gif.view.MainLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -19,7 +19,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <com.example.gif.view.FsgifView
+            <com.prac.buxiaoqing.prac.gif.view.FsgifView
                 android:id="@+id/gifView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -44,6 +44,7 @@
 
             </LinearLayout>
 
+
             <EditText
                 android:id="@+id/et_content"
                 android:layout_width="match_parent"
@@ -54,7 +55,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
                 <Button
                     android:layout_width="wrap_content"
@@ -68,26 +70,27 @@
                     android:onClick="play"
                     android:text="播放动画" />
 
+                <Button
+                    android:id="@+id/jump"
+                    style="@style/MaterialAnimations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="jump"
+                    android:text="跳转动画"
+                    android:transitionName="jump" />
+
+                <Button
+                    style="@style/MaterialAnimations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="praise"
+                    android:text="点赞动画"
+                    android:transitionName="jump" />
+
             </LinearLayout>
 
 
-            <Button
-                android:id="@+id/jump"
-                android:transitionName="jump"
-                style="@style/MaterialAnimations"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="jump"
-                android:text="跳转动画" />
-
-            <Button
-                android:transitionName="jump"
-                style="@style/MaterialAnimations"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="praise"
-                android:text="点赞动画" />
         </LinearLayout>
 
-    </com.example.gif.view.MainLayout>
-</com.example.gif.view.DragLayout>
+    </com.prac.buxiaoqing.prac.gif.view.MainLayout>
+</com.prac.buxiaoqing.prac.gif.view.DragLayout>

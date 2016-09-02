@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.prac.buxiaoqing.prac">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,17 +23,23 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".gif.MainActivity"></activity>
-        <activity android:name=".gif.jump_act" />
-        <activity android:name=".gif.Animateact">
+        <activity android:name=".gif.MainActivity">
 
         </activity>
-        <activity android:name=".gif.InnerScrollViewAct">
+        <activity android:name=".gif.jump_act" />
+        <activity android:name=".gif.Animateact">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity android:name=".gif.PlayVideoActiviy"></activity>
+        <activity android:name=".gif.RecordVedioAct"></activity>
+        <activity android:name=".gif.InnerScrollViewAct"></activity>
+        <activity android:name=".gif.SpringAct">
+
         </activity>
     </application>
 
