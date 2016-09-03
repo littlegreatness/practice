@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/build/intermediates/res/merged/debug/layout/example_row_view.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/src/main/res/layout/example_row_view.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/build/intermediates/res/merged/debug/layout/origami_example.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/src/main/res/layout/origami_example.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/build/intermediates/res/merged/debug/layout/spring_scroll_view_example.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/src/main/res/layout/spring_scroll_view_example.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/build/intermediates/res/merged/debug/layout/activity_playground.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/src/main/res/layout/activity_playground.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/build/intermediates/res/merged/debug/layout/photo_scale_example.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/src/main/res/layout/photo_scale_example.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/build/intermediates/res/merged/debug/layout/row_view.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/src/main/res/layout/row_view.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/build/intermediates/res/merged/debug/layout/cascade_effect.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/src/main/res/layout/cascade_effect.xml"
+    }
+]

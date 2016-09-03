@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/build/intermediates/res/merged/debug/drawable/row_background.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/src/main/res/drawable/row_background.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/build/intermediates/res/merged/debug/drawable/rebound_tiles.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/src/main/res/drawable/rebound_tiles.xml"
+    }
+]

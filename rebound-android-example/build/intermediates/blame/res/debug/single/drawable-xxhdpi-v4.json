@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-example/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/landscape.png",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-example/src/main/res/drawable-xxhdpi/landscape.png"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-example/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/rebound_icon.png",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-example/src/main/res/drawable-xxhdpi/rebound_icon.png"
+    }
+]

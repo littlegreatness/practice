@@ -1,0 +1,22 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+  compile fileTree(include: ['*.jar'], dir: 'libs')
+  compile project(':rebound-android')
+}
+
+android {
+
+
+  compileSdkVersion 23
+  buildToolsVersion "23.0.0"
+
+  defaultConfig {
+    applicationId "com.facebook.rebound.androidplayground"
+    versionCode 1
+    versionName "1.0"
+    minSdkVersion 10
+    targetSdkVersion 14
+  }
+
+}

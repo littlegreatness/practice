@@ -1,0 +1,6 @@
+int drawable landscape 0x7f020000
+int drawable rebound_icon 0x7f020001
+int id image_view 0x7f040001
+int id root_view 0x7f040000
+int id spring_configurator 0x7f040002
+int layout main 0x7f030000

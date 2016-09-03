@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="armeabi-v7a,armeabi"
+    api-level="19"
+    density="xhdpi"
+    format="7"
+    timestamp="25150580774501"
+    token="0" >
+
+    <task
+        name="javac"
+        duration="0" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="0" />
+    <task
+        name="verifier"
+        duration="0" />
+
+    <artifact
+        location="/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-example/build/intermediates/res/resources-debug.ap_"
+        type="RESOURCES" />
+
+</instant-run>
