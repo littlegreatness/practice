@@ -52,12 +52,12 @@
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
-        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png",
-        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
-    },
-    {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png",
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_longpressed_holo.9.png",

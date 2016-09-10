@@ -4,12 +4,12 @@
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/src/main/res/drawable-xhdpi/feedback.png"
     },
     {
-        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_launcher.png",
-        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/src/main/res/drawable-xhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/build/intermediates/res/merged/debug/drawable-xhdpi-v4/selected_photo.png",
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/src/main/res/drawable-xhdpi/selected_photo.png"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_launcher.png",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/src/main/res/drawable-xhdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/build/intermediates/res/merged/debug/drawable-xhdpi-v4/rebound_icon.png",
