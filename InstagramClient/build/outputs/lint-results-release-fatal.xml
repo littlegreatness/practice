@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 25.2.2">
+
+    <issue
+        id="ReferenceType"
+        severity="Fatal"
+        message="Unexpected resource reference type; expected value of type `@integer/`"
+        category="Correctness"
+        priority="8"
+        summary="Incorrect reference types"
+        explanation="When you generate a resource alias, the resource you are pointing to must be of the same type as the alias"
+        errorLine1="    &lt;integer name=&quot;slide_interpolator&quot;>@android:anim/accelerate_decelerate_interpolator&lt;/integer>"
+        errorLine2="                                       ^"
+        quickfix="studio">
+        <location
+            file="/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/values/style.xml"
+            line="50"
+            column="40"/>
+    </issue>
+
+</issues>

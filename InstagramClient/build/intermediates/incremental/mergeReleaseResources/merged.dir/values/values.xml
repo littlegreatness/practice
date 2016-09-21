@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#D32F2F</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="footer_button_bg">@color/primary_lighter</color>
+    <color name="footer_numbers">@color/primary_text</color>
+    <color name="footer_pointer">#ffffff</color>
+    <color name="footer_text">@color/divider</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="primary_light">#C5CAE9</color>
+    <color name="primary_lighter">#445CC1</color>
+    <color name="primary_text">#212121</color>
+    <color name="rippelColor">#FFFFFF</color>
+    <color name="secondary_text">#727272</color>
+    <declare-styleable name="Fab"><attr format="color" name="fab_base_colour"/><attr format="color" name="fab_pressed_colour"/></declare-styleable>
+    <declare-styleable name="RippleView"><attr format="integer" name="rv_alpha"/><attr format="integer" name="rv_framerate"/><attr format="integer" name="rv_rippleDuration"/><attr format="integer" name="rv_zoomDuration"/><attr format="color" name="rv_color"/><attr format="boolean" name="rv_centered"/><attr format="enum" name="rv_type"><enum name="simpleRipple" value="0"/><enum name="doubleRipple" value="1"/><enum name="rectangle" value="2"/></attr><attr format="dimension" name="rv_ripplePadding"/><attr format="boolean" name="rv_zoom"/><attr format="float" name="rv_zoomScale"/></declare-styleable>
+    <dimen name="eight_dp">8dp</dimen>
+    <dimen name="fab_2nd_margin">75dp</dimen>
+    <dimen name="fab_diameter">@dimen/one_inrement</dimen>
+    <dimen name="fab_margins">@dimen/screen_edge_space</dimen>
+    <dimen name="fab_padding">@dimen/screen_edge_space</dimen>
+    <dimen name="footer_elevation">5dp</dimen>
+    <dimen name="footer_height">@dimen/one_inrement</dimen>
+    <dimen name="footer_number_height">35dp</dimen>
+    <dimen name="footer_text_height">30dp</dimen>
+    <dimen name="four_dp">4dp</dimen>
+    <dimen name="grid_spacing">1px</dimen>
+    <dimen name="half_header_contracted">28dp</dimen>
+    <dimen name="header_contracted">@dimen/one_inrement</dimen>
+    <dimen name="header_elevation">10dp</dimen>
+    <dimen name="header_expanded">120dp</dimen>
+    <dimen name="one_inrement">56dp</dimen>
+    <dimen name="screen_edge_space">16dp</dimen>
+    <dimen name="second_screen_edge_space">72dp</dimen>
+    <dimen name="six_dp">6dp</dimen>
+    <dimen name="space">16dp</dimen>
+    <dimen name="user_image_elevation">10dp</dimen>
+    <dimen name="user_image_fourty_dp">40dp</dimen>
+    <integer name="slide_duration">@android:integer/config_mediumAnimTime</integer>
+    <integer name="slide_interpolator">@android:anim/accelerate_decelerate_interpolator</integer>
+    <string name="account_key">account_key</string>
+    <string name="app_name">Instragram Client</string>
+    <string name="cache_json_to_memory">cache_json_to_memory</string>
+    <string name="cache_to_disk">cach_to_memory</string>
+    <string name="cache_to_memory">cache_to_memory</string>
+    <string name="clear_cache_key">clear_cache_key</string>
+    <string name="crop_borders_key">crop_borders_key</string>
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Apptheme" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="android:colorPrimary">@color/primary_dark</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/secondary_text</item>
+
+
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowSharedElementEnterTransition">
+            @transition/change_image_transform
+        </item>
+        <item name="android:windowSharedElementExitTransition">
+            @transition/change_image_transform
+        </item>
+    </style>
+    <style name="HeaderFooterNumberViews" parent="@android:style/TextAppearance.Medium">
+        <item name="android:text">10</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">@dimen/footer_number_height</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:textColor">@color/footer_numbers</item>
+        <!--<item name="android:alpha">0</item>-->
+    </style>
+    <style name="HeaderFooterTextViews" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/footer_text_height</item>
+        <item name="android:gravity">top|center_horizontal</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/footer_text</item>
+        <!--<item name="android:alpha">0</item>-->
+    </style>
+</resources>

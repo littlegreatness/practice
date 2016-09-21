@@ -3,12 +3,18 @@ package com.prac.buxiaoqing.testapp;
 /**
  * author：buxiaoqing on 9/21/16 10:25
  * Just do IT(没有梦想,何必远方)
+ *
+ * Espresso测试
+ *
  */
 
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
 import android.test.suitebuilder.annotation.LargeTest;
 
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -32,17 +38,33 @@ public class MainActivityInstrumentationTest {
     public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<>(
             MainActivity.class);
 
-    @Test
+    @Test(timeout = 1000)
     public void sayHello() {
         onView(withId(R.id.editText)).perform(typeText(STRING_TO_BE_TYPED), closeSoftKeyboard()); //line 1
 
         onView(withText("Say hello!")).perform(click()); //line 2
 
-        String expectedText = PRE_FIXED + STRING_TO_BE_TYPED+"!";
+        String expectedText = PRE_FIXED + STRING_TO_BE_TYPED + "!";
         onView(withId(R.id.textView)).check(matches(withText(expectedText))); //line 3
     }
 
 
+    @After
+    public void finish() {
+
+    }
+
+
+    @AfterClass
+    public void after() {
+
+    }
+
+
+    @BeforeClass
+    public void before() {
+
+    }
 
 
 }

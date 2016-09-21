@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/release/drawable/instagram.png",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/drawable/instagram.png"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/release/drawable/add_comment.png",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/drawable/add_comment.png"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/release/drawable/user_place_holder.png",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/drawable/user_place_holder.png"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/release/drawable/heart.png",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/drawable/heart.png"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/release/drawable/shape_rounded.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/exploded-aar/com.github.traex.rippleeffect/library/1.2.3/res/drawable/shape_rounded.xml"
+    }
+]

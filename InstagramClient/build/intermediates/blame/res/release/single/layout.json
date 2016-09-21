@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/release/layout/upper_header_fragment.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/layout/upper_header_fragment.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/release/layout/posts_grid_item.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/layout/posts_grid_item.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/release/layout/main.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/release/layout/lower_post_fragment.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/layout/lower_post_fragment.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/release/layout/preference_screen_space.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/layout/preference_screen_space.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/release/layout/posts_list_item.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/layout/posts_list_item.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/release/layout/user_fragment.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/layout/user_fragment.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/release/layout/posts_grid_fragment.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/layout/posts_grid_fragment.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/release/layout/fabs_fragment.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/layout/fabs_fragment.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/release/layout/post_fragment.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/layout/post_fragment.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/release/layout/users_fragment.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/layout/users_fragment.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/release/layout/comment.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/layout/comment.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/release/layout/users_list_item.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/layout/users_list_item.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/release/layout/header_fragment_states.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/layout/header_fragment_states.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/release/layout/upper_post_fragment.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/layout/upper_post_fragment.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/release/layout/posts_lists_fragment.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/layout/posts_lists_fragment.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/release/layout/lower_header_fragment.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/layout/lower_header_fragment.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/release/layout/post_activity.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/layout/post_activity.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/release/layout/comments_header.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/layout/comments_header.xml"
+    }
+]
