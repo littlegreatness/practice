@@ -5,7 +5,11 @@
     <color name="crop__button_text">#666666</color>
     <color name="crop__selector_focused">#77000000</color>
     <color name="crop__selector_pressed">#1a000000</color>
-    <declare-styleable name="CropImageView"><attr format="reference|color" name="highlightColor"/><attr format="boolean" name="showThirds"/><attr format="boolean" name="showCircle"/><attr name="showHandles"><enum name="changing" value="0"/><enum name="always" value="1"/><enum name="never" value="2"/></attr></declare-styleable>
+    <declare-styleable name="CropImageView"><attr format="reference|color" name="highlightColor"/><attr format="boolean" name="showThirds"/><attr format="boolean" name="showCircle"/><attr name="showHandles">
+          <enum name="changing" value="0"/>
+          <enum name="always" value="1"/>
+          <enum name="never" value="2"/>
+        </attr></declare-styleable>
     <dimen name="crop__bar_height">56dp</dimen>
     <string name="crop__cancel" ns1:ignore="ButtonCase">CANCEL</string>
     <string name="crop__done">DONE</string>

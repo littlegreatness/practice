@@ -1,13 +1,13 @@
 package com.prac.buxiaoqing.prac.gif;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.ScrollView;
 
 import com.prac.buxiaoqing.prac.R;
 import com.prac.buxiaoqing.prac.gif.view.InnerScrollView;
 
-public class InnerScrollViewAct extends AppCompatActivity {
+public class InnerScrollViewAct extends Activity {
 
 
     private ScrollView s1;

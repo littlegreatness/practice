@@ -100,7 +100,7 @@ public class BounceLayout extends LinearLayout {
                             ViewCompat.setTranslationY(getChildAt(0), dy);
                         }
                     }
-                    return true;
+                    return false;
                 }
 
                 break;
@@ -118,7 +118,7 @@ public class BounceLayout extends LinearLayout {
 
                 if (direction != DIRECTION_NONE) {
                     direction = DIRECTION_NONE;
-                    return true;
+                    return false;
 
                 }
 

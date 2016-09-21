@@ -1,12 +1,12 @@
 package com.prac.buxiaoqing.prac.gif;
 
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActivityOptionsCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.transition.Fade;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -29,7 +29,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
     private static final String TAG = MainActivity.class.getSimpleName();
     private HashMap<String, Integer> matchMap;
     FsgifView gifView;

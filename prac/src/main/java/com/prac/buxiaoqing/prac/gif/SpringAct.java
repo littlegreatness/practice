@@ -1,6 +1,6 @@
 package com.prac.buxiaoqing.prac.gif;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -13,7 +13,7 @@ import com.facebook.rebound.SpringSystem;
 import com.nineoldandroids.view.ViewHelper;
 import com.prac.buxiaoqing.prac.R;
 
-public class SpringAct extends AppCompatActivity {
+public class SpringAct extends Activity {
 
     private ImageView dragIv;
     SpringSystem springSys = SpringSystem.create();

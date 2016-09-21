@@ -116,12 +116,12 @@
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_action_menu_item_layout.xml"
     },
     {
-        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
-        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_action_mode_bar.xml"
-    },
-    {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_action_mode_bar.xml"
     },
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",

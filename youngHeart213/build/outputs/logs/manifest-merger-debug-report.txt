@@ -31,7 +31,6 @@ uses-sdk
 ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/youngHeart213/src/main/AndroidManifest.xml:11:5-13:41
 MERGED from [Practice:androidLib2122:unspecified] /Users/buxiaoqing/AndroidStudioProjects/Practice/youngHeart213/build/intermediates/exploded-aar/Practice/androidLib2122/unspecified/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/youngHeart213/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/youngHeart213/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:21:5-23:54
 	tools:overrideLibrary
 		ADDED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/youngHeart213/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
@@ -45,7 +44,6 @@ MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStu
 application
 ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/youngHeart213/src/main/AndroidManifest.xml:15:5-58:19
 MERGED from [Practice:androidLib2122:unspecified] /Users/buxiaoqing/AndroidStudioProjects/Practice/youngHeart213/build/intermediates/exploded-aar/Practice/androidLib2122/unspecified/AndroidManifest.xml:11:5-16:19
-MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/youngHeart213/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/youngHeart213/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/youngHeart213/src/main/AndroidManifest.xml:19:9-41

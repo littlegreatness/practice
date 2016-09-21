@@ -1,9 +1,9 @@
 package com.prac.buxiaoqing.prac.gif;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -15,7 +15,7 @@ import com.prac.buxiaoqing.prac.gif.view.AnimateView;
 import com.prac.buxiaoqing.prac.gif.view.ProgressView;
 
 
-public class Animateact extends AppCompatActivity {
+public class Animateact extends Activity {
 
     private String TAG = "Animateact";
     private Button button;

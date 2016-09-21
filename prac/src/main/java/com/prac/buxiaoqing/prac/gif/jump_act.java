@@ -1,10 +1,10 @@
 package com.prac.buxiaoqing.prac.gif;
 
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
 import android.support.v4.app.ActivityOptionsCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.transition.Fade;
 import android.transition.Slide;
@@ -14,7 +14,7 @@ import android.widget.Button;
 
 import com.prac.buxiaoqing.prac.R;
 
-public class jump_act extends AppCompatActivity {
+public class jump_act extends Activity {
 
     Button back;
 
