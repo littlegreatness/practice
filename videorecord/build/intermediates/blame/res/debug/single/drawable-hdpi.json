@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi/button.png",
-        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/button.png"
-    },
-    {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi/progress_bar_grey.9.png",
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/progress_bar_grey.9.png"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi/button.png",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/button.png"
     },
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi/video_text04.png",
@@ -72,12 +72,12 @@
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/guide_text.png"
     },
     {
-        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi/icn_zoomin_pressed.png",
-        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/icn_zoomin_pressed.png"
-    },
-    {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi/video_text03.png",
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/video_text03.png"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi/icn_zoomin_pressed.png",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/icn_zoomin_pressed.png"
     },
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi/btn_lightgreen_bg_pressed.9.png",
