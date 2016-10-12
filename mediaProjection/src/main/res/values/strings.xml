@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">xx银行客户端注意事项</string>
+    <string name="app_name1">MediaProjection</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
