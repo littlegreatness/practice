@@ -6620,12 +6620,12 @@
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/drawable-hdpi/ic_input_white_48dp.png"
     },
     {
-        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/debug/drawable-hdpi/ic_settings_cell_white_24dp.png",
-        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/drawable-hdpi/ic_settings_cell_white_24dp.png"
-    },
-    {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/debug/drawable-hdpi/ic_pageview_black_36dp.png",
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/drawable-hdpi/ic_pageview_black_36dp.png"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/debug/drawable-hdpi/ic_settings_cell_white_24dp.png",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/drawable-hdpi/ic_settings_cell_white_24dp.png"
     },
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/debug/drawable-hdpi/ic_query_builder_black_36dp.png",

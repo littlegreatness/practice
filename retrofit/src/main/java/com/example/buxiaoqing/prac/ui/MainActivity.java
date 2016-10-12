@@ -9,7 +9,7 @@ import com.example.buxiaoqing.prac.R;
 
 
 /**
- * Retrofir教程，分五篇，这里是Demo，我是夜闪冰，英文名是ysbing，希望大家学习愉快
+ * Retrofit教程，分五篇，这里是Demo，我是夜闪冰，英文名是ysbing，希望大家学习愉快
  *
  * @author ysbing
  * @date 20160105
