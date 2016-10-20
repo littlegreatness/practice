@@ -31,6 +31,7 @@ public class Decoration extends RecyclerView.ItemDecoration {
         int left = parent.getPaddingLeft();
         int right = parent.getWidth() - parent.getPaddingRight();
         final int childCount = parent.getChildCount();
+        //根据childCount数量还添加分割线，并且最后一个item不添加
         for (int i = 0; i < childCount - 1; i++) {
             final View child = parent.getChildAt(i);
             final RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) child.getLayoutParams();
