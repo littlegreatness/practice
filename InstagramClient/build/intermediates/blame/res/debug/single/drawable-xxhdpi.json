@@ -1380,12 +1380,12 @@
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/drawable-xxhdpi/ic_assignment_return_grey600_18dp.png"
     },
     {
-        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_view_week_white_18dp.png",
-        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/drawable-xxhdpi/ic_view_week_white_18dp.png"
-    },
-    {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_grade_white_18dp.png",
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/drawable-xxhdpi/ic_grade_white_18dp.png"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_view_week_white_18dp.png",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/drawable-xxhdpi/ic_view_week_white_18dp.png"
     },
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_settings_phone_white_24dp.png",
@@ -3980,12 +3980,12 @@
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/drawable-xxhdpi/ic_delete_black_36dp.png"
     },
     {
-        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_alarm_on_black_36dp.png",
-        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/drawable-xxhdpi/ic_alarm_on_black_36dp.png"
-    },
-    {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_swap_vert_black_48dp.png",
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/drawable-xxhdpi/ic_swap_vert_black_48dp.png"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_alarm_on_black_36dp.png",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/drawable-xxhdpi/ic_alarm_on_black_36dp.png"
     },
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_dashboard_grey600_48dp.png",

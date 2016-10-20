@@ -156,12 +156,12 @@
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/btn_dialog_normal.png"
     },
     {
-        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi/icn_save_pressed.png",
-        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/icn_save_pressed.png"
-    },
-    {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi/guide_icn_close.png",
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/guide_icn_close.png"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi/icn_save_pressed.png",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/icn_save_pressed.png"
     },
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi/guide_btn.png",

@@ -24,12 +24,12 @@
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
-        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_default.xml"
-    },
-    {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_default.xml"
     },
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",

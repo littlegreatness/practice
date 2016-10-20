@@ -14,6 +14,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <!--
          ATTENTION: This was auto-generated to add Google Play services to your project for
          App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -22,23 +23,25 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".gif.MainActivity">
-
-        </activity>
+        <activity android:name=".gif.MainActivity"></activity>
         <activity android:name=".gif.jump_act" />
         <activity android:name=".gif.Animateact">
+
+        </activity>
+        <activity android:name=".gif.PlayVideoActiviy" />
+        <activity android:name=".gif.RecordVedioAct" />
+        <activity android:name=".gif.InnerScrollViewAct" />
+        <activity android:name=".gif.SpringAct"></activity>
+        <activity
+            android:name=".gif.Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-        </activity>
-        <activity android:name=".gif.PlayVideoActiviy"></activity>
-        <activity android:name=".gif.RecordVedioAct"></activity>
-        <activity android:name=".gif.InnerScrollViewAct"></activity>
-        <activity android:name=".gif.SpringAct">
-
         </activity>
     </application>
+
 </manifest>

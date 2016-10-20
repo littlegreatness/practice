@@ -39,7 +39,6 @@
     <dimen name="user_image_elevation">10dp</dimen>
     <dimen name="user_image_fourty_dp">40dp</dimen>
     <integer name="slide_duration">@android:integer/config_mediumAnimTime</integer>
-    <integer name="slide_interpolator">@android:anim/accelerate_decelerate_interpolator</integer>
     <string name="account_key">account_key</string>
     <string name="app_name">Instragram Client</string>
     <string name="cache_json_to_memory">cache_json_to_memory</string>

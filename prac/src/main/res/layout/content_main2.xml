@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.prac.buxiaoqing.prac.gif.Main2Activity"
+    tools:showIn="@layout/activity_main2">
+
+    <com.prac.buxiaoqing.prac.gif.view.MainLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <com.prac.buxiaoqing.prac.gif.view.MImageView
+            android:id="@+id/MImageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/pic"></com.prac.buxiaoqing.prac.gif.view.MImageView>
+    </com.prac.buxiaoqing.prac.gif.view.MainLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <com.prac.buxiaoqing.prac.gif.view.MImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/pic"></com.prac.buxiaoqing.prac.gif.view.MImageView>
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -710,27 +710,8 @@
                     "startLine": 41,
                     "startColumn": 4,
                     "startOffset": 2673,
-                    "endColumn": 97,
-                    "endOffset": 2766
-                },
-                "from": {
-                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/values/style.xml",
-                    "position": {
-                        "startLine": 49,
-                        "startColumn": 4,
-                        "startOffset": 2272,
-                        "endColumn": 97,
-                        "endOffset": 2365
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 42,
-                    "startColumn": 4,
-                    "startOffset": 2771,
                     "endColumn": 51,
-                    "endOffset": 2818
+                    "endOffset": 2720
                 },
                 "from": {
                     "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/values/strings.xml",
@@ -745,11 +726,11 @@
             },
             {
                 "to": {
-                    "startLine": 43,
+                    "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 2823,
+                    "startOffset": 2725,
                     "endColumn": 54,
-                    "endOffset": 2873
+                    "endOffset": 2775
                 },
                 "from": {
                     "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/values/strings.xml",
@@ -764,11 +745,11 @@
             },
             {
                 "to": {
-                    "startLine": 44,
+                    "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 2878,
+                    "startOffset": 2780,
                     "endColumn": 69,
-                    "endOffset": 2943
+                    "endOffset": 2845
                 },
                 "from": {
                     "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/values/preference_strings.xml",
@@ -783,11 +764,11 @@
             },
             {
                 "to": {
-                    "startLine": 45,
+                    "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 2948,
+                    "startOffset": 2850,
                     "endColumn": 56,
-                    "endOffset": 3000
+                    "endOffset": 2902
                 },
                 "from": {
                     "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/values/preference_strings.xml",
@@ -802,11 +783,11 @@
             },
             {
                 "to": {
-                    "startLine": 46,
+                    "startLine": 45,
                     "startColumn": 4,
-                    "startOffset": 3005,
+                    "startOffset": 2907,
                     "endColumn": 59,
-                    "endOffset": 3060
+                    "endOffset": 2962
                 },
                 "from": {
                     "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/values/preference_strings.xml",
@@ -821,11 +802,11 @@
             },
             {
                 "to": {
-                    "startLine": 47,
+                    "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 3065,
+                    "startOffset": 2967,
                     "endColumn": 59,
-                    "endOffset": 3120
+                    "endOffset": 3022
                 },
                 "from": {
                     "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/values/preference_strings.xml",
@@ -840,11 +821,11 @@
             },
             {
                 "to": {
-                    "startLine": 48,
+                    "startLine": 47,
                     "startColumn": 4,
-                    "startOffset": 3125,
+                    "startOffset": 3027,
                     "endColumn": 61,
-                    "endOffset": 3182
+                    "endOffset": 3084
                 },
                 "from": {
                     "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/values/preference_strings.xml",
@@ -859,12 +840,12 @@
             },
             {
                 "to": {
-                    "startLine": 49,
+                    "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 3187,
-                    "endLine": 51,
+                    "startOffset": 3089,
+                    "endLine": 50,
                     "endColumn": 12,
-                    "endOffset": 3315
+                    "endOffset": 3217
                 },
                 "from": {
                     "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/exploded-aar/com.github.traex.rippleeffect/library/1.2.3/res/values/values.xml",
@@ -880,12 +861,12 @@
             },
             {
                 "to": {
-                    "startLine": 52,
+                    "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 3320,
-                    "endLine": 71,
+                    "startOffset": 3222,
+                    "endLine": 70,
                     "endColumn": 12,
-                    "endOffset": 4323
+                    "endOffset": 4225
                 },
                 "from": {
                     "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/values/style.xml",
@@ -901,12 +882,12 @@
             },
             {
                 "to": {
-                    "startLine": 72,
+                    "startLine": 71,
                     "startColumn": 4,
-                    "startOffset": 4328,
-                    "endLine": 80,
+                    "startOffset": 4230,
+                    "endLine": 79,
                     "endColumn": 12,
-                    "endOffset": 4840
+                    "endOffset": 4742
                 },
                 "from": {
                     "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/values/style.xml",
@@ -922,12 +903,12 @@
             },
             {
                 "to": {
-                    "startLine": 81,
+                    "startLine": 80,
                     "startColumn": 4,
-                    "startOffset": 4845,
-                    "endLine": 88,
+                    "startOffset": 4747,
+                    "endLine": 87,
                     "endColumn": 12,
-                    "endOffset": 5302
+                    "endOffset": 5204
                 },
                 "from": {
                     "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/values/style.xml",

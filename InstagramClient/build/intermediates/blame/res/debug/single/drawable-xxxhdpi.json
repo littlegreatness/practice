@@ -4032,12 +4032,12 @@
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/drawable-xxxhdpi/ic_stars_white_36dp.png"
     },
     {
-        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_group_work_grey600_24dp.png",
-        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/drawable-xxxhdpi/ic_group_work_grey600_24dp.png"
-    },
-    {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_view_week_black_48dp.png",
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/drawable-xxxhdpi/ic_view_week_black_48dp.png"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_group_work_grey600_24dp.png",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/src/main/res/drawable-xxxhdpi/ic_group_work_grey600_24dp.png"
     },
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/InstagramClient/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_settings_overscan_black_24dp.png",

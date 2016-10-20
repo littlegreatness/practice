@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Users/buxiaoqing/AndroidStudioProjects/Practice/WXLikeVideoRecorderLib/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 485,
+                    "endColumn": 53,
+                    "endOffset": 534
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/WXLikeVideoRecorderLib/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 53,
+                        "endOffset": 104
+                    }
+                }
+            }
+        ]
+    }
+]
