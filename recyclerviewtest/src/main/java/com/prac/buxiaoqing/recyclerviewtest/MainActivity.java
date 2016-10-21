@@ -64,7 +64,10 @@ public class MainActivity extends AppCompatActivity {
     private static String[] getDatas() {
         String[] str = new String[COUNT];
         for (int i = 0; i < COUNT; i++) {
-            str[i] = "I am No." + i;
+            if (i != COUNT - 1)
+                str[i] = "I am No." + i + "  ->";
+            else
+                str[i] = "I am No." + i;
         }
         return str;
     }
