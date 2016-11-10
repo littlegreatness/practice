@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ButterKnifeTest</string>
+
+    <string-array name="knife">
+        <item>黄油刀</item>
+        <item>匕首</item>
+        <item>解剖刀</item>
+    </string-array>
+
+</resources>

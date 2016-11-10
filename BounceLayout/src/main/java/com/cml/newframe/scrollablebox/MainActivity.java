@@ -10,6 +10,8 @@ import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import main.java.com.anno.PrintMe;
+
 public class MainActivity extends AppCompatActivity {
     private GridView gridview;
 
@@ -45,13 +47,14 @@ public class MainActivity extends AppCompatActivity {
                 if (view == null) {
                     view = LayoutInflater.from(getApplicationContext()).inflate(R.layout.item, null);
                 }
-                ((TextView)view.findViewById(R.id.tv)).setText(strs[i]);
+                ((TextView) view.findViewById(R.id.tv)).setText(strs[i]);
 
                 return view;
             }
         });
     }
 
+    @PrintMe(layoutId = 10086, des = "description...")
     public void click(View v) {
         Toast.makeText(this, "点击：" + ((TextView) v).getText(), Toast.LENGTH_SHORT).show();
     }

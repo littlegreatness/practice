@@ -3,13 +3,15 @@ package com.prac.buxiaoqing.prac.gif;
 import java.util.Iterator;
 import java.util.LinkedList;
 
+import main.java.com.anno.PrintMe;
+
 /**
  * author：buxiaoqing on 16/7/26 14:03
  * Just do IT(没有梦想,何必远方)
  */
 public class prac {
 
-
+    @PrintMe(des = "ss")
     public static void main(String[] args) {
 
 //        String str = "We are happy";
@@ -39,7 +41,7 @@ public class prac {
 //        System.out.println(" string = " +  Integer .parseInt(str));
     }
 
-    public static  void reverse() {
+    public static void reverse() {
         LinkedList<Integer> list = new LinkedList<>();
         LinkedList<Integer> templist = new LinkedList<>();
         int i = 0;
@@ -58,13 +60,13 @@ public class prac {
         System.out.println(list);
     }
 
-    public static   void sort(Integer[] list){
+    public static void sort(Integer[] list) {
         int length = list.length;
-        for ( int i = 0; i < length ; i ++ ) {
-            for(int j = i ; j < length ; j ++){
-                if(list [i] > list[j] ){
+        for (int i = 0; i < length; i++) {
+            for (int j = i; j < length; j++) {
+                if (list[i] > list[j]) {
                     int temp = list[i];
-                    list[i ] = list[j];//把较大的数换到后面去
+                    list[i] = list[j];//把较大的数换到后面去
                     list[j] = temp;
                 }
             }
