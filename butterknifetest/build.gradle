@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-//apply plugin: 'android-apt'
+apply plugin: 'android-apt'
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.0"
@@ -14,9 +14,9 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         // Java8需要jack工具链支持
-        jackOptions {
-            enabled true
-        }
+//        jackOptions {
+//            enabled true
+//        }
 
     }
     buildTypes {
@@ -25,7 +25,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    // 指定编译版本
+    //指定编译版本
 //    compileOptions {
 //        targetCompatibility = '1.8'
 //        sourceCompatibility = '1.8'
@@ -37,11 +37,15 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.jakewharton:butterknife:8.4.0'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile project(':myknifelibrary')
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.jakewharton.scalpel:scalpel:1.1.2'
-    testCompile 'junit:junit:4.12'
-    compile files('libs/AnnoProcessor.jar')
     compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    compile 'com.android.support:design:24.2.1'
+    testCompile 'junit:junit:4.12'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    //add for butterknife
+    compile 'com.jakewharton:butterknife:8.4.0'
+    compile project(':waveviewlibrary')
+    compile project(':waveview2library')
 }

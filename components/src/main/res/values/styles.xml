@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="__AppTheme.Base" parent="android:Theme">
+        <!--<item name="colorPrimary">@color/__colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/__colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/__colorAccentRed</item>-->
+    </style>
+
+    <style name="__DTIntro" />
+
+    <style name="__DTIntro.Title">
+        <item name="android:layout_marginTop">100dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="__DTIntro.FeatureContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+
+    <style name="__DTIntro.Content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_marginBottom">48dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="__DTIntro.ContentText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="__DTIntro.ContentText.Left" parent="__DTIntro.ContentText">
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="__DTIntro.ContentText.Message" parent="__DTIntro.ContentText">
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+    <style name="__DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/__slide_down_dialog</item>
+        <item name="android:windowExitAnimation">@anim/__slide_up_dialog</item>
+    </style>
+
+    <style name="__DialogSlide" parent="@android:style/Theme.Dialog">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowAnimationStyle">@style/__DialogAnimation</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="__QuickDialog" />
+    <style name="__QuickDialog.Item" />
+
+    <style name="__QuickDialog.Item.Layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="__QuickDialog.Item.Title">
+        <item name="android:textColor">@color/__primary_text</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="__QuickDialog.Item.Description">
+        <item name="android:textColor">@color/__secondary_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

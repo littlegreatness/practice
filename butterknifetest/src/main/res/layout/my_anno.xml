@@ -12,7 +12,7 @@
     tools:context="com.prac.buxiaoqing.butterknifetest.MainActivity">
 
     <TextView
-        android:id="@+id/text1"
+        android:id="@+id/text_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -20,7 +20,7 @@
         android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/text2"
+        android:id="@+id/text_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"

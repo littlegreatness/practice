@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.text1)
     TextView tv;
     //批量绑定
-    @BindViews({R.id.text1, R.id.text2, R.id.text3})
+    @BindViews({R.id.text1, R.id.text2, R.id.text3, R.id.text4})
     List<TextView> textViews;
 
     @BindColor(R.color.colorPrimaryDark)
@@ -55,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.listView)
     mScrollView listView;
-    private mViewGroup mView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +62,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ButterKnife.bind(this);
-        mView = (mViewGroup) findViewById(R.id.mView);
 
         sp = this.getSharedPreferences("my_sp", MODE_PRIVATE);
         sp.registerOnSharedPreferenceChangeListener(new SharedPreferences.OnSharedPreferenceChangeListener() {
@@ -123,10 +121,13 @@ public class MainActivity extends AppCompatActivity {
                     }
                 })
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(strings1 -> {
-                    adapter.clear();
-                    adapter.addAll(strings1);
-                    adapter.notifyDataSetChanged();
+                .subscribe(new Action1<List<String>>() {
+                    @Override
+                    public void call(List<String> strings) {
+                        adapter.clear();
+                        adapter.addAll(strings);
+                        adapter.notifyDataSetChanged();
+                    }
                 });
 
         //批量操作
@@ -148,6 +149,10 @@ public class MainActivity extends AppCompatActivity {
                                 view.setText(strings[2]);
                                 view.setTextColor(color3);
                                 break;
+                            case 3:
+                                view.setText(strings[3]);
+                                view.setTextColor(color3);
+                                break;
                         }
                     }
                 }
@@ -167,15 +172,19 @@ public class MainActivity extends AppCompatActivity {
 
 
     //将多个id绑定到一个方法里
-    @OnClick({R.id.text1, R.id.text2, R.id.text3})
+    @OnClick({R.id.text1, R.id.text2, R.id.text3, R.id.text4})
     public void click(View view) {
+        Intent intent;
         if (view.getId() == R.id.text1) {
-            //Toast.makeText(getApplicationContext(), "text1 cilck", Toast.LENGTH_SHORT).show();
+            intent = new Intent(this, myanno.class);
         } else if (view.getId() == R.id.text2) {
-            Toast.makeText(getApplicationContext(), "text2 cilck", Toast.LENGTH_SHORT).show();
+            intent = new Intent(this, Scalpel.class);
         } else if (view.getId() == R.id.text3) {
-            Toast.makeText(getApplicationContext(), "text3 cilck", Toast.LENGTH_SHORT).show();
+            intent = new Intent(this, WaveViewActivity.class);
+        } else {
+            intent = new Intent(this, WaveView2Activity.class);
         }
+        startActivity(intent);
     }
 
     //将多个id绑定到一个方法里

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    style="@style/__DTList.Item"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/__dt_title"
+        android:layout_toLeftOf="@+id/__dt_switcher"
+        android:layout_alignParentLeft="true"
+        style="@style/__DTList.Header"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/__dt_title"
+        android:layout_toLeftOf="@+id/__dt_switcher"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/__dt_content"/>
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/__dt_switcher"
+        android:textOn="On"
+        android:textOff="Off"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+</RelativeLayout>

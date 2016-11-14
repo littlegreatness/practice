@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dt="http://schemas.android.com/apk/res-auto"
+    style="@style/__DTDialog.Floating">
+
+    <com.exyui.android.debugbottle.components.widgets.__FloatingDialogHeaderLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/__floating_header"
+        dt:__dt_title="@string/__dt_black_box_testing"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/__dt_test_report"/>
+
+        <com.exyui.android.debugbottle.components.widgets.DTListItemSwitch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/__dt_network_switcher"
+            dt:__dt_smart="true"
+            dt:__dt_title="@string/__dt_network_listener"/>
+
+        <View style="@style/__DTList.Divider" />
+
+        <com.exyui.android.debugbottle.components.widgets.DTListItemSwitch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/__dt_strict_switcher"
+            dt:__dt_smart="true"
+            dt:__dt_title="@string/__dt_strict_mode" />
+
+        <View style="@style/__DTList.Divider" />
+
+        <com.exyui.android.debugbottle.components.widgets.DTListItemSwitch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/__dt_leak_canary_switcher"
+            dt:__dt_smart="true"
+            dt:__dt_title="@string/__dt_leak_canary" />
+
+        <View style="@style/__DTList.Divider" />
+
+        <com.exyui.android.debugbottle.components.widgets.DTListItemSwitch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/__dt_block_canary_switcher"
+            dt:__dt_smart="true"
+            dt:__dt_title="@string/__dt_block_canary"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/__dt_enable_testing_environment"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="#2196F3"
+            android:id="@+id/__dt_apply_and_restart"
+            android:text="@string/__dt_apply_and_restart"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="#2196F3"
+            android:id="@+id/__dt_run_test"
+            android:text="@string/__dt_run_test"/>
+
+    </LinearLayout>
+
+</LinearLayout>

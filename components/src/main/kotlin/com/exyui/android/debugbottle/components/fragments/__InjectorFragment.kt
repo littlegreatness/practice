@@ -1,0 +1,137 @@
+package com.exyui.android.debugbottle.components.fragments
+
+import android.app.AlertDialog
+import android.os.Bundle
+import android.support.annotation.IdRes
+import android.text.Editable
+import android.text.TextWatcher
+import android.view.*
+import android.widget.EditText
+import android.widget.ListView
+import com.exyui.android.debugbottle.components.DTInstaller
+import com.exyui.android.debugbottle.components.R
+import com.exyui.android.debugbottle.components.SearchableListViewHelper
+import com.exyui.android.debugbottle.components.injector.AllActivities
+import com.exyui.android.debugbottle.components.injector.InjectableAdapter
+import com.exyui.android.debugbottle.components.injector.IntentInjector
+import com.exyui.android.debugbottle.components.injector.RunnableInjector
+
+/**
+ * Created by yuriel on 9/3/16.
+ */
+class __InjectorFragment: __ContentFragment() {
+    private var rootView: View? = null
+
+    companion object {
+        val TYPE = "type"
+        val TYPE_RUNNABLE = 0x11
+        val TYPE_INTENT = 0x22
+        val TYPE_ALL_ACTIVITIES = 0x33
+
+        fun newInstance(type: Int): __InjectorFragment {
+            val f = __InjectorFragment()
+            val arg = Bundle()
+            arg.putInt(TYPE, type)
+            f.arguments = arg
+            return f
+        }
+    }
+
+    private val type: Int by lazy {
+        arguments.getInt(TYPE, TYPE_ALL_ACTIVITIES)
+    }
+
+    private val adapter by lazy {
+        val injectable = when (type) {
+            TYPE_RUNNABLE -> RunnableInjector
+            TYPE_INTENT -> {
+                IntentInjector.setActivity(context!!)
+                IntentInjector
+            }
+            TYPE_ALL_ACTIVITIES -> AllActivities(context!!)
+            else -> throw NotImplementedError("$type is not implemented")
+        }
+        InjectableAdapter(injectable)
+    }
+
+    private val editText by lazy {
+        val result = findViewById(R.id.edit_text) as EditText
+        result.addTextChangedListener(object: TextWatcher {
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+
+            }
+
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+                val pattern = SearchableListViewHelper.getPattern(s.toString())
+                adapter.highlight(pattern, s.toString())
+            }
+        })
+        result
+    }
+
+    private val list by lazy {
+        val result = findViewById(R.id.list_view) as ListView
+        result.adapter = adapter
+        result.onItemClickListener = adapter
+        result
+    }
+
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+        val rootView = inflater.inflate(R.layout.__activity_injector, container, false)
+        this.rootView = rootView
+        list; editText
+        if (type != TYPE_ALL_ACTIVITIES) {
+            setHasOptionsMenu(true)
+        }
+        return rootView
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater?) {
+        menu.add(R.string.__dt_how_to_use)
+                .setIcon(R.drawable.__ic_lightbulb_outline_black_24dp)
+                .setOnMenuItemClickListener {
+                    showHelper()
+                    true
+                }
+                .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS)
+    }
+
+    private fun showHelper() {
+        val builder = AlertDialog.Builder(activity)
+                .setIcon(R.drawable.__ic_lightbulb_outline_black_24dp)
+                .setTitle(R.string.__dt_injector_help)
+        when(type) {
+            TYPE_INTENT -> builder.setMessage(R.string.__dt_intent_injector_introduction)
+            TYPE_RUNNABLE -> builder.setMessage(R.string.__dt_runnable_injector_introduction)
+            else -> builder
+        }
+                .setPositiveButton(R.string.__dt_next) { dialog, witch ->
+                    showStepOne()
+                }
+                .setNegativeButton(R.string.__dt_close) { dialog, witch -> }
+                .show()
+    }
+
+    private fun showStepOne() {
+        val packageName = DTInstaller.injectorClassName
+        val builder = AlertDialog.Builder(activity)
+                .setIcon(R.drawable.__ic_lightbulb_outline_black_24dp)
+                .setTitle(R.string.__dt_step_one)
+        if (null == packageName) {
+            builder.setMessage(R.string.__dt_injector_step_one_no_package_message)
+        } else {
+            builder.setMessage(getString(R.string.__dt_injector_step_one_message, packageName))
+        }
+                .setNegativeButton(R.string.__dt_close) { dialog, witch -> }
+                .show()
+    }
+
+    private fun findViewById(@IdRes id: Int): View? {
+        return rootView?.findViewById(id)
+    }
+}

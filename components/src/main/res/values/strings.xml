@@ -1,0 +1,174 @@
+<resources>
+    <string name="__dt_component_name">components</string>
+
+    <string name="__warn">WARN</string>
+    <string name="__busy">BUSY</string>
+    <string name="__idle">IDLE</string>
+    <string name="__filter">filter</string>
+    <string name="__run">Run</string>
+    <string name="__run_activity_with_intent">Run activity with intent</string>
+    <string name="__cancel">Cancel</string>
+    <string name="__string">String</string>
+    <string name="__ic_char_delete">❌</string>
+    <string name="__intent_content_hint">Input an intent extra split key and value by a SPACE and end by an ENTER.</string>
+    <string name="__package">package:</string>
+    <string name="__sp_editor_title">Shared Preferences Editor</string>
+    <string name="__delete">delete</string>
+    <string name="__save">save</string>
+    <string name="__true">true</string>
+    <string name="__false">false</string>
+    <string name="__start">start</string>
+    <string name="__dt_run_test">run test</string>
+    <string name="__dt_block_threshold">Block Threshold (default: 500ms)</string>
+    <string name="__dt_network_listener">Network Listener</string>
+    <string name="__dt_okhttp_listener_switcher">Okhttp listener switcher</string>
+    <string name="__dt_sp_title">Shared Preferences Editor</string>
+    <string name="__dt_setting_title">Debug Tools Setting</string>
+    <string name="__dt_strict_mode">Strict Mode</string>
+    <string name="__dt_strict_mode_switcher">Using Android Strict Mode when startup</string>
+    <string name="__dt_3d_window">3D View Controller</string>
+    <string name="__dt_3d_window_switcher">Show 3D window</string>
+    <string name="__dt_leak_canary">Leak Canary</string>
+    <string name="__dt_leak_canary_switcher">Enable Leak Canary (need restart application)</string>
+    <string name="__dt_block_canary_switcher">Enable Block Canary</string>
+    <string name="__dt_block_canary">Block Canary</string>
+
+    <string name="__dt_drawer_open">__dt_drawer_open</string>
+    <string name="__dt_drawer_close">__dt_drawer_close</string>
+
+    <string name="__dt_status">Debug Bottle Status</string>
+    <string name="__dt_all_activities">All Activities</string>
+    <string name="__dt_sp_viewer">Shared Preferences Editor</string>
+    <string name="__dt_leaks">Leak Reports</string>
+    <string name="__dt_blocks">Block Reports</string>
+    <string name="__dt_network_traffics">Network Traffics Reports</string>
+    <string name="__dt_crashes">Crash Reports</string>
+    <string name="__dt_black_box_testing">Black-box Testing</string>
+    <string name="__dt_feedback">Feedback</string>
+    <string name="__dt_project">Open source project</string>
+    <string name="__dt_intents">Intent Entries</string>
+    <string name="__dt_runnable">Runnable Entries</string>
+    <string name="__dt_settings">Settings</string>
+    <string name="__dt_submit">submit</string>
+    <string name="__dt_put">put</string>
+    <string name="__dt_enable_switcher">Enable Debug Bottle Notifications(need restart)</string>
+    <string name="__dt_bottle_enable">Debug Bottle Report</string>
+    <string name="__dt_permissions">Debug Bottle Permissions</string>
+    <string name="__dt_permission_request">request</string>
+    <string name="__dt_toggles">Quick Toggles</string>
+
+    <string name="__dt_granted">Granted</string>
+    <string name="__dt_denied">Denied</string>
+    <string name="__dt_on_off">on / off</string>
+    <string name="__dt_if_crashes_see_this">** If your app starts crashing when enable this, click me to help you solve this problem.</string>
+    <string name="__dt_application_process">App Process</string>
+    <string name="__dt_kill_process">Kill proc</string>
+    <string name="__dt_bottle">Debug Bottle</string>
+    <string name="__dt_bottle_version">version 1.0.0EAP</string>
+    <string name="__dt_finish">Close</string>
+    <string name="__dt_running_feature">Running Services Status</string>
+    <string name="__dt_bottle_feature">Debug Bottle</string>
+    <string name="__dt_net_work_feature">Network Reporting</string>
+    <string name="__dt_strict_mode_feature">Strict Mode</string>
+    <string name="__dt_3d_feature">3D Controller Window</string>
+    <string name="__dt_leak_canary_feature">Leak Canary</string>
+    <string name="__dt_block_canary_feature">Block Canary</string>
+    <string name="__dt_running">Running</string>
+    <string name="__dt_stopped">Stopped</string>
+    <string name="__dt_write_external_storage">Write external storage</string>
+    <string name="__dt_read_phone_state">Read phone state</string>
+    <string name="__dt_system_alert_window">System alert window</string>
+
+    <string name="__dt_need_permissions">Needs permissions</string>
+    <string name="__dt_permission_message">To work correctly, Debug Bottle needs permissions. You must allow access to at least these permissions. To check permissions now, please click CHECK button.</string>
+    <string name="__dt_check">check</string>
+    <string name="__dt_not_now">not now</string>
+
+    <string name="__dt_need_enable_dt">Enable Debug Bottle now!</string>
+    <string name="__dt_enable_dt_message">Debug Bottle is disabled. Now you can enable Debug Bottle\'s all features. Do you want to enable now? Or you can enable at \"settings\" later.</string>
+    <string name="__dt_enable">enable</string>
+    <string name="__dt_later">later</string>
+
+    <string name="__dt_need_kill_proc">Well done! Now try to kill process to restart Application.</string>
+    <string name="__dt_kill_proc">kill process</string>
+    <string name="__dt_kill_success">Process killed. Click App icon to relaunch.</string>
+
+    <string name="__dt_need_restart_after_apply">The feature setting will apply after kill process.</string>
+    <string name="__dt_information">Info</string>
+    <string name="__dt_help">Help</string>
+    <string name="__dt_share">Share</string>
+
+    <string name="__dt_info">Debug Bottle</string>
+    <string name="__dt_info_introduction">An Android debug / develop tools written using Kotlin language.\n\nIf you like my work, please star this open source project on Github.</string>
+    <string name="__dt_github">github</string>
+    <string name="__dt_close">close</string>
+    <string name="__dt_full_url">FULL URL</string>
+    <string name="__dt_copy">copy</string>
+    <string name="__dt_open_in_browser">open in browser</string>
+    <string name="__dt_copied">URL has copied to your clipboard.</string>
+
+    <string name="__dt_intro_title_welcome">Welcome to use Debug Bottle!</string>
+    <string name="__dt_intro_title_check_permission">Checkup permission</string>
+    <string name="__dt_intro_title_enable_features">Enable Debug Bottle</string>
+    <string name="__dt_intro_title_done">Well done!</string>
+    <string name="__dt_intro_content_debug_runtime">Debug codes at Runtime</string>
+    <string name="__dt_intro_content_find_bug">Find bug automatically</string>
+    <string name="__dt_intro_content_view_reports">View reports at any time</string>
+    <string name="__dt_intro_content_more_feature">More amazing features</string>
+    <string name="__dt_next">NEXT</string>
+    <string name="__dt_restart">RESTART</string>
+    <string name="__dt_intro_request_permissions">Click me to allow these permissions now</string>
+    <string name="__dt_intro_permission_done">All permissions allowed</string>
+    <string name="__dt_enable_bottle">Enable Debug Bottle</string>
+    <string name="__dt_enable_strict_mode">Enable strict mode</string>
+    <string name="__dt_enable_leak_canary">Enable detect memory leaks</string>
+    <string name="__dt_enable_block_canary">Enable detect UI blocks</string>
+    <string name="__dt_intro_content_done_1">All configurations is done.</string>
+    <string name="__dt_intro_content_done_2">Now you can use Debug Bottle with your App.</string>
+    <string name="__dt_intro_content_done_3">After restart your app, you\'ll see a notification entry.</string>
+    <string name="__dt_intro_content_done_4">Good luck!</string>
+
+    <string name="__dt_how_to_use">How to use</string>
+    <string name="__dt_injector_help">What\'s this?</string>
+    <string name="__dt_intent_injector_introduction">Injector is a feature of Debug Bottle.\n\nThis feature provide you with a way to quick access an Activity with your Intent here.\n\nTo use this, you need follow below steps.</string>
+    <string name="__dt_runnable_injector_introduction">Injector is a feature of Debug Bottle.\n\nThis feature provide you with a simple way to run your code here.\n\nTo use this, you need follow below steps.</string>
+    <string name="__dt_step_one">Tips</string>
+    <string name="__dt_injector_step_one_no_package_message">Create a class extends Injector, implement function inject().\n\nPut Intents and Runnable at function inject().\n\nIntent can be create with getActivity() function.</string>
+    <string name="__dt_injector_step_one_message">Find the class %s, put Intents and Runnable at function inject().\n\nIntent can be create with getActivity() function.</string>
+    <string name="__dt_enable_http_sniffer">Enable HTTP sniffer</string>
+    <string name="__dt_intro_for_dev">For Develop</string>
+    <string name="__dt_intro_for_qa">For Quality Assurance</string>
+
+    <string name="__dt_draw_over_permission_denied">Permission denied for this action. You need to manually grant the permission in Settings -> Apps -> Draw over other apps.</string>
+    <string name="__dt_should_enable_leak_canary">You should enable leak canary first!</string>
+    <string name="__dt_should_grant_draw_over_permission">You should grant draw over permission first!</string>
+
+    <string name="__dt_warning_open_activity_first">Please open your App first.</string>
+    <string name="__dt_warning_joker">Would you want to test Debug Bottle?????</string>
+
+    <string name="__dt_testing_ready">Testing runner is ready!</string>
+    <string name="__dt_testing_ready_message">All Debug Bottle running services has been reset.\n\nFire by click start button.</string>
+    <string name="__dt_test_controller_enable">Enable test controller</string>
+    <string name="__dt_test_controller">Test Controller</string>
+    <string name="__dt_frame">Frame per second</string>
+    <string name="__dt_frame_switcher">Display FPS on screen</string>
+    <string name="__dt_root_required">** This feature requires ROOT permission.</string>
+    <string name="__dt_open">open</string>
+    <string name="__dt_empty">Empty</string>
+    <string name="__dt_empty_injector">This is QuickEntry area of Debug Bottle.\n\nThere\'s still has no quick entry implemented in injector.\n\nTo implement quick entry, click this for view examples.</string>
+    <string name="__dt_monkey_blacklist">Monkey test blacklist</string>
+    <string name="__dt_monkey_black_list_enabled">Monkey blacklist is enabled now. To disable, you should restart your App.</string>
+    <string name="__dt_activities_in_monkey_black_list">Activities in Monkey blacklist</string>
+    <string name="__dt_review_activityies_list">Review Activities list.</string>
+    <string name="__dt_notification_lock">lock the notification of Debug Bottle</string>
+    <string name="__dt_unlock">Unlock Debug Bottle</string>
+    <string name="__dt_unlock_input_following_number">Input following number to unlock:</string>
+    <string name="__dt_unlocked">unlocked</string>
+    <string name="__dt_notification_locked">Debug bottle notification has locked.</string>
+    <string name="__dt_monkey_blacklist_activity_closed">Monkey Blacklist: Activity is closed</string>
+    <string name="__dt_test_report">Enable these reports / features while testing:</string>
+    <string name="__dt_enable_testing_environment">Enable testing environment will enable \"monkey blacklist\" and \"notification lock\", you may close these after tested.</string>
+    <string name="__dt_monkey_environment_ready">monkey test environment is ready.</string>
+    <string name="__dt_apply_and_restart">apply &amp; restart</string>
+
+</resources>

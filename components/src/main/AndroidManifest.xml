@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.exyui.android.debugbottle.components">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application>
+        <!--<activity-->
+            <!--android:name="com.exyui.android.debugbottle.components.TestingActivity"-->
+            <!--android:theme="@style/__AppTheme"-->
+            <!--android:screenOrientation="portrait"/>-->
+        <!--<activity-->
+            <!--android:name="com.exyui.android.debugbottle.components.injector.InjectorActivity"-->
+            <!--android:windowSoftInputMode="stateHidden"-->
+            <!--android:screenOrientation="portrait"/>-->
+        <!--<activity android:name="com.exyui.android.debugbottle.components.spviewer.SPViewerActivity"-->
+            <!--android:screenOrientation="portrait"/>-->
+        <!--<activity android:name="com.exyui.android.debugbottle.components.SettingsActivity"-->
+            <!--android:screenOrientation="portrait"/>-->
+
+        <activity
+            android:name="com.exyui.android.debugbottle.components.okhttp.DisplayHttpBlockActivity"
+            android:theme="@style/__dt_canary_BlockCanary.Base"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.exyui.android.debugbottle.components.DTDrawerActivity"
+            android:icon="@drawable/__dt_ic_bottle_64dp"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.exyui.android.DEBUG_BOTTLE"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".guide.IntroductionActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.exyui.android.INTRODUCTION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--<service android:name="com.exyui.android.debugbottle.components.floating.Floating3DService" />-->
+        <!--<service android:name="com.exyui.android.debugbottle.components.floating.FloatingTestRunnerService" />-->
+        <service android:name="com.exyui.android.debugbottle.components.bubbles.__BubblesService"
+            android:enabled="true"
+            android:exported="false"/>
+        <service android:name="com.exyui.android.debugbottle.components.bubbles.services.__BubblesManagerService" />
+        
+        <receiver android:name=".__OnNotificationReceiver">
+
+        </receiver>
+    </application>
+
+</manifest>

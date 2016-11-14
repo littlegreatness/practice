@@ -8,19 +8,25 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-
-            </intent-filter>
+            </intent-filter>¬
         </activity>
-
-        <activity android:name=".myanno">
+        <activity android:name=".myanno"></activity>
+        <activity android:name=".Scalpel" />
+        <activity
+            android:name=".WaveViewActivity"
+            android:label="@string/title_activity_wave_view"
+            android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
-        <activity android:name=".Scalpel"></activity>
+        <activity
+            android:name=".WaveView2Activity"
+            android:label="@string/title_activity_wave_view2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,67 @@
+apply plugin: 'com.android.library'
+
+
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '24.0.0'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 24
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+//    compile "org.jetbrains.kotlin:kotlin-stdlib:${libs.kotlin}"
+    compile project(':blockcanary')
+    compile project(':views')
+    testCompile "com.squareup.leakcanary:leakcanary-android-no-op:${libs.leakcanary}"
+    testCompile "junit:junit:4.12}"
+    compile "com.squareup.leakcanary:leakcanary-android:${libs.leakcanary}"
+    provided "com.squareup.okhttp:okhttp:${libs.okhttp}"
+    provided "com.android.support:appcompat-v7:24.0.0"
+}
+
+repositories {
+    mavenCentral()
+}
+
+task setVersionInfo << {
+    println 'Set version code start!'
+
+    def file = new File(rootDir, 'components/src/main/kotlin/com/exyui/android/debugbottle/components/VersionCtrl.kt')
+    def versionCode = rootProject.versionCode
+    def versionName = rootProject.versionName
+
+    file.withWriter('utf-8') { writer ->
+        writer.writeLine 'package com.exyui.android.debugbottle.components'
+        writer.writeLine ''
+        writer.writeLine '/**'
+        writer.writeLine " * Created by machine on ${new Date().format('yyyy-MM-dd')}"
+        writer.writeLine ''
+        writer.writeLine ' * This file is generated automatically, DO NOT modify!!!'
+        writer.writeLine ' */'
+        writer.writeLine ''
+        writer.writeLine "const val __DT_VERSION_CODE = $versionCode"
+        writer.writeLine "const val __DT_VERSION_NAME = \"$versionName\""
+        writer.writeLine "const val __DT_BUILD_NUM = ${rootProject.buildCode}"
+    }
+    println 'Set version code done!'
+}
+
+preBuild.dependsOn setVersionInfo
