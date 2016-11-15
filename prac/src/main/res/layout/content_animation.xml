@@ -13,4 +13,12 @@
     tools:context="com.prac.buxiaoqing.prac.gif.AnimationActivity"
     tools:showIn="@layout/activity_animation">
 
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="content" />
+
+
 </RelativeLayout>
