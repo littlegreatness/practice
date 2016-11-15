@@ -11,7 +11,7 @@ import main.java.com.anno.PrintMe;
  */
 public class prac {
 
-    @PrintMe(des = "ss")
+    @PrintMe
     public static void main(String[] args) {
 
 //        String str = "We are happy";
