@@ -1,0 +1,106 @@
+[
+    {
+        "outputFile": "/Users/buxiaoqing/AndroidStudioProjects/Practice/swipecards/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 315,
+                    "endColumn": 57,
+                    "endOffset": 368
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/swipecards/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 88,
+                        "endColumn": 57,
+                        "endOffset": 141
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 373,
+                    "endColumn": 55,
+                    "endOffset": 424
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/swipecards/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 146,
+                        "endColumn": 55,
+                        "endOffset": 197
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 429,
+                    "endColumn": 48,
+                    "endOffset": 473
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/swipecards/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 48,
+                        "endOffset": 100
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 478,
+                    "endLine": 8,
+                    "endColumn": 12,
+                    "endOffset": 606
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/swipecards/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 54,
+                        "endLine": 5,
+                        "endColumn": 12,
+                        "endOffset": 182
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 611,
+                    "endLine": 13,
+                    "endColumn": 12,
+                    "endOffset": 787
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/swipecards/build/intermediates/exploded-aar/Practice/swipelibrary/unspecified/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 370,
+                        "endLine": 8,
+                        "endColumn": 12,
+                        "endOffset": 546
+                    }
+                }
+            }
+        ]
+    }
+]

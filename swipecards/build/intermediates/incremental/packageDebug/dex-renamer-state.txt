@@ -1,0 +1,7 @@
+#Fri Nov 18 18:30:53 CST 2016
+base.0=/Users/buxiaoqing/AndroidStudioProjects/Practice/swipecards/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_fc5f6c693ed317b469a772b3752159a72457ae66
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/buxiaoqing/AndroidStudioProjects/Practice/swipecards/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_26c7ee093008725abe9f87b1b6d7cc25b6f5e4c2/classes.dex
+base.1=/Users/buxiaoqing/AndroidStudioProjects/Practice/swipecards/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_26c7ee093008725abe9f87b1b6d7cc25b6f5e4c2
+file.0=/Users/buxiaoqing/AndroidStudioProjects/Practice/swipecards/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_fc5f6c693ed317b469a772b3752159a72457ae66/classes.dex

@@ -1,0 +1,47 @@
+[
+    {
+        "outputFile": "/Users/buxiaoqing/AndroidStudioProjects/Practice/swipelibrary/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 315,
+                    "endColumn": 54,
+                    "endOffset": 365
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/swipelibrary/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 315,
+                        "endColumn": 54,
+                        "endOffset": 365
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 370,
+                    "endLine": 8,
+                    "endColumn": 12,
+                    "endOffset": 546
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/swipelibrary/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 370,
+                        "endLine": 8,
+                        "endColumn": 12,
+                        "endOffset": 546
+                    }
+                }
+            }
+        ]
+    }
+]
