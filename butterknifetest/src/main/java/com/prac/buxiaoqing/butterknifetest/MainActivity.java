@@ -26,6 +26,7 @@ import butterknife.BindView;
 import butterknife.BindViews;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import butterknife.Optional;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
 import rx.functions.Func1;
@@ -56,11 +57,11 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.listView)
     mScrollView listView;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         ButterKnife.bind(this);
 
         sp = this.getSharedPreferences("my_sp", MODE_PRIVATE);
@@ -188,6 +189,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //将多个id绑定到一个方法里
+    @Optional
     @OnClick(R.id.btn)
     public void anno(View view) {
         Intent it = new Intent(getApplicationContext(), myanno.class);
@@ -205,5 +207,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 }
