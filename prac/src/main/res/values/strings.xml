@@ -3,4 +3,5 @@
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_animation">AnimationActivity</string>
     <string name="title_activity_xformode">XformodeActivity</string>
+    <string name="title_activity_cus_prrogress">CusPrrogressAct</string>
 </resources>

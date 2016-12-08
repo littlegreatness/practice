@@ -4,6 +4,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -23,7 +24,7 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity implements SwipeFlingAdapterView.onFlingListener,
         SwipeFlingAdapterView.OnItemClickListener {
 
-    int [] headerIcons = {
+    int[] headerIcons = {
             R.drawable.i1,
             R.drawable.i2,
             R.drawable.i3,
@@ -32,13 +33,13 @@ public class MainActivity extends AppCompatActivity implements SwipeFlingAdapter
             R.drawable.i6
     };
 
-    String [] names = {"张三","李四","王五","小明","小红","小花"};
+    String[] names = {"张三", "李四", "王五", "小明", "小红", "小花"};
 
-    String [] citys = {"北京", "上海", "广州", "深圳"};
+    String[] citys = {"北京", "上海", "广州", "深圳"};
 
-    String [] edus = {"大专", "本科", "硕士", "博士"};
+    String[] edus = {"大专", "本科", "硕士", "博士"};
 
-    String [] years = {"1年", "2年", "3年", "4年", "5年"};
+    String[] years = {"1年", "2年", "3年", "4年", "5年"};
 
     Random ran = new Random();
 
@@ -112,10 +113,10 @@ public class MainActivity extends AppCompatActivity implements SwipeFlingAdapter
                 for (int i = 0; i < 10; i++) {
                     talent = new Talent();
                     talent.headerIcon = headerIcons[i % headerIcons.length];
-                    talent.nickname = names[ran.nextInt(names.length-1)];
-                    talent.cityName = citys[ran.nextInt(citys.length-1)];
-                    talent.educationName = edus[ran.nextInt(edus.length-1)];
-                    talent.workYearName = years[ran.nextInt(years.length-1)];
+                    talent.nickname = names[ran.nextInt(names.length - 1)];
+                    talent.cityName = citys[ran.nextInt(citys.length - 1)];
+                    talent.educationName = edus[ran.nextInt(edus.length - 1)];
+                    talent.workYearName = years[ran.nextInt(years.length - 1)];
                     list.add(talent);
                 }
                 return list;
@@ -171,7 +172,7 @@ public class MainActivity extends AppCompatActivity implements SwipeFlingAdapter
 
         @Override
         public Talent getItem(int position) {
-            if(objs==null ||objs.size()==0) return null;
+            if (objs == null || objs.size() == 0) return null;
             return objs.get(position);
         }
 
@@ -187,7 +188,7 @@ public class MainActivity extends AppCompatActivity implements SwipeFlingAdapter
             Talent talent = getItem(position);
             if (convertView == null) {
                 convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_new_item, parent, false);
-                holder  = new ViewHolder();
+                holder = new ViewHolder();
                 convertView.setTag(holder);
                 convertView.getLayoutParams().width = cardWidth;
                 holder.portraitView = (ImageView) convertView.findViewById(R.id.portrait);
@@ -204,7 +205,7 @@ public class MainActivity extends AppCompatActivity implements SwipeFlingAdapter
             } else {
                 holder = (ViewHolder) convertView.getTag();
             }
-
+            Log.e("getView", "getView  position = " + position + "  ,head = " + talent.headerIcon);
 
             holder.portraitView.setImageResource(talent.headerIcon);
 
@@ -215,15 +216,15 @@ public class MainActivity extends AppCompatActivity implements SwipeFlingAdapter
 
             holder.cityView.setHint(no);
             holder.cityView.setText(talent.cityName);
-            holder.cityView.setCompoundDrawablesWithIntrinsicBounds(0,R.drawable.home01_icon_location,0,0);
+            holder.cityView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.home01_icon_location, 0, 0);
 
             holder.eduView.setHint(no);
             holder.eduView.setText(talent.educationName);
-            holder.eduView.setCompoundDrawablesWithIntrinsicBounds(0,R.drawable.home01_icon_edu,0,0);
+            holder.eduView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.home01_icon_edu, 0, 0);
 
             holder.workView.setHint(no);
             holder.workView.setText(talent.workYearName);
-            holder.workView.setCompoundDrawablesWithIntrinsicBounds(0,R.drawable.home01_icon_work_year,0,0);
+            holder.workView.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.home01_icon_work_year, 0, 0);
 
 
             return convertView;
