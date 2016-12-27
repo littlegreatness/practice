@@ -18,6 +18,8 @@ import com.example.buxiaoqing.prac.bean.DemoBean;
 
 import java.io.IOException;
 
+import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.GsonConverterFactory;
@@ -108,12 +110,6 @@ public class Teach1Activity extends Activity implements View.OnClickListener {
         }).start();
 
 
-        if (BuildConfig.DEBUG) {
-
-
-        }
-
-
     }
 
     /**
@@ -126,9 +122,13 @@ public class Teach1Activity extends Activity implements View.OnClickListener {
             return;
         }
         String baseUrl = "http://ip.taobao.com";
+
+        HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
+        logging.setLevel(HttpLoggingInterceptor.Level.BODY);
+        OkHttpClient httpClient = new OkHttpClient.Builder().addInterceptor(logging).build();
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(baseUrl)
-                .addConverterFactory(GsonConverterFactory.create())
+                .addConverterFactory(GsonConverterFactory.create()).client(httpClient)
                 .build();
         //绑定接口
         APIService apiService = retrofit.create(APIService.class);

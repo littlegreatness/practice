@@ -1,16 +1,17 @@
 package com.example.buxiaoqing.prac.model.impl;
 
 
-
-
 import com.example.buxiaoqing.prac.api.APIService;
 import com.example.buxiaoqing.prac.bean.ApiBean;
 import com.example.buxiaoqing.prac.bean.IpBean;
 import com.example.buxiaoqing.prac.model.Teach4Model;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import java.io.IOException;
 
-
+import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Call;
 import retrofit2.GsonConverterFactory;
 import retrofit2.Response;
@@ -32,6 +33,11 @@ public class Teach4ModelImpl implements Teach4Model {
                 new Observable.OnSubscribe<ApiBean<IpBean>>() {
                     @Override
                     public void call(Subscriber<? super ApiBean<IpBean>> subscriber) {
+//                        HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
+//                        logging.setLevel(HttpLoggingInterceptor.Level.BODY);
+//                        OkHttpClient httpClient = new OkHttpClient.Builder().addInterceptor(logging).build();
+//                        client(httpClient)
+
                         String baseUrl = "http://ip.taobao.com";
                         Retrofit retrofit = new Retrofit.Builder()
                                 .baseUrl(baseUrl)

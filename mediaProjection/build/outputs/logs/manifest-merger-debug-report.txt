@@ -34,9 +34,9 @@ ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/mediaProjection/src/
 uses-sdk
 ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/mediaProjection/src/main/AndroidManifest.xml:12:6-14:41
 MERGED from [com.android.support:appcompat-v7:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/mediaProjection/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/mediaProjection/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-vector-drawable:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/mediaProjection/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/AndroidManifest.xml:21:5-43
 MERGED from [com.android.support:animated-vector-drawable:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/mediaProjection/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/mediaProjection/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/mediaProjection/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:21:5-23:54
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/mediaProjection/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
@@ -50,9 +50,9 @@ MERGED from [com.android.support:animated-vector-drawable:24.0.0] /Users/buxiaoq
 application
 ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/mediaProjection/src/main/AndroidManifest.xml:16:5-29:19
 MERGED from [com.android.support:appcompat-v7:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/mediaProjection/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/mediaProjection/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-vector-drawable:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/mediaProjection/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/AndroidManifest.xml:23:5-20
 MERGED from [com.android.support:animated-vector-drawable:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/mediaProjection/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/mediaProjection/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/mediaProjection/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/mediaProjection/src/main/AndroidManifest.xml:18:9-41
 	android:icon

@@ -44,12 +44,12 @@
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/m14_large.jpg"
     },
     {
-        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi-v4/f1_large.jpg",
-        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/f1_large.jpg"
-    },
-    {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi-v4/f7_large.jpg",
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/f7_large.jpg"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi-v4/f1_large.jpg",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/f1_large.jpg"
     },
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi-v4/f5_large.jpg",
