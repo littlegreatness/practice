@@ -1,0 +1,110 @@
+[
+    {
+        "outputFile": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 50,
+                    "endOffset": 101
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 17,
+                        "endColumn": 50,
+                        "endOffset": 63
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 106,
+                    "endLine": 10,
+                    "endColumn": 12,
+                    "endOffset": 393
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 192,
+                        "endLine": 14,
+                        "endColumn": 12,
+                        "endOffset": 483
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 398,
+                    "endLine": 13,
+                    "endColumn": 12,
+                    "endOffset": 553
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 524,
+                        "endLine": 19,
+                        "endColumn": 12,
+                        "endOffset": 681
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 558,
+                    "endLine": 22,
+                    "endColumn": 12,
+                    "endOffset": 954
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 689,
+                        "endLine": 29,
+                        "endColumn": 12,
+                        "endOffset": 1093
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 959,
+                    "endLine": 33,
+                    "endColumn": 12,
+                    "endOffset": 1448
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 1101,
+                        "endLine": 41,
+                        "endColumn": 12,
+                        "endOffset": 1600
+                    }
+                }
+            }
+        ]
+    }
+]

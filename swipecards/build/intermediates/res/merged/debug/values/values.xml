@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwipeFlingAdapterView"><attr format="reference" name="SwipeFlingStyle"/><attr format="float" name="rotation_degrees"/><attr format="integer" name="min_adapter_stack"/><attr format="integer" name="max_visible"/></declare-styleable>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="app_name">Swipe cards</string>
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="SwipeFling">
+        <item name="rotation_degrees">15</item>
+        <item name="min_adapter_stack">6</item>
+        <item name="max_visible">4</item>
+    </style>
+</resources>
