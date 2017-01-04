@@ -5,25 +5,59 @@
       <GradleProjectSettings>
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-2.10" />
+        <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/BounceLayout" />
+            <option value="$PROJECT_DIR$/DragGridView" />
+            <option value="$PROJECT_DIR$/Gpu-Image" />
+            <option value="$PROJECT_DIR$/ImageViewTouch" />
+            <option value="$PROJECT_DIR$/JigsawDemo" />
             <option value="$PROJECT_DIR$/MvpSample" />
-            <option value="$PROJECT_DIR$/gif" />
+            <option value="$PROJECT_DIR$/Permissioncheck" />
+            <option value="$PROJECT_DIR$/WXLikeVideoRecorderLib" />
+            <option value="$PROJECT_DIR$/androidLib2122" />
+            <option value="$PROJECT_DIR$/annoprocessor" />
+            <option value="$PROJECT_DIR$/butterknifetest" />
+            <option value="$PROJECT_DIR$/crop" />
+            <option value="$PROJECT_DIR$/dragSquare" />
+            <option value="$PROJECT_DIR$/greendao" />
+            <option value="$PROJECT_DIR$/libraries" />
+            <option value="$PROJECT_DIR$/libraries/CustomShapeImageView" />
+            <option value="$PROJECT_DIR$/libraries/Shimmer" />
+            <option value="$PROJECT_DIR$/library" />
+            <option value="$PROJECT_DIR$/mediaProjection" />
+            <option value="$PROJECT_DIR$/meitudemo" />
+            <option value="$PROJECT_DIR$/multiAPK" />
+            <option value="$PROJECT_DIR$/myknifelibrary" />
+            <option value="$PROJECT_DIR$/prac" />
+            <option value="$PROJECT_DIR$/pullToZoomListSimple" />
+            <option value="$PROJECT_DIR$/pulltorefresh" />
+            <option value="$PROJECT_DIR$/rebound-android" />
+            <option value="$PROJECT_DIR$/rebound-android-example" />
+            <option value="$PROJECT_DIR$/rebound-android-playground" />
+            <option value="$PROJECT_DIR$/rebound-core" />
+            <option value="$PROJECT_DIR$/recordvedio" />
+            <option value="$PROJECT_DIR$/recyclerviewtest" />
             <option value="$PROJECT_DIR$/retrofit" />
-            <option value="$PROJECT_DIR$/rxandroid" />
+            <option value="$PROJECT_DIR$/rxJoke" />
+            <option value="$PROJECT_DIR$/stickercamera" />
+            <option value="$PROJECT_DIR$/surfaceview_game_1" />
+            <option value="$PROJECT_DIR$/surfaceviewbackground" />
+            <option value="$PROJECT_DIR$/swipecards" />
+            <option value="$PROJECT_DIR$/swipecardsview" />
+            <option value="$PROJECT_DIR$/swipelibrary" />
+            <option value="$PROJECT_DIR$/testapp" />
+            <option value="$PROJECT_DIR$/videorecord" />
+            <option value="$PROJECT_DIR$/viewdraghelper" />
+            <option value="$PROJECT_DIR$/waveview2library" />
+            <option value="$PROJECT_DIR$/waveviewlibrary" />
+            <option value="$PROJECT_DIR$/wewin" />
+            <option value="$PROJECT_DIR$/youngHeart213" />
           </set>
         </option>
-        <option name="myModules">
-          <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/MvpSample" />
-            <option value="$PROJECT_DIR$/gif" />
-            <option value="$PROJECT_DIR$/retrofit" />
-            <option value="$PROJECT_DIR$/rxandroid" />
-          </set>
-        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

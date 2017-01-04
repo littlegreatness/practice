@@ -2,11 +2,53 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BounceLayout/BounceLayout.iml" filepath="$PROJECT_DIR$/BounceLayout/BounceLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/CustomShapeImageView/CustomShapeImageView.iml" filepath="$PROJECT_DIR$/libraries/CustomShapeImageView/CustomShapeImageView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DragGridView/DragGridView.iml" filepath="$PROJECT_DIR$/DragGridView/DragGridView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Gpu-Image/Gpu-Image.iml" filepath="$PROJECT_DIR$/Gpu-Image/Gpu-Image.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ImageViewTouch/ImageViewTouch.iml" filepath="$PROJECT_DIR$/ImageViewTouch/ImageViewTouch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JigsawDemo/JigsawDemo.iml" filepath="$PROJECT_DIR$/JigsawDemo/JigsawDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/MvpSample/MvpSample.iml" filepath="$PROJECT_DIR$/MvpSample/MvpSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Permissioncheck/Permissioncheck.iml" filepath="$PROJECT_DIR$/Permissioncheck/Permissioncheck.iml" />
       <module fileurl="file://$PROJECT_DIR$/Practice.iml" filepath="$PROJECT_DIR$/Practice.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gif/gif.iml" filepath="$PROJECT_DIR$/gif/gif.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/Shimmer/Shimmer.iml" filepath="$PROJECT_DIR$/libraries/Shimmer/Shimmer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WXLikeVideoRecorderLib/WXLikeVideoRecorderLib.iml" filepath="$PROJECT_DIR$/WXLikeVideoRecorderLib/WXLikeVideoRecorderLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/androidLib2122/androidLib2122.iml" filepath="$PROJECT_DIR$/androidLib2122/androidLib2122.iml" />
+      <module fileurl="file://$PROJECT_DIR$/annoprocessor/annoprocessor.iml" filepath="$PROJECT_DIR$/annoprocessor/annoprocessor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/butterknifetest/butterknifetest.iml" filepath="$PROJECT_DIR$/butterknifetest/butterknifetest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/crop/crop.iml" filepath="$PROJECT_DIR$/crop/crop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dragSquare/dragSquare.iml" filepath="$PROJECT_DIR$/dragSquare/dragSquare.iml" />
+      <module fileurl="file://$PROJECT_DIR$/greendao/greendao.iml" filepath="$PROJECT_DIR$/greendao/greendao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/libraries.iml" filepath="$PROJECT_DIR$/libraries/libraries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mediaProjection/mediaProjection.iml" filepath="$PROJECT_DIR$/mediaProjection/mediaProjection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meitudemo/meitudemo.iml" filepath="$PROJECT_DIR$/meitudemo/meitudemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multiAPK/multiAPK.iml" filepath="$PROJECT_DIR$/multiAPK/multiAPK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myknifelibrary/myknifelibrary.iml" filepath="$PROJECT_DIR$/myknifelibrary/myknifelibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/prac/prac.iml" filepath="$PROJECT_DIR$/prac/prac.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pullToZoomListSimple/pullToZoomListSimple.iml" filepath="$PROJECT_DIR$/pullToZoomListSimple/pullToZoomListSimple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pulltorefresh/pulltorefresh.iml" filepath="$PROJECT_DIR$/pulltorefresh/pulltorefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rebound-android/rebound-android.iml" filepath="$PROJECT_DIR$/rebound-android/rebound-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rebound-android-example/rebound-android-example.iml" filepath="$PROJECT_DIR$/rebound-android-example/rebound-android-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rebound-android-playground/rebound-android-playground.iml" filepath="$PROJECT_DIR$/rebound-android-playground/rebound-android-playground.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rebound-core/rebound-core.iml" filepath="$PROJECT_DIR$/rebound-core/rebound-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recordvedio/recordvedio.iml" filepath="$PROJECT_DIR$/recordvedio/recordvedio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recyclerviewtest/recyclerviewtest.iml" filepath="$PROJECT_DIR$/recyclerviewtest/recyclerviewtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/retrofit/retrofit.iml" filepath="$PROJECT_DIR$/retrofit/retrofit.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rxandroid/rxandroid.iml" filepath="$PROJECT_DIR$/rxandroid/rxandroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxJoke/rxJoke.iml" filepath="$PROJECT_DIR$/rxJoke/rxJoke.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stickercamera/stickercamera.iml" filepath="$PROJECT_DIR$/stickercamera/stickercamera.iml" />
+      <module fileurl="file://$PROJECT_DIR$/surfaceview_game_1/surfaceview_game_1.iml" filepath="$PROJECT_DIR$/surfaceview_game_1/surfaceview_game_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/surfaceviewbackground/surfaceviewbackground.iml" filepath="$PROJECT_DIR$/surfaceviewbackground/surfaceviewbackground.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swipecards/swipecards.iml" filepath="$PROJECT_DIR$/swipecards/swipecards.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swipecardsview/swipecardsview.iml" filepath="$PROJECT_DIR$/swipecardsview/swipecardsview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swipelibrary/swipelibrary.iml" filepath="$PROJECT_DIR$/swipelibrary/swipelibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testapp/testapp.iml" filepath="$PROJECT_DIR$/testapp/testapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/videorecord/videorecord.iml" filepath="$PROJECT_DIR$/videorecord/videorecord.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewdraghelper/viewdraghelper.iml" filepath="$PROJECT_DIR$/viewdraghelper/viewdraghelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/waveview2library/waveview2library.iml" filepath="$PROJECT_DIR$/waveview2library/waveview2library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/waveviewlibrary/waveviewlibrary.iml" filepath="$PROJECT_DIR$/waveviewlibrary/waveviewlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wewin/wewin.iml" filepath="$PROJECT_DIR$/wewin/wewin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/youngHeart213/youngHeart213.iml" filepath="$PROJECT_DIR$/youngHeart213/youngHeart213.iml" />
     </modules>
   </component>
 </project>

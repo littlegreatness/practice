@@ -1,4 +1,4 @@
-ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+4ECLIPSE ANDROID PROJECT IMPORT SUMMARY
 ======================================
 
 Ignored Files:
@@ -8,57 +8,46 @@ should evaluate whether these are still needed in your project and if
 so manually move them:
 
 * .DS_Store
-* .gitignore
-* Demo/
-* Demo/AndroidManifest.xml
-* Demo/ic_launcher-web.png
-* Demo/proguard-project.txt
-* Demo/project.properties
-* Demo/res/
-* Demo/res/drawable-hdpi/
-* Demo/res/drawable-hdpi/b001.jpg
-* Demo/res/drawable-hdpi/b002.jpg
-* Demo/res/drawable-hdpi/b003.jpg
-* Demo/res/drawable-hdpi/b004.jpg
-* Demo/res/drawable-hdpi/ic_action_search.png
-* Demo/res/drawable-hdpi/ic_launcher.png
-* Demo/res/drawable-ldpi/
-* Demo/res/drawable-ldpi/ic_launcher.png
-* Demo/res/drawable-mdpi/
-* Demo/res/drawable-mdpi/ic_action_search.png
-* Demo/res/drawable-mdpi/ic_launcher.png
-* Demo/res/drawable-xhdpi/
-* Demo/res/drawable-xhdpi/ic_action_search.png
-* Demo/res/drawable-xhdpi/ic_launcher.png
-* Demo/res/layout/
-* Demo/res/layout/activity_main.xml
-* Demo/res/layout/item.xml
-* Demo/res/menu/
-* Demo/res/menu/activity_main.xml
-* Demo/res/values/
-* Demo/res/values/mydata.xml
-* Demo/res/values/strings.xml
-* Demo/res/values/styles.xml
-* Demo/src/
-* Demo/src/cn/
-* Demo/src/cn/classd/
-* Demo/src/cn/classd/demo/
-* Demo/src/cn/classd/demo/drag_drop_gridview/
-* Demo/src/cn/classd/demo/drag_drop_gridview/MainActivity.java
-* Demo/src/cn/classd/demo/drag_drop_gridview/bean/
-* Demo/src/cn/classd/demo/drag_drop_gridview/bean/Book.java
-* README.md
 * ic_launcher-web.png
 * proguard-project.txt
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+appcompat-v7 => [com.android.support:appcompat-v7:22.+]
 
 Moved Files:
 ------------
 Android Gradle projects use a different directory structure than ADT
 Eclipse projects. Here's how the projects were restructured:
 
-* AndroidManifest.xml => android_dragdropable_gridview/src/main/AndroidManifest.xml
-* res/ => android_dragdropable_gridview/src/main/res/
-* src/ => android_dragdropable_gridview/src/main/java/
+* AndroidManifest.xml => mediaProjection/src/main/AndroidManifest.xml
+* assets/ => mediaProjection/src/main/assets
+* lint.xml => mediaProjection/lint.xml
+* res/ => mediaProjection/src/main/res/
+* src/ => mediaProjection/src/main/java/
+
+Missing Android Support Repository:
+-----------------------------------
+Some useful libraries, such as the Android Support Library, are
+installed from a special Maven repository, which should be installed
+via the SDK manager.
+
+It looks like this library is missing from your SDK installation at:
+null
+
+To install it, open the SDK manager, and in the Extras category,
+select "Android Support Repository". You may also want to install the
+"Google Repository" if you want to use libraries like Google Play
+Services.
 
 Next Steps:
 -----------

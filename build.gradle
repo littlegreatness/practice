@@ -9,10 +9,11 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.1.2'
+        classpath 'com.android.tools.build:gradle:2.2.3'
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
         classpath 'me.tatarka:gradle-retrolambda:3.2.4'
         classpath 'com.android.databinding:dataBinder:1.0-rc4'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.0.0'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -20,7 +21,7 @@ buildscript {
 
 ext {
     configuration = [
-            package          : "buxiaoqing.prac.com",
+            package          : "buxiaoq.prac.com",
             buildToolsVersion: "24.0.0",
             compileVersion   : 24,
             minSdk           : 14,
@@ -63,4 +64,6 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+
 
