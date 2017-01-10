@@ -8,12 +8,12 @@
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/src/main/res/drawable-nodpi/d8.jpg"
     },
     {
-        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/build/intermediates/res/merged/debug/drawable-nodpi-v4/d5.jpg",
-        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/src/main/res/drawable-nodpi/d5.jpg"
-    },
-    {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/build/intermediates/res/merged/debug/drawable-nodpi-v4/d7.jpg",
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/src/main/res/drawable-nodpi/d7.jpg"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/build/intermediates/res/merged/debug/drawable-nodpi-v4/d5.jpg",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/src/main/res/drawable-nodpi/d5.jpg"
     },
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/build/intermediates/res/merged/debug/drawable-nodpi-v4/d2.jpg",

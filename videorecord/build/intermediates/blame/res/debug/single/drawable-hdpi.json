@@ -40,12 +40,12 @@
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/record_icon.png"
     },
     {
-        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi/progress_bar_green.9.png",
-        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/progress_bar_green.9.png"
-    },
-    {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi/ic_launcher.png",
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi/progress_bar_green.9.png",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/progress_bar_green.9.png"
     },
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi/icn_pic_delete.png",

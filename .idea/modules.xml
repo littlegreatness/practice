@@ -19,6 +19,8 @@
       <module fileurl="file://$PROJECT_DIR$/crop/crop.iml" filepath="$PROJECT_DIR$/crop/crop.iml" />
       <module fileurl="file://$PROJECT_DIR$/dragSquare/dragSquare.iml" filepath="$PROJECT_DIR$/dragSquare/dragSquare.iml" />
       <module fileurl="file://$PROJECT_DIR$/greendao/greendao.iml" filepath="$PROJECT_DIR$/greendao/greendao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jcvideoplayer-lib/jcvideoplayer-lib.iml" filepath="$PROJECT_DIR$/jcvideoplayer-lib/jcvideoplayer-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jiecaoapp/jiecaoapp.iml" filepath="$PROJECT_DIR$/jiecaoapp/jiecaoapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/libraries.iml" filepath="$PROJECT_DIR$/libraries/libraries.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/mediaProjection/mediaProjection.iml" filepath="$PROJECT_DIR$/mediaProjection/mediaProjection.iml" />

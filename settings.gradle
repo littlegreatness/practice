@@ -1,4 +1,4 @@
-include ':MvpSample', ':retrofit', ':Permissioncheck', ':rxJoke', ':multiAPK', ':greendao'
+include ':MvpSample', ':retrofit', ':Permissioncheck', ':rxJoke', ':multiAPK', ':greendao', ':jiecaoapp', ':jcvideoplayer-lib'
 include ':meitudemo', ':ImageViewTouch', ':stickercamera', ':Gpu-Image'
 include ':wewin', ':libraries:CustomShapeImageView', ':libraries:Shimmer'
 include ':library', ':crop', ':videorecord'
