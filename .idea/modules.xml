@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Annotationlibrary/Annotationlibrary.iml" filepath="$PROJECT_DIR$/Annotationlibrary/Annotationlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/BounceLayout/BounceLayout.iml" filepath="$PROJECT_DIR$/BounceLayout/BounceLayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/CustomShapeImageView/CustomShapeImageView.iml" filepath="$PROJECT_DIR$/libraries/CustomShapeImageView/CustomShapeImageView.iml" />
       <module fileurl="file://$PROJECT_DIR$/DragGridView/DragGridView.iml" filepath="$PROJECT_DIR$/DragGridView/DragGridView.iml" />
@@ -22,7 +23,6 @@
       <module fileurl="file://$PROJECT_DIR$/jcvideoplayer-lib/jcvideoplayer-lib.iml" filepath="$PROJECT_DIR$/jcvideoplayer-lib/jcvideoplayer-lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/jiecaoapp/jiecaoapp.iml" filepath="$PROJECT_DIR$/jiecaoapp/jiecaoapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/libraries.iml" filepath="$PROJECT_DIR$/libraries/libraries.iml" />
-      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/mediaProjection/mediaProjection.iml" filepath="$PROJECT_DIR$/mediaProjection/mediaProjection.iml" />
       <module fileurl="file://$PROJECT_DIR$/meitudemo/meitudemo.iml" filepath="$PROJECT_DIR$/meitudemo/meitudemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/multiAPK/multiAPK.iml" filepath="$PROJECT_DIR$/multiAPK/multiAPK.iml" />

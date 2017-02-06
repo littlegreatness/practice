@@ -9,6 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Annotationlibrary" />
             <option value="$PROJECT_DIR$/BounceLayout" />
             <option value="$PROJECT_DIR$/DragGridView" />
             <option value="$PROJECT_DIR$/Gpu-Image" />
@@ -28,7 +29,6 @@
             <option value="$PROJECT_DIR$/libraries" />
             <option value="$PROJECT_DIR$/libraries/CustomShapeImageView" />
             <option value="$PROJECT_DIR$/libraries/Shimmer" />
-            <option value="$PROJECT_DIR$/library" />
             <option value="$PROJECT_DIR$/mediaProjection" />
             <option value="$PROJECT_DIR$/meitudemo" />
             <option value="$PROJECT_DIR$/multiAPK" />

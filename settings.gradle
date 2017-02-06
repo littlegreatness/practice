@@ -1,7 +1,7 @@
 include ':MvpSample', ':retrofit', ':Permissioncheck', ':rxJoke', ':multiAPK', ':greendao', ':jiecaoapp', ':jcvideoplayer-lib'
 include ':meitudemo', ':ImageViewTouch', ':stickercamera', ':Gpu-Image'
 include ':wewin', ':libraries:CustomShapeImageView', ':libraries:Shimmer'
-include ':library', ':crop', ':videorecord'
+include ':Annotationlibrary', ':crop', ':videorecord'
 include ':viewdraghelper'
 include ':androidLib2122'
 include ':WXLikeVideoRecorderLib', ':recordvedio', ':dragSquare', ':testapp'
