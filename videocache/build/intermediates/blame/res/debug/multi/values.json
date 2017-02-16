@@ -1,0 +1,984 @@
+[
+    {
+        "outputFile": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 44,
+                    "endOffset": 95
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 45,
+                        "endOffset": 97
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 100,
+                    "endColumn": 47,
+                    "endOffset": 143
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 102,
+                        "endColumn": 48,
+                        "endOffset": 146
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 148,
+                    "endColumn": 49,
+                    "endOffset": 193
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 151,
+                        "endColumn": 50,
+                        "endOffset": 197
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 198,
+                    "endColumn": 49,
+                    "endOffset": 243
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 202,
+                        "endColumn": 50,
+                        "endOffset": 248
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 248,
+                    "endColumn": 62,
+                    "endOffset": 306
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 254,
+                        "endColumn": 62,
+                        "endOffset": 312
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 311,
+                    "endColumn": 59,
+                    "endOffset": 366
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 317,
+                        "endColumn": 59,
+                        "endOffset": 372
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 371,
+                    "endColumn": 60,
+                    "endOffset": 427
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 377,
+                        "endColumn": 60,
+                        "endOffset": 433
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 432,
+                    "endColumn": 66,
+                    "endOffset": 494
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 438,
+                        "endColumn": 66,
+                        "endOffset": 500
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 499,
+                    "endColumn": 62,
+                    "endOffset": 557
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 505,
+                        "endColumn": 62,
+                        "endOffset": 563
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 562,
+                    "endColumn": 71,
+                    "endOffset": 629
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 569,
+                        "endColumn": 71,
+                        "endOffset": 636
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 634,
+                    "endColumn": 71,
+                    "endOffset": 701
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 641,
+                        "endColumn": 71,
+                        "endOffset": 708
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 706,
+                    "endColumn": 73,
+                    "endOffset": 775
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 713,
+                        "endColumn": 73,
+                        "endOffset": 782
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 780,
+                    "endColumn": 73,
+                    "endOffset": 849
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 787,
+                        "endColumn": 73,
+                        "endOffset": 856
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 854,
+                    "endColumn": 75,
+                    "endOffset": 925
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 861,
+                        "endColumn": 75,
+                        "endOffset": 932
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 930,
+                    "endColumn": 72,
+                    "endOffset": 998
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 937,
+                        "endColumn": 72,
+                        "endOffset": 1005
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1003,
+                    "endColumn": 74,
+                    "endOffset": 1073
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1010,
+                        "endColumn": 74,
+                        "endOffset": 1080
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1078,
+                    "endColumn": 70,
+                    "endOffset": 1144
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1085,
+                        "endColumn": 70,
+                        "endOffset": 1151
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1149,
+                    "endColumn": 78,
+                    "endOffset": 1223
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1156,
+                        "endColumn": 78,
+                        "endOffset": 1230
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1228,
+                    "endColumn": 61,
+                    "endOffset": 1285
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1235,
+                        "endColumn": 61,
+                        "endOffset": 1292
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1290,
+                    "endColumn": 62,
+                    "endOffset": 1348
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1297,
+                        "endColumn": 62,
+                        "endOffset": 1355
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1353,
+                    "endColumn": 77,
+                    "endOffset": 1426
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1360,
+                        "endColumn": 77,
+                        "endOffset": 1433
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1431,
+                    "endColumn": 78,
+                    "endOffset": 1505
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1438,
+                        "endColumn": 78,
+                        "endOffset": 1512
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1510,
+                    "endColumn": 92,
+                    "endOffset": 1598
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 1517,
+                        "endColumn": 92,
+                        "endOffset": 1605
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1603,
+                    "endColumn": 92,
+                    "endOffset": 1691
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 1610,
+                        "endColumn": 92,
+                        "endOffset": 1698
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1696,
+                    "endColumn": 107,
+                    "endOffset": 1799
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1703,
+                        "endColumn": 107,
+                        "endOffset": 1806
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 1804,
+                    "endColumn": 107,
+                    "endOffset": 1907
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 1811,
+                        "endColumn": 107,
+                        "endOffset": 1914
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 4254,
+                    "endColumn": 58,
+                    "endOffset": 4308
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 141,
+                        "startColumn": 4,
+                        "startOffset": 7162,
+                        "endColumn": 58,
+                        "endOffset": 7216
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 4313,
+                    "endColumn": 61,
+                    "endOffset": 4370
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 142,
+                        "startColumn": 4,
+                        "startOffset": 7221,
+                        "endColumn": 61,
+                        "endOffset": 7278
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 4375,
+                    "endColumn": 67,
+                    "endOffset": 4438
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 143,
+                        "startColumn": 4,
+                        "startOffset": 7283,
+                        "endColumn": 67,
+                        "endOffset": 7346
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 4443,
+                    "endColumn": 62,
+                    "endOffset": 4501
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 144,
+                        "startColumn": 4,
+                        "startOffset": 7351,
+                        "endColumn": 62,
+                        "endOffset": 7409
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 4506,
+                    "endColumn": 64,
+                    "endOffset": 4566
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 145,
+                        "startColumn": 4,
+                        "startOffset": 7414,
+                        "endColumn": 64,
+                        "endOffset": 7474
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 45,
+                    "startColumn": 4,
+                    "startOffset": 4571,
+                    "endColumn": 65,
+                    "endOffset": 4632
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 146,
+                        "startColumn": 4,
+                        "startOffset": 7479,
+                        "endColumn": 65,
+                        "endOffset": 7540
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 4637,
+                    "endColumn": 66,
+                    "endOffset": 4699
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 147,
+                        "startColumn": 4,
+                        "startOffset": 7545,
+                        "endColumn": 66,
+                        "endOffset": 7607
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 4704,
+                    "endColumn": 77,
+                    "endOffset": 4777
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 148,
+                        "startColumn": 4,
+                        "startOffset": 7612,
+                        "endColumn": 77,
+                        "endOffset": 7685
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 48,
+                    "startColumn": 4,
+                    "startOffset": 4782,
+                    "endColumn": 89,
+                    "endOffset": 4867
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 149,
+                        "startColumn": 4,
+                        "startOffset": 7690,
+                        "endColumn": 89,
+                        "endOffset": 7775
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 49,
+                    "startColumn": 4,
+                    "startOffset": 4872,
+                    "endColumn": 72,
+                    "endOffset": 4940
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 150,
+                        "startColumn": 4,
+                        "startOffset": 7780,
+                        "endColumn": 72,
+                        "endOffset": 7848
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 4945,
+                    "endColumn": 68,
+                    "endOffset": 5009
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 151,
+                        "startColumn": 4,
+                        "startOffset": 7853,
+                        "endColumn": 68,
+                        "endOffset": 7917
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 51,
+                    "startColumn": 4,
+                    "startOffset": 5014,
+                    "endColumn": 64,
+                    "endOffset": 5074
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 152,
+                        "startColumn": 4,
+                        "startOffset": 7922,
+                        "endColumn": 64,
+                        "endOffset": 7982
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 52,
+                    "startColumn": 4,
+                    "startOffset": 5079,
+                    "endColumn": 67,
+                    "endOffset": 5142
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 153,
+                        "startColumn": 4,
+                        "startOffset": 7987,
+                        "endColumn": 67,
+                        "endOffset": 8050
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 53,
+                    "startColumn": 4,
+                    "startOffset": 5147,
+                    "endColumn": 65,
+                    "endOffset": 5208
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 154,
+                        "startColumn": 4,
+                        "startOffset": 8055,
+                        "endColumn": 65,
+                        "endOffset": 8116
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 54,
+                    "startColumn": 4,
+                    "startOffset": 5213,
+                    "endColumn": 68,
+                    "endOffset": 5277
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 156,
+                        "startColumn": 4,
+                        "startOffset": 8122,
+                        "endColumn": 68,
+                        "endOffset": 8186
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 5282,
+                    "endColumn": 78,
+                    "endOffset": 5356
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 157,
+                        "startColumn": 4,
+                        "startOffset": 8191,
+                        "endColumn": 78,
+                        "endOffset": 8265
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 56,
+                    "startColumn": 4,
+                    "startOffset": 5361,
+                    "endColumn": 69,
+                    "endOffset": 5426
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 158,
+                        "startColumn": 4,
+                        "startOffset": 8270,
+                        "endColumn": 69,
+                        "endOffset": 8335
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 57,
+                    "startColumn": 4,
+                    "startOffset": 5431,
+                    "endColumn": 72,
+                    "endOffset": 5499
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 159,
+                        "startColumn": 4,
+                        "startOffset": 8340,
+                        "endColumn": 72,
+                        "endOffset": 8408
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 58,
+                    "startColumn": 4,
+                    "startOffset": 5504,
+                    "endColumn": 73,
+                    "endOffset": 5573
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 160,
+                        "startColumn": 4,
+                        "startOffset": 8413,
+                        "endColumn": 73,
+                        "endOffset": 8482
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 59,
+                    "startColumn": 4,
+                    "startOffset": 5578,
+                    "endColumn": 53,
+                    "endOffset": 5627
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 16,
+                        "endColumn": 53,
+                        "endOffset": 65
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 60,
+                    "startColumn": 4,
+                    "startOffset": 5632,
+                    "endLine": 63,
+                    "endColumn": 12,
+                    "endOffset": 5827
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 162,
+                        "startColumn": 4,
+                        "startOffset": 8488,
+                        "endLine": 165,
+                        "endColumn": 12,
+                        "endOffset": 8683
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 64,
+                    "startColumn": 4,
+                    "startOffset": 5832,
+                    "endLine": 67,
+                    "endColumn": 12,
+                    "endOffset": 6080
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 167,
+                        "startColumn": 4,
+                        "startOffset": 8689,
+                        "endLine": 170,
+                        "endColumn": 12,
+                        "endOffset": 8937
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 68,
+                    "startColumn": 4,
+                    "startOffset": 6085,
+                    "endColumn": 26,
+                    "endOffset": 6107
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 172,
+                        "startColumn": 4,
+                        "startOffset": 8943,
+                        "endColumn": 33,
+                        "endOffset": 8972
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 69,
+                    "startColumn": 4,
+                    "startOffset": 6112,
+                    "endLine": 72,
+                    "endColumn": 12,
+                    "endOffset": 6297
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 174,
+                        "startColumn": 4,
+                        "startOffset": 8978,
+                        "endLine": 177,
+                        "endColumn": 12,
+                        "endOffset": 9163
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 73,
+                    "startColumn": 4,
+                    "startOffset": 6302,
+                    "endLine": 83,
+                    "endColumn": 12,
+                    "endOffset": 6899
+                },
+                "from": {
+                    "file": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/values/values.xml",
+                    "position": {
+                        "startLine": 179,
+                        "startColumn": 4,
+                        "startOffset": 9169,
+                        "endLine": 189,
+                        "endColumn": 12,
+                        "endOffset": 9766
+                    }
+                }
+            }
+        ]
+    }
+]

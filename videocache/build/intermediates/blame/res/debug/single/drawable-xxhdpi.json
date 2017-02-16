@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_cloud_done.png",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/src/main/res/drawable-xxhdpi/ic_cloud_done.png"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_cloud_download.png",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/src/main/res/drawable-xxhdpi/ic_cloud_download.png"
+    }
+]

@@ -1,0 +1,28 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/src/main/AndroidManifest.xml:2:1-10:12
+	package
+		ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/src/main/AndroidManifest.xml:4:5-43
+		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/src/main/AndroidManifest.xml
+		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/src/main/AndroidManifest.xml
+		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/src/main/AndroidManifest.xml:3:5-63
+	android:versionCode
+		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/src/main/AndroidManifest.xml
+		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/src/main/AndroidManifest.xml
+uses-sdk
+ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/src/main/AndroidManifest.xml:6:5-44
+MERGED from [Practice:videocacehLibrary:unspecified] /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/build/intermediates/exploded-aar/Practice/videocacehLibrary/unspecified/AndroidManifest.xml:8:5-10:41
+	android:targetSdkVersion
+		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/src/main/AndroidManifest.xml
+		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/src/main/AndroidManifest.xml:6:15-41
+		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/src/main/AndroidManifest.xml
+		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/src/main/AndroidManifest.xml
+application
+ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/src/main/AndroidManifest.xml:8:5-20
+MERGED from [Practice:videocacehLibrary:unspecified] /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/build/intermediates/exploded-aar/Practice/videocacehLibrary/unspecified/AndroidManifest.xml:12:5-20

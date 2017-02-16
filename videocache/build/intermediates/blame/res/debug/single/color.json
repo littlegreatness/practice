@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/res/merged/debug/color/vpi__dark_theme.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/color/vpi__dark_theme.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/res/merged/debug/color/vpi__light_theme.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/res/color/vpi__light_theme.xml"
+    }
+]

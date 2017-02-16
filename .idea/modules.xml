@@ -45,6 +45,9 @@
       <module fileurl="file://$PROJECT_DIR$/swipecardsview/swipecardsview.iml" filepath="$PROJECT_DIR$/swipecardsview/swipecardsview.iml" />
       <module fileurl="file://$PROJECT_DIR$/swipelibrary/swipelibrary.iml" filepath="$PROJECT_DIR$/swipelibrary/swipelibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/testapp/testapp.iml" filepath="$PROJECT_DIR$/testapp/testapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/videocacehLibrary/videocacehLibrary.iml" filepath="$PROJECT_DIR$/videocacehLibrary/videocacehLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/videocache/videocache.iml" filepath="$PROJECT_DIR$/videocache/videocache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/videocacheTest/videocacheTest.iml" filepath="$PROJECT_DIR$/videocacheTest/videocacheTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/videorecord/videorecord.iml" filepath="$PROJECT_DIR$/videorecord/videorecord.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewdraghelper/viewdraghelper.iml" filepath="$PROJECT_DIR$/viewdraghelper/viewdraghelper.iml" />
       <module fileurl="file://$PROJECT_DIR$/waveview2library/waveview2library.iml" filepath="$PROJECT_DIR$/waveview2library/waveview2library.iml" />

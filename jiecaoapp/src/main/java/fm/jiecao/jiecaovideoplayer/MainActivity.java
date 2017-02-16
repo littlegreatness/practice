@@ -61,6 +61,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
     public void onBackPressed() {
         if (JCVideoPlayer.backPress()) {
             return;

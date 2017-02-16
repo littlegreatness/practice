@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/res/merged/debug/layout/activity_video_gallery.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/src/main/res/layout/activity_video_gallery.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/res/merged/debug/layout/activity_multiple_videos.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/src/main/res/layout/activity_multiple_videos.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/res/merged/debug/layout/activity_menu.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/src/main/res/layout/activity_menu.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/res/merged/debug/layout/activity_single_video.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/src/main/res/layout/activity_single_video.xml"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/res/merged/debug/layout/fragment_video.xml",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/src/main/res/layout/fragment_video.xml"
+    }
+]
