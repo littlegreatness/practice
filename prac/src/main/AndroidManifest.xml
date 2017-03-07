@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -47,7 +48,8 @@
         <activity
             android:name=".gif.CusPrrogressAct"
             android:label="@string/title_activity_cus_prrogress"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".gif.OkHttpAct">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

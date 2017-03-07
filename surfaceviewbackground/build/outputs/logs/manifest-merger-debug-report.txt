@@ -17,12 +17,12 @@ ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackgroun
 		ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/src/main/AndroidManifest.xml:2:11-69
 uses-sdk
 ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/src/main/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:appcompat-v7:24.0.0] /Users/buxiaoqing/.android/build-cache/8ed1f56186a0bb682a496e2c355fc1d88c140056/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:24.0.0] /Users/buxiaoqing/.android/build-cache/eeed8f73955c14f210db37be8496c1fc27d1eef7/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.0.0] /Users/buxiaoqing/.android/build-cache/b5f7c28ded9f296cbcb114edd21a1a082827c8d5/output/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/.android/build-cache/f5918748c31eb1b3c8731b30a19685d70153fc84/output/AndroidManifest.xml:21:5-23:54
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:24.0.0] /Users/buxiaoqing/.android/build-cache/8ed1f56186a0bb682a496e2c355fc1d88c140056/output/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/src/main/AndroidManifest.xml:9:9-38
 		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/src/main/AndroidManifest.xml
@@ -33,10 +33,10 @@ MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStu
 		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/src/main/AndroidManifest.xml
 application
 ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/src/main/AndroidManifest.xml:11:5-26:19
-MERGED from [com.android.support:appcompat-v7:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:24.0.0] /Users/buxiaoqing/.android/build-cache/8ed1f56186a0bb682a496e2c355fc1d88c140056/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.0.0] /Users/buxiaoqing/.android/build-cache/eeed8f73955c14f210db37be8496c1fc27d1eef7/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.0.0] /Users/buxiaoqing/.android/build-cache/b5f7c28ded9f296cbcb114edd21a1a082827c8d5/output/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/.android/build-cache/f5918748c31eb1b3c8731b30a19685d70153fc84/output/AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/src/main/AndroidManifest.xml:14:9-41
 	android:allowBackup

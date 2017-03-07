@@ -9,7 +9,7 @@ ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/swipecards/src/main/
 		ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/swipecards/src/main/AndroidManifest.xml:2:11-69
 application
 ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/swipecards/src/main/AndroidManifest.xml:5:5-19:19
-MERGED from [Practice:swipelibrary:unspecified] /Users/buxiaoqing/AndroidStudioProjects/Practice/swipecards/build/intermediates/exploded-aar/Practice/swipelibrary/unspecified/AndroidManifest.xml:10:5-20
+MERGED from [Practice:swipelibrary:unspecified] /Users/buxiaoqing/AndroidStudioProjects/Practice/swipelibrary/build/intermediates/bundles/default/AndroidManifest.xml:10:5-20
 	android:label
 		ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/swipecards/src/main/AndroidManifest.xml:8:9-41
 	android:allowBackup
@@ -36,7 +36,7 @@ ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/swipecards/src/main/
 		ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/swipecards/src/main/AndroidManifest.xml:16:27-74
 uses-sdk
 INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/swipecards/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [Practice:swipelibrary:unspecified] /Users/buxiaoqing/AndroidStudioProjects/Practice/swipecards/build/intermediates/exploded-aar/Practice/swipelibrary/unspecified/AndroidManifest.xml:6:5-8:41
+MERGED from [Practice:swipelibrary:unspecified] /Users/buxiaoqing/AndroidStudioProjects/Practice/swipelibrary/build/intermediates/bundles/default/AndroidManifest.xml:6:5-8:41
 	android:targetSdkVersion
 		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/swipecards/src/main/AndroidManifest.xml
 		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/swipecards/src/main/AndroidManifest.xml

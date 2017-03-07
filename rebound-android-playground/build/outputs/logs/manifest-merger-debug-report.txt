@@ -15,7 +15,7 @@ ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-play
 		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/src/main/AndroidManifest.xml
 uses-sdk
 ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/src/main/AndroidManifest.xml:4:3-5:41
-MERGED from [Practice:rebound-android:unspecified] /Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/build/intermediates/exploded-aar/Practice/rebound-android/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [Practice:rebound-android:unspecified] /Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android/build/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion
 		ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/src/main/AndroidManifest.xml:4:13-42
 		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-playground/src/main/AndroidManifest.xml

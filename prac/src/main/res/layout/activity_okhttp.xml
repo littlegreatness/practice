@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+    
+
+    <Button
+        android:onClick="getAsyncHttp"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="异步GET请求 "/>
+
+    <Button
+        android:onClick="getSyncHttp"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="同步GET请求 "/>
+
+
+    <Button
+        android:onClick="postAsynHttp"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="异步POS请求 "/>
+
+    <Button
+        android:onClick="postStream"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="POST stream "/>
+    
+</LinearLayout>

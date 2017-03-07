@@ -17,9 +17,9 @@ ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/pullToZoomListSimple
 		ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/pullToZoomListSimple/src/main/AndroidManifest.xml:2:11-69
 uses-sdk
 ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/pullToZoomListSimple/src/main/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/pullToZoomListSimple/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/.android/build-cache/f5918748c31eb1b3c8731b30a19685d70153fc84/output/AndroidManifest.xml:21:5-23:54
 	tools:overrideLibrary
-		ADDED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/pullToZoomListSimple/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:23:9-51
+		ADDED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/.android/build-cache/f5918748c31eb1b3c8731b30a19685d70153fc84/output/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
 		ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/pullToZoomListSimple/src/main/AndroidManifest.xml:9:9-38
 		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/pullToZoomListSimple/src/main/AndroidManifest.xml
@@ -30,7 +30,7 @@ MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStu
 		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/pullToZoomListSimple/src/main/AndroidManifest.xml
 application
 ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/pullToZoomListSimple/src/main/AndroidManifest.xml:11:5-25:19
-MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/pullToZoomListSimple/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.0.0] /Users/buxiaoqing/.android/build-cache/f5918748c31eb1b3c8731b30a19685d70153fc84/output/AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/pullToZoomListSimple/src/main/AndroidManifest.xml:14:9-41
 	android:allowBackup

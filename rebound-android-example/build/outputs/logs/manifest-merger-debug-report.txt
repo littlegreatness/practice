@@ -15,7 +15,7 @@ ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-exam
 		ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-example/src/main/AndroidManifest.xml:3:3-61
 uses-sdk
 ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-example/src/main/AndroidManifest.xml:7:3-8:41
-MERGED from [Practice:rebound-android:unspecified] /Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-example/build/intermediates/exploded-aar/Practice/rebound-android/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [Practice:rebound-android:unspecified] /Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android/build/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion
 		ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-example/src/main/AndroidManifest.xml:7:13-42
 		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/rebound-android-example/src/main/AndroidManifest.xml

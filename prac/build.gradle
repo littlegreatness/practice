@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "24.0.0"
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId "com.prac.buxiaoqing.prac"
@@ -32,4 +32,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile files('libs/AnnotationTest.jar')
     compile project(':annoprocessor')
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    compile 'com.squareup.okio:okio:1.7.0'
 }

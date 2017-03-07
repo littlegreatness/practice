@@ -1,10 +1,10 @@
 [
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
-        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+        "source": "/Users/buxiaoqing/.android/build-cache/8ed1f56186a0bb682a496e2c355fc1d88c140056/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
     },
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
-        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/viewdraghelper/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+        "source": "/Users/buxiaoqing/.android/build-cache/8ed1f56186a0bb682a496e2c355fc1d88c140056/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
     }
 ]

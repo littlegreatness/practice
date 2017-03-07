@@ -15,7 +15,7 @@ ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/src/m
 		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/src/main/AndroidManifest.xml
 uses-sdk
 ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/src/main/AndroidManifest.xml:6:5-44
-MERGED from [Practice:videocacehLibrary:unspecified] /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/build/intermediates/exploded-aar/Practice/videocacehLibrary/unspecified/AndroidManifest.xml:8:5-10:41
+MERGED from [Practice:videocacehLibrary:unspecified] /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacehLibrary/build/intermediates/bundles/default/AndroidManifest.xml:8:5-10:41
 	android:targetSdkVersion
 		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/src/main/AndroidManifest.xml
 		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/src/main/AndroidManifest.xml
@@ -25,4 +25,4 @@ MERGED from [Practice:videocacehLibrary:unspecified] /Users/buxiaoqing/AndroidSt
 		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/src/main/AndroidManifest.xml
 application
 ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/src/main/AndroidManifest.xml:8:5-20
-MERGED from [Practice:videocacehLibrary:unspecified] /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacheTest/build/intermediates/exploded-aar/Practice/videocacehLibrary/unspecified/AndroidManifest.xml:12:5-20
+MERGED from [Practice:videocacehLibrary:unspecified] /Users/buxiaoqing/AndroidStudioProjects/Practice/videocacehLibrary/build/intermediates/bundles/default/AndroidManifest.xml:12:5-20

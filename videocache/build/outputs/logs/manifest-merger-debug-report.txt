@@ -23,8 +23,8 @@ ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/src/main/
 		ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/src/main/AndroidManifest.xml:7:22-78
 application
 ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/src/main/AndroidManifest.xml:9:5-27:19
-MERGED from [com.android.support:support-v4:23.1.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:22:5-20
-MERGED from [com.danikula:videocache:2.6.4] /Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.danikula/videocache/2.6.4/AndroidManifest.xml:12:5-20
+MERGED from [com.android.support:support-v4:23.1.0] /Users/buxiaoqing/.android/build-cache/6aea27ddb32d1853fbb7ace92842f7de11dc4491/output/AndroidManifest.xml:22:5-20
+MERGED from [com.danikula:videocache:2.6.4] /Users/buxiaoqing/.android/build-cache/d73373660d957c35ffacf6f2659aad58c4a8c235/output/AndroidManifest.xml:12:5-20
 	android:label
 		ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/src/main/AndroidManifest.xml:13:9-41
 	android:allowBackup
@@ -69,8 +69,8 @@ ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/src/main/
 		ADDED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/src/main/AndroidManifest.xml:26:19-55
 uses-sdk
 INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:support-v4:23.1.0] /Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/AndroidManifest.xml:20:5-43
-MERGED from [com.danikula:videocache:2.6.4] /Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.danikula/videocache/2.6.4/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:support-v4:23.1.0] /Users/buxiaoqing/.android/build-cache/6aea27ddb32d1853fbb7ace92842f7de11dc4491/output/AndroidManifest.xml:20:5-43
+MERGED from [com.danikula:videocache:2.6.4] /Users/buxiaoqing/.android/build-cache/d73373660d957c35ffacf6f2659aad58c4a8c235/output/AndroidManifest.xml:8:5-10:41
 MERGED from [com.viewpagerindicator:library:2.4.2-SNAPSHOT] /Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/build/intermediates/exploded-aar/com.viewpagerindicator/library/2.4.2-SNAPSHOT/AndroidManifest.xml:8:5-43
 	android:targetSdkVersion
 		INJECTED from /Users/buxiaoqing/AndroidStudioProjects/Practice/videocache/src/main/AndroidManifest.xml
