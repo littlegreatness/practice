@@ -38,18 +38,19 @@
         <activity
             android:name=".gif.AnimationActivity"
             android:label="@string/title_activity_animation"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".gif.XformodeActivity"
             android:label="@string/title_activity_xformode"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".gif.CusPrrogressAct"
             android:label="@string/title_activity_cus_prrogress"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".gif.OkHttpAct">
+
+        </activity>
+        <activity android:name=".gif.OKIOAct">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

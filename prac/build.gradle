@@ -23,15 +23,17 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile files('libs/javacpp.jar')
     compile files('libs/ffmpeg.jar')
+    compile files('libs/AnnotationTest.jar')
+    compile project(':annoprocessor')
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.nineoldandroids:library:2.4.0'
     compile 'com.google.android.gms:play-services-appindexing:9.6.1'
     compile 'com.yqritc:android-scalablevideoview:1.0.1'
     compile 'com.facebook.rebound:rebound:0.3.8'
     compile 'com.android.support:design:24.2.1'
-    testCompile 'junit:junit:4.12'
-    compile files('libs/AnnotationTest.jar')
-    compile project(':annoprocessor')
     compile 'com.squareup.okhttp3:okhttp:3.3.1'
     compile 'com.squareup.okio:okio:1.7.0'
+    compile 'com.android.support.constraint:constraint-layout:+'
+    testCompile 'junit:junit:4.12'
+    compile 'junit:junit:4.12'
 }
