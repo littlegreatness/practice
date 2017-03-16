@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi/button.png",
-        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/button.png"
-    },
-    {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi/progress_bar_grey.9.png",
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/progress_bar_grey.9.png"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi/button.png",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/button.png"
     },
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi/video_text04.png",
@@ -152,12 +152,12 @@
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/icn_save.png"
     },
     {
-        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi/btn_dialog_normal.png",
-        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/btn_dialog_normal.png"
-    },
-    {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi/icn_save_pressed.png",
         "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/icn_save_pressed.png"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi/btn_dialog_normal.png",
+        "source": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/src/main/res/drawable-hdpi/btn_dialog_normal.png"
     },
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/videorecord/build/intermediates/res/merged/debug/drawable-hdpi/guide_icn_close.png",

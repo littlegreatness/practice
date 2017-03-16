@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/Gpu-Image/Gpu-Image.iml" filepath="$PROJECT_DIR$/Gpu-Image/Gpu-Image.iml" />
       <module fileurl="file://$PROJECT_DIR$/ImageViewTouch/ImageViewTouch.iml" filepath="$PROJECT_DIR$/ImageViewTouch/ImageViewTouch.iml" />
       <module fileurl="file://$PROJECT_DIR$/JigsawDemo/JigsawDemo.iml" filepath="$PROJECT_DIR$/JigsawDemo/JigsawDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LottieSample/LottieSample.iml" filepath="$PROJECT_DIR$/LottieSample/LottieSample.iml" />
       <module fileurl="file://$PROJECT_DIR$/MvpSample/MvpSample.iml" filepath="$PROJECT_DIR$/MvpSample/MvpSample.iml" />
       <module fileurl="file://$PROJECT_DIR$/Permissioncheck/Permissioncheck.iml" filepath="$PROJECT_DIR$/Permissioncheck/Permissioncheck.iml" />
       <module fileurl="file://$PROJECT_DIR$/Practice.iml" filepath="$PROJECT_DIR$/Practice.iml" />
@@ -16,6 +17,9 @@
       <module fileurl="file://$PROJECT_DIR$/WXLikeVideoRecorderLib/WXLikeVideoRecorderLib.iml" filepath="$PROJECT_DIR$/WXLikeVideoRecorderLib/WXLikeVideoRecorderLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/androidLib2122/androidLib2122.iml" filepath="$PROJECT_DIR$/androidLib2122/androidLib2122.iml" />
       <module fileurl="file://$PROJECT_DIR$/annoprocessor/annoprocessor.iml" filepath="$PROJECT_DIR$/annoprocessor/annoprocessor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GithubApp-master/app/app.iml" filepath="$PROJECT_DIR$/GithubApp-master/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GithubApp-master/appintro/appintro.iml" filepath="$PROJECT_DIR$/GithubApp-master/appintro/appintro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GithubApp-master/breadcrumb/breadcrumb.iml" filepath="$PROJECT_DIR$/GithubApp-master/breadcrumb/breadcrumb.iml" />
       <module fileurl="file://$PROJECT_DIR$/butterknifetest/butterknifetest.iml" filepath="$PROJECT_DIR$/butterknifetest/butterknifetest.iml" />
       <module fileurl="file://$PROJECT_DIR$/crop/crop.iml" filepath="$PROJECT_DIR$/crop/crop.iml" />
       <module fileurl="file://$PROJECT_DIR$/dragSquare/dragSquare.iml" filepath="$PROJECT_DIR$/dragSquare/dragSquare.iml" />
@@ -23,9 +27,11 @@
       <module fileurl="file://$PROJECT_DIR$/jcvideoplayer-lib/jcvideoplayer-lib.iml" filepath="$PROJECT_DIR$/jcvideoplayer-lib/jcvideoplayer-lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/jiecaoapp/jiecaoapp.iml" filepath="$PROJECT_DIR$/jiecaoapp/jiecaoapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/libraries.iml" filepath="$PROJECT_DIR$/libraries/libraries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lottie/lottie.iml" filepath="$PROJECT_DIR$/lottie/lottie.iml" />
       <module fileurl="file://$PROJECT_DIR$/mediaProjection/mediaProjection.iml" filepath="$PROJECT_DIR$/mediaProjection/mediaProjection.iml" />
       <module fileurl="file://$PROJECT_DIR$/meitudemo/meitudemo.iml" filepath="$PROJECT_DIR$/meitudemo/meitudemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/multiAPK/multiAPK.iml" filepath="$PROJECT_DIR$/multiAPK/multiAPK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GithubApp-master/mvp/mvp.iml" filepath="$PROJECT_DIR$/GithubApp-master/mvp/mvp.iml" />
       <module fileurl="file://$PROJECT_DIR$/myknifelibrary/myknifelibrary.iml" filepath="$PROJECT_DIR$/myknifelibrary/myknifelibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/prac/prac.iml" filepath="$PROJECT_DIR$/prac/prac.iml" />
       <module fileurl="file://$PROJECT_DIR$/pullToZoomListSimple/pullToZoomListSimple.iml" filepath="$PROJECT_DIR$/pullToZoomListSimple/pullToZoomListSimple.iml" />
@@ -38,6 +44,7 @@
       <module fileurl="file://$PROJECT_DIR$/recyclerviewtest/recyclerviewtest.iml" filepath="$PROJECT_DIR$/recyclerviewtest/recyclerviewtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/retrofit/retrofit.iml" filepath="$PROJECT_DIR$/retrofit/retrofit.iml" />
       <module fileurl="file://$PROJECT_DIR$/rxJoke/rxJoke.iml" filepath="$PROJECT_DIR$/rxJoke/rxJoke.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GithubApp-master/sharesdk/sharesdk.iml" filepath="$PROJECT_DIR$/GithubApp-master/sharesdk/sharesdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/stickercamera/stickercamera.iml" filepath="$PROJECT_DIR$/stickercamera/stickercamera.iml" />
       <module fileurl="file://$PROJECT_DIR$/surfaceview_game_1/surfaceview_game_1.iml" filepath="$PROJECT_DIR$/surfaceview_game_1/surfaceview_game_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/surfaceviewbackground/surfaceviewbackground.iml" filepath="$PROJECT_DIR$/surfaceviewbackground/surfaceviewbackground.iml" />

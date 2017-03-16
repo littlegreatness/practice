@@ -12,9 +12,15 @@
             <option value="$PROJECT_DIR$/Annotationlibrary" />
             <option value="$PROJECT_DIR$/BounceLayout" />
             <option value="$PROJECT_DIR$/DragGridView" />
+            <option value="$PROJECT_DIR$/GithubApp-master/app" />
+            <option value="$PROJECT_DIR$/GithubApp-master/appintro" />
+            <option value="$PROJECT_DIR$/GithubApp-master/breadcrumb" />
+            <option value="$PROJECT_DIR$/GithubApp-master/mvp" />
+            <option value="$PROJECT_DIR$/GithubApp-master/sharesdk" />
             <option value="$PROJECT_DIR$/Gpu-Image" />
             <option value="$PROJECT_DIR$/ImageViewTouch" />
             <option value="$PROJECT_DIR$/JigsawDemo" />
+            <option value="$PROJECT_DIR$/LottieSample" />
             <option value="$PROJECT_DIR$/MvpSample" />
             <option value="$PROJECT_DIR$/Permissioncheck" />
             <option value="$PROJECT_DIR$/WXLikeVideoRecorderLib" />
@@ -29,6 +35,7 @@
             <option value="$PROJECT_DIR$/libraries" />
             <option value="$PROJECT_DIR$/libraries/CustomShapeImageView" />
             <option value="$PROJECT_DIR$/libraries/Shimmer" />
+            <option value="$PROJECT_DIR$/lottie" />
             <option value="$PROJECT_DIR$/mediaProjection" />
             <option value="$PROJECT_DIR$/meitudemo" />
             <option value="$PROJECT_DIR$/multiAPK" />

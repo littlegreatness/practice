@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_list_divider_mtrl_alpha.9.png",
-        "source": "/Users/buxiaoqing/.android/build-cache/8ed1f56186a0bb682a496e2c355fc1d88c140056/output/res/drawable-xhdpi-v4/abc_list_divider_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_list_pressed_holo_dark.9.png",
         "source": "/Users/buxiaoqing/.android/build-cache/8ed1f56186a0bb682a496e2c355fc1d88c140056/output/res/drawable-xhdpi-v4/abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_list_divider_mtrl_alpha.9.png",
+        "source": "/Users/buxiaoqing/.android/build-cache/8ed1f56186a0bb682a496e2c355fc1d88c140056/output/res/drawable-xhdpi-v4/abc_list_divider_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/buxiaoqing/AndroidStudioProjects/Practice/surfaceviewbackground/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png",

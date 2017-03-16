@@ -1,4 +1,4 @@
-include ':MvpSample', ':retrofit', ':Permissioncheck', ':rxJoke', ':multiAPK', ':greendao', ':jiecaoapp', ':jcvideoplayer-lib'
+include ':MvpSample', ':retrofit', ':Permissioncheck', ':rxJoke', ':multiAPK', ':greendao', ':jiecaoapp', ':jcvideoplayer-lib', ':mvp', ':appintro', ':sharesdk', ':breadcrumb', ':app', ':lottie', ':LottieSample'
 include ':meitudemo', ':ImageViewTouch', ':stickercamera', ':Gpu-Image'
 include ':wewin', ':libraries:CustomShapeImageView', ':libraries:Shimmer'
 include ':Annotationlibrary', ':crop', ':videorecord'
@@ -16,3 +16,8 @@ include ':recyclerviewtest'
 include ':prac', ':BounceLayout', ':swipelibrary', ':swipecards', ':swipecardsview'
 include ':butterknifetest', ':annoprocessor', ':myknifelibrary', ':waveviewlibrary', ':waveview2library'
 include ':videocache', ':videocacheTest', ':videocacehLibrary'
+project(':mvp').projectDir = new File('GithubApp-master/mvp')
+project(':appintro').projectDir = new File('GithubApp-master/appintro')
+project(':sharesdk').projectDir = new File('GithubApp-master/sharesdk')
+project(':breadcrumb').projectDir = new File('GithubApp-master/breadcrumb')
+project(':app').projectDir = new File('GithubApp-master/app')

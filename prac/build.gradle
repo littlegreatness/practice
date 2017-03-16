@@ -31,7 +31,7 @@ dependencies {
     compile 'com.yqritc:android-scalablevideoview:1.0.1'
     compile 'com.facebook.rebound:rebound:0.3.8'
     compile 'com.android.support:design:24.2.1'
-    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
     compile 'com.squareup.okio:okio:1.7.0'
     compile 'com.android.support.constraint:constraint-layout:+'
     testCompile 'junit:junit:4.12'
