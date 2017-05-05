@@ -26,7 +26,9 @@
 
         <activity android:name=".gif.MainActivity" />
         <activity android:name=".gif.jump_act" />
-        <activity android:name=".gif.Animateact" />
+        <activity android:name=".gif.Animateact">
+
+        </activity>
         <activity android:name=".gif.PlayVideoActiviy" />
         <activity android:name=".gif.RecordVedioAct" />
         <activity android:name=".gif.InnerScrollViewAct" />
@@ -42,15 +44,14 @@
         <activity
             android:name=".gif.XformodeActivity"
             android:label="@string/title_activity_xformode"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".gif.CusPrrogressAct"
             android:label="@string/title_activity_cus_prrogress"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".gif.OkHttpAct">
-
-        </activity>
-        <activity android:name=".gif.OKIOAct">
+        <activity android:name=".gif.OkHttpAct"></activity>
+        <activity android:name=".gif.OKIOAct"></activity>
+        <activity android:name=".gif.SVGActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
