@@ -6,7 +6,6 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.util.AttributeSet;
-import android.view.View;
 
 /**
  * 介绍：一个路径动画的View
@@ -21,14 +20,14 @@ import android.view.View;
  * 时间： 2016/11/2.
  */
 
-public class PathAnimView extends View {
+public class PathAnimView extends android.support.v7.widget.AppCompatImageView {
     private static final String TAG = "PathAnimView";
 
     protected Path mSourcePath;//需要做动画的源Path
     protected Path mAnimPath;//用于绘制动画的Path
     protected Paint mPaint;
     protected int mColorBg = Color.GRAY;//背景色
-    protected int mColorFg = Color.WHITE;//前景色 填充色
+    protected int mColorFg = Color.YELLOW;//前景色 填充色
     protected PathAnimHelper mPathAnimHelper;//Path动画工具类
 
     protected int mPaddingLeft, mPaddingTop;
@@ -162,13 +161,21 @@ public class PathAnimView extends View {
     int w = 600, h = 600;
     int r = 200;
 
+    boolean isOutSideRes = false;
+    public void setResource(int res){
+        isOutSideRes = true;
+        setImageResource(res);
+    }
+
     /**
      * draw FUNC
      **/
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
+        if(isOutSideRes){
+            return;
+        }
 //        w = canvas.getWidth();
 //        h = canvas.getWidth();
 
