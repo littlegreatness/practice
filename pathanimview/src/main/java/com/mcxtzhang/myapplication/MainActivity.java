@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         fillView1.getPaint().setStrokeWidth(5);
+//        fillView1.setResource(R.drawable.ic_android_black_24dp);
         //设置颜色
         fillView2.setColorBg(Color.WHITE).setColorFg(Color.BLACK);
         fillView2.getPaint().setStrokeWidth(5);

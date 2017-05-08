@@ -25,7 +25,7 @@
                 android:id="@+id/fillView1"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:background="@android:color/black"
+                android:background="@android:color/darker_gray"
                 android:padding="5dp" />
 
             <com.mcxtzhang.myapplication.CstStoreHouseAnimView
